@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<title>redrock_sub_closed_180826</title>
+	<link rel="stylesheet" href="../css/common.css">
+	<link rel="stylesheet" href="../css/sub.css">
+	<link href="http://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:100,200,400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Exo:400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Handlee" rel="stylesheet">
+	<!-- <link rel="shortcut icon" href="../img/favicon.ico"> -->
+</head>
+<body>
+	<div id="wrap">	
+		<header>
+			<input type="checkbox" id="menu" class="hidden">
+			<div class="hd">
+				<h1><a href="../index.html">logo</a></h1>
+				<div class="menu">
+					<label for="menu"></label>
+				</div>
+			</div> <!-- /.hd -->
+			<nav>
+				<ul>
+					<li class="big_tit">
+						<a href="sub_story.html">STORY</a>
+					</li>
+					<li class="small_tit">
+						<a href="sub_story.html">RED ROCK</a>
+					</li>
+					<li class="line"></li>
+					<li class="big_tit">
+						<a href="sub_beers.html">MENU</a>
+					</li>
+					<li class="small_tit">
+						<a href="sub_beers.html">BEERS</a>
+					</li>
+					<li class="small_tit">
+						<a href="sub_foods.html">SALADS</a>
+					</li>
+					<li class="small_tit">
+						<a href="sub_foods.html">PIZZA</a>
+					</li>
+					<li class="small_tit">
+						<a href="sub_foods.html">PASTA</a>
+					</li>
+					<li class="line"></li>
+					<li class="big_tit">
+						<a href="sub_locations.html">LOCATION</a>
+					</li>
+					<li class="small_tit">
+						<a href="sub_locations.html">WHERE IS</a>
+					</li>
+					<li class="line"></li>
+					<li class="big_tit">
+						<a href="javascript:alert('준비중 입니다.')#">NOTICES</a>
+					</li>
+					<li class="small_tit">
+						<a href="javascript:alert('준비중 입니다.')">NEWS</a>
+					</li>
+					<li class="small_tit">
+						<a href="sub_closed.html">EVENTS</a>
+					</li>
+					<li class="add_tit">
+						<a href="sub_events.html">- In progress<br></a>
+						<a href="sub_closed.html">- Closed</a>
+					</li>
+					<li class="small_tit">
+						<a href="javascript:alert('준비중 입니다.')">CONTACT</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="sns">
+				<p>Red Rock<br>SNS</p>
+				<div class="link">
+					<div class="instagram">
+						<a href="https://www.instagram.com/redrock_beerhouse"><span>Instagram</span></a>
+					</div>
+					<div class="facebook">
+						<a href="https://www.facebook.com/obredrock.co.kr"><span>Facebook</span></a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div id="container" style="background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0.3)), url(../img/bg_3.png);">
+			<div class="banner">
+				<div class="content">
+					<div class="inner">
+						<div class="product_wrap">
+							<div class="closed_1 product">
+								<div class="tit event">
+									<span class="big">Events <em>Have a nice time in redrock!</em></span>
+								</div>
+								<div class="img_wrap">
+									<img src="../img/event_1-1.jpg" alt="event_pg1">
+								</div> <!-- /.img_wrap -->
+							</div> <!-- /.closed -->
+						</div> <!-- /.product_wrap -->
+					</div> <!-- /.inner -->
+				</div> <!-- /.content -->
+			</div> <!-- /.banner -->
+		</div> <!-- /#container -->
+		<footer>
+			<div class="m_link">
+				<div class="instagram">
+					<a href="https://www.instagram.com/redrock_beerhouse/"></a>
+				</div>
+				<div class="facebook">
+					<a href="https://www.facebook.com/obredrock.co.kr"></a>
+				</div>
+			</div>
+			<p>
+				<span>주소 : 서울 서초구 남부순환로 2561 (서초동 1365-22) 원효빌딩 205-206호</span> 사업자등록번호 : 588-86-00066 TEL : 1899-6865 FAX : 02-3472-0014 대표이사 : 조허정
+			</p>
+			<p>COPYRIGHT © 2018 OB RED ROCK. ALL RIGHT RESERVED.</p>
+		</footer>
+	</div> <!-- /#wrap -->
+	<script type="text/javascript">
+		$(document).scroll(function(){
+
+			if($(this).scrollTop()<$(window).height()){
+
+				$('.bx').removeClass('active');
+			} else {
+
+				$('.bx').addClass('active');
+			}
+		}).scroll();
+
+		$('.bx').click(function() {
+			$('html, body').animate({scrollTop : '0'},500);
+		});
+
+		// 전체 화면 채우도록 jq 작업처리
+		var H = $(window).height();
+		$('#wrap, #container').css('min-height', H);
+	</script>
+</body>
+</html>

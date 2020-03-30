@@ -1,0 +1,522 @@
+/*********  common  *********/
+/*  table  */
+.tb_board table {width: 100%;}
+.tb_board table thead{}
+.tb_board table tr{height: 40px; line-height: 40px; text-align: center;}
+.tb_board table tr td.num{font-weight: 700;}
+.tb_board table thead tr{height: 50px; background-color: rgba(148,22,44,0.8); border-top: 2px solid #8C8C8C; font-weight: 700;}
+.tb_board table thead tr th{}
+.tb_board table tbody{}
+.tb_board table tbody tr{border-top: 1px solid #BDBDBD; font-size: 0.9em;}
+.tb_board table tbody tr.notice{background-color: rgba(0,0,0,0.7);}
+.tb_board table tbody tr:last-child{border-bottom: 2px solid #8C8C8C;}
+.tb_board table tbody tr td.store,
+.tb_board table tbody tr td.address{text-align: left;}
+.tb_board .paging_wrap{margin: 3% 0; text-align: center;}
+.tb_board .paging_wrap .paging{overflow: hidden; display: inline-block;}
+.tb_board .paging_wrap .paging>div{overflow: hidden; float: left;}
+.tb_board .paging_wrap .paging label{float: left; text-align: center; font-size: 0.8em;}
+.tb_board .paging_wrap .paging .arrow_l label{border:1px solid #ddd; background: url(../img/icon/icon_arrow_left.png) 11px 10px no-repeat; background-size: 20%; background-color: #f8f8f8; width: 32px; height: 32px;}
+.tb_board .paging_wrap .paging .arrow_r label{border:1px solid #ddd; background: url(../img/icon/icon_arrow_right.png) 12px 11px no-repeat; background-size: 20%; background-color: #f8f8f8; width: 32px; height: 32px;}
+.tb_board .paging_wrap .paging .pg_num{margin-left: 5px;}
+.tb_board .paging_wrap .paging .pg_num ul{}
+.tb_board .paging_wrap .paging .pg_num ul li{position: relative; float: left; width: 32px; height: 32px; }
+.tb_board .paging_wrap .paging .pg_num ul li label{position: absolute; top: 25%; left: 50%; margin-left: -7px; width: 15px; height: 18px;}
+.tb_board .paging_wrap .paging .pg_num ul li label:not(:nth-of-type(1)){margin-left: 5px;}
+.tb_board .paging_wrap .paging .pg_num ul li label:hover{border-bottom: 1px solid #d32400; color:#d32400;}
+.tb_board .paging_wrap .paging .arrow_r{margin-left: 5px;}
+
+
+/************************ header ************************/
+
+header {position: absolute; top: 0; bottom: 0; left: 0; z-index: 10;}
+header nav .home{display: none;}
+
+
+/************************ footer ************************/
+
+/************************ container ************************/
+#main_container{width: 100%; height: 100%; padding-left: 200px; background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/main_banner_1.jpg); background-size: cover; background-origin: content-box;}
+#container{position: relative; padding-left: 200px; min-height: 100%; background-size: cover; background-color: #222;}
+#banner_pg_1:checked~.visual .btn_1,
+#banner_pg_2:checked~.visual .btn_2,
+#banner_pg_3:checked~.visual .btn_3{display: block;}
+.visual{overflow: hidden; height: 100%;}
+.visual .big_banner {position: relative; height: 100%;}
+.visual .banner.dark i {display: block; position: absolute; top: 0; bottom: 0; left: 0; right: 0; background-color: rgba(0,0,0,0.5);}
+.visual .big_banner .banner {background-position: 50% 50%; background-size: cover;}
+.prod_intro{margin-top: 50px;}
+
+
+
+/* OWL SLIDER */
+.owl-carousel .owl-stage-outer,
+.owl-carousel .owl-stage,
+.owl-carousel.owl-drag .owl-item {height: 100%;}
+.owldots {bottom: 70px; z-index: 10; margin-left: -99px;}
+.owl-dots{bottom: 70px; margin-left: -99px;}
+
+
+
+/************************ sub_story ************************/
+.banner{position: relative; height: 100%;}
+.banner h1{background-image: url(../img/logo_finger.png); background-size: 100% 100%; width: 100px; height: 60px; text-indent: -9999px; margin: 60px auto 20px;}
+.banner h1 a{display: block; width: 100%; height: 100%;}
+.banner .bg_beer{background-image: url(../img/bg_2.png); background-size: 100% 100%; width: 100%; height: 100%;}
+.banner .cnt{overflow: hidden;}
+.banner .cnt p{font-family: 'Handlee', cursive; color:#fff; font-size: 1.8em; text-align: center;}
+.banner .cnt p:nth-of-type(2){font-size: 0.9em;}
+.banner .cnt .events{color:#fff; text-align: center; padding: 40px 0 90px;}
+.banner .cnt .events ul{overflow: hidden;}
+.banner .cnt .events ul li{float: left; width: 23.5%; margin-left: 2%; padding: 40px 0; border:2px solid #fff; transition: color 0.5s;}
+.banner .cnt .events ul li:hover{background-color: rgba(0,0,0,0.5); color:#c41e3b; font-weight: 700;}
+.banner .cnt .events ul li:nth-child(4n+1){margin-left: 0;}
+.banner .cnt .events ul li:nth-child(4n)~li{margin-top: 2%;}
+.banner .cnt .events ul li a{display: block;}
+.banner .cnt .events ul li a span{display: block;}
+.banner .cnt .events ul li a .info{margin-bottom: 10px;}
+.banner .cnt .events ul li a .info .desc{overflow: hidden;}
+.banner .cnt .events ul li a .info .add{position: relative; height: 16px; margin: 10px 50%;}
+.banner .cnt .events ul li a .info .add:after{content:''; position: absolute; top: 0; left: 0; width: 12px; height: 12px; border: 1.5px solid #fff; border-radius: 20px; margin: auto; transition: 0.5s;}
+.banner .cnt .events ul li a:hover .info .add:after{background-color: #c41e3b;}
+.banner .cnt .events ul li a .info .txt{font-size: 1.1em; height: 50px;}
+.banner .cnt .events ul li a .thumb{}
+.banner .cnt .events ul li a .thumb img{display: block; width: 50%; padding: 18px 10px 10px 10px; margin: 10px auto 0;}
+
+/************************ sub_beers ************************/
+.banner .content{color:#fff;}
+.banner .content h1{margin-top: 0;}
+.banner .content .tit{margin-bottom: 70px;}
+.banner .content .news .tit{margin-bottom: 30px;}
+.banner .content .tit span.big{position: relative; font-size: 1.8em; padding-left: 36px; font-family: 'Handlee';}
+.banner .content .tit span.big:after{content:''; position: absolute; top: 0; left: 0; background-size: 100% 100%;}
+.banner .content .location .tit span.big:after{top: 2px; background-image: url(../img/icon/icon_locations.png); width: 24px; height: 24px;}
+.banner .content .contact .tit span.big:after{top: 2px; background-image: url(../img/icon/icon_contact.png); width: 24px; height: 24px;}
+.banner .content .news .tit span.big:after{top: 2px; background-image: url(../img/icon/icon_news.png); width: 24px; height: 24px;}
+.banner .content .closed .tit span.big:after{background-image: url(../img/icon/icon_special.png); width: 30px; height: 30px;}
+.banner .content .closed_1 .tit span.big:after{background-image: url(../img/icon/icon_special.png); width: 30px; height: 30px;}
+.banner .content .redrock .tit span.big:after{background-image: url(../img/icon/icon_special.png); width: 30px; height: 30px;}
+.banner .content .goose .tit span.big:after{background-image: url(../img/icon/icon_goose.png); width: 26px; height: 26px;}
+.banner .content .ob .tit span.big:after{background-image: url(../img/icon/icon_beer.png); width: 24px; height: 24px; }
+.banner .content .product_wrap{padding-bottom: 120px; padding-top: 120px;}
+.banner .content .product_wrap .salads .tit span.big:after,
+.banner .content .product_wrap .pizza .tit span.big:after,
+.banner .content .product_wrap .pasta .tit span.big:after{background-image: url(../img/icon/icon_special.png); width: 30px; height: 30px;}
+.banner .content .events .tit span.big:after{background-image: url(../img/icon/icon_progress.png); width: 30px; height: 30px;}
+.banner .content .tit span em{display: inline-block; font-size: 0.6em; font-weight: 500;}
+/*.banner .content .menu{padding-top: 100px;}
+.banner .content .menu .txt_menu{font-size: 1.1em; float: left; height: 36px; line-height: 34px; width: 80px; border-color: #fff; border-width: 1.5px 0 1.5px 1.5px; padding-left: 10px;}
+.banner .content .menu .txt{position: relative; font-size: 1.1em; float: left; height: 36px; line-height: 34px; width: 150px; color:#fff; border-color: #fff; border-width: 1.5px; padding-left: 32px;}
+.banner .content .menu .txt .list {}
+.banner .content .menu .txt .list li {cursor: pointer;}
+.banner .content .menu .txt .list2 {position: absolute; top: 100%; left: 0; right: 0; z-index: 1; background-color: #ddd;}
+.banner .content .menu .txt .list2 li {cursor: pointer;}
+.banner .content .menu .txt .list2 li:hover {background-color: red;}
+.banner .content .menu .txt:after{content:''; position: absolute; z-index: 1; top: 7px; left: 10px; width: 16px; height: 16px; background-size: 100% 100%;}
+.banner .content .menu .txt_beers:after{background-image: url(../img/icon/icon_beer.png);}
+.banner .content .menu .txt_salads:after{background-image: url(../img/icon/icon_spoon.png);}
+.banner .content .menu .txt_events:after{background-image: url(../img/icon/icon_progress.png);}
+.banner .content .menu .txt_closed:after{background-image: url(../img/icon/icon_finish.png);}*/
+.banner .content .product_wrap .red_rock{width: 100%; margin: 60px 0 70px;}
+.banner .content .goose,
+.banner .content .ob{margin-top: 100px;}
+.banner .content .redrock .tit span{display: block;}
+.banner .content .events .event{margin-bottom: 160px;}
+.banner .content .events .events_cnt{width: 100%;}
+.banner .content .events .events_cnt img{display: block; width: 16%; margin: 20px auto;}
+.banner .content .events .events_cnt p{text-align: center; font-size: 1.6em; line-height: 34px; font-weight: 700;}
+.banner .content .location{}
+.banner .content .location .maps_wrap{overflow: hidden;}
+.banner .content .location .maps_wrap .maps{float: left; width: 30%; position: relative;}
+.banner .content .location .maps_wrap .maps .city_wrap{position: relative; width: 100%;}
+.banner .content .location .maps_wrap .maps .city_wrap img{width: 100%;}
+.banner .content .location .maps_wrap .maps .city_wrap img.city{display: none; position: absolute; top: 0; left: 0;}
+.locations #all:checked~.location .maps .all,
+.locations #seoul:checked~.location .maps .seoul,
+.locations #busan:checked~.location .maps .busan,
+.locations #daegu:checked~.location .maps .daegu,
+.locations #incheon:checked~.location .maps .incheon,
+.locations #daejeon:checked~.location .maps .daejeon,
+.locations #ulsan:checked~.location .maps .ulsan,
+.locations #gwangju:checked~.location .maps .gwangju,
+.locations #sejong:checked~.location .maps .sejong,
+.locations #gyunggido:checked~.location .maps .gyunggido,
+.locations #gyeongsangnamdo:checked~.location .maps .gyeongsangnamdo,
+.locations #gyeongsangbukdo:checked~.location .maps .gyeongsangbukdo,
+.locations #jeollanamdo:checked~.location .maps .jeollanamdo,
+.locations #jeollabukdo:checked~.location .maps .jeollabukdo,
+.locations #chungchongnamdo:checked~.location .maps .chungchongnamdo,
+.locations #chungchongbukdo:checked~.location .maps .chungchongbukdo,
+.locations #gangwondo:checked~.location .maps .gangwondo,
+.locations #jeju:checked~.location .maps .jeju{display: block;}
+.locations #all:checked~.location .bx ul li label.all,
+.locations #seoul:checked~.location .bx ul li label.seoul,
+.locations #busan:checked~.location .bx ul li label.busan,
+.locations #daegu:checked~.location .bx ul li label.daegu,
+.locations #incheon:checked~.location .bx ul li label.incheon,
+.locations #daejeon:checked~.location .bx ul li label.daejeon,
+.locations #ulsan:checked~.location .bx ul li label.ulsan,
+.locations #gwangju:checked~.location .bx ul li label.gwangju,
+.locations #sejong:checked~.location .bx ul li label.sejong,
+.locations #gyunggido:checked~.location .bx ul li label.gyunggido,
+.locations #gyeongsangnamdo:checked~.location .bx ul li label.gyeongsangnamdo,
+.locations #gyeongsangbukdo:checked~.location .bx ul li label.gyeongsangbukdo,
+.locations #jeollanamdo:checked~.location .bx ul li label.jeollanamdo,
+.locations #jeollabukdo:checked~.location .bx ul li label.jeollabukdo,
+.locations #chungchongnamdo:checked~.location .bx ul li label.chungchongnamdo,
+.locations #chungchongbukdo:checked~.location .bx ul li label.chungchongbukdo,
+.locations #gangwondo:checked~.location .bx ul li label.gangwondo,
+.locations #jeju:checked~.location .bx ul li label.jeju{background-color: #94162c; font-weight: 700;}
+.graph{margin-top: 120px;}
+.graph.news{margin-top: 50px;}
+.graph colgroup {}
+.graph colgroup col:nth-child(1) {width:10%;}
+.graph colgroup col:nth-child(2) {width:26%;}
+.graph colgroup col:nth-child(3) {width:46%;}
+.graph colgroup col:nth-child(4) {width:20%;}
+.news table colgroup col:nth-child(1) {width:60px;}
+.news table colgroup col:nth-child(2) {width:auto;}
+.news table colgroup col:nth-child(3) {width:120px;}
+.banner .content .bx{position: relative; float: left; width: 60%; margin: 16% 0 0 10%;}
+.banner .content .bx .area{position: absolute; top: -30%; left: 0; height: 30px; line-height: 30px; font-weight: 700;}
+.banner .content .bx .area div{border: 1px solid #fff;}
+.banner .content .bx .area .left{float: left; width: 80px; padding-left: 10px;}
+.banner .content .bx .area .right{position: relative; float: left; width: 200px; padding-left: 30px;}
+.banner .content .bx .area .right:before{content:''; position: absolute; top: 5px; left: 6px; background-image: url(../img/icon/icon_area.png); background-size: 100%; width: 20px; height: 20px;}
+#btn_left:checked~.paging .pg_num ul li:nth-of-type(1) label,
+#btn_right:checked~.paging .pg_num ul li:nth-of-type(2) label{border-bottom: 1px solid #d32400; color:#d32400; font-weight: 700;}
+#btn_left:checked~.paging .pg_num ul li:nth-of-type(1) label,
+#btn_right:checked~.paging .pg_num ul li:nth-of-type(2) label{border-bottom: 1px solid #d32400; color:#d32400; font-weight: 700;}
+
+.banner .content .bx ul{overflow: hidden;}
+.banner .content .bx ul li{float: left; width: 18%; text-align: center; border: 1px solid #fff; /*border-color: #fff; border-style: solid; border-width: 1px 0 0 1px;*/ height: 40px; line-height: 40px;}
+.banner .content .bx ul li.active {background-color: #94162c;}
+.banner .content .bx ul li:not(:nth-child(5n+1)) {border-left: 0;}
+.banner .content .bx ul li:nth-child(5n)~li {border-top: 0;}
+.banner .content .bx ul li label{display: block; height: 100%;}
+.banner .content .img_wrap .img{float: left; width: 30%;}
+.banner .content .img_wrap .img img{display: block; width: 100%;}
+.banner .content .img_wrap .img+.img{margin-left: 5%;}
+.banner .content .img_wrap .img a{display: block; width: 100%; background-size: 100%;}
+.banner .content .img_wrap .img p{font-size: 0.9em; text-align: center; line-height: 18px; height: 56px; margin-top: 20px;}
+.banner .content .closed .img_wrap .img p:nth-of-type(1){font-size: 1.1em; text-align: center; line-height: 24px; height: 30px; margin-top: 30px;}
+.banner .content .closed .img_wrap .img p:nth-of-type(2){font-size: 0.9em; text-align: center; line-height: 24px; height: 56px; margin-top: 10px;}
+.banner .content .closed .img_wrap .img a{display: block; position: relative; transition: background-size 0.5s, transform 0.5s;}
+.banner .content .closed .img_wrap .img a img{display: block; width: 100%;}
+.banner .content .closed .img_wrap .img a span{display: block; position: absolute; top: 0; left: 0; right: 0; bottom: 0;}
+.banner .content .closed .img_wrap .img a span em{position: relative; text-shadow: 2px 2px 1px rgba(0,0,0,1); line-height: 24px; display: none; margin-top: 10px;}
+.banner .content .closed .img_wrap .img a span img{display: none; width: 50px; height: 50px; margin: auto;}
+.banner .content .closed .img_wrap .img:hover a span img{display: block;}
+.banner .content .closed .img_wrap .img_01:hover a,
+.banner .content .closed .img_wrap .img_02:hover a,
+.banner .content .closed .img_wrap .img_03:hover a{transform: scale(1.03);}
+.banner .content .closed .img_wrap .img_01:hover a span,
+.banner .content .closed .img_wrap .img_02:hover a span,
+.banner .content .closed .img_wrap .img_03:hover a span{background-color: rgba(0,0,0,0.7); text-align: center; padding-top: 36%;}
+.banner .content .closed .img_wrap .img_01:hover a span em,
+.banner .content .closed .img_wrap .img_02:hover a span em,
+.banner .content .closed .img_wrap .img_03:hover a span em{display: block;}
+.banner .content .img_wrap{overflow: hidden;}
+.banner .content .img_wrap .img:nth-child(3n+1){margin-left: 0;}
+.banner .content .img_wrap .img:nth-child(n+4){margin-top: 70px;}
+.banner .content .product_wrap .closed_1{}
+.banner .content .product_wrap .closed_1 .img_wrap{text-align: center;}
+.banner .content .product_wrap .closed_1 .img_wrap .img{display: inline-block; width: 100%;}
+.banner .content .product_wrap .closed_1 .img_wrap a{display: block; width: 140px; height: 40px; margin: 20px auto 0; line-height: 40px; font-weight: 700; text-align: center; background-color: #94162c; color: #fff; font-size: 1.2em; box-shadow: 2px 2px 1px rgba(0,0,0,0.5); border-radius: 20px;}
+.banner .content .product_wrap .salads .img_wrap .img:nth-child(n+4),
+.banner .content .product_wrap .pizza .img_wrap .img:nth-child(n+4),
+.banner .content .product_wrap .pasta .img_wrap .img:nth-child(n+4){margin-top: 30px;}
+
+/************************ sub_contact ************************/
+.banner .content .product_wrap .contact .tit{margin-bottom: 30px;}
+.banner .content .product_wrap .contact{}
+.banner .content .product_wrap .contact .contact_box{padding: 10px 30px;}
+.banner .content .product_wrap .contact .contact_box form{}
+.banner .content .product_wrap .contact .contact_box form table{border-style: solid; border-width: 1px 0; border-color: #fff; padding: 20px 0;}
+.banner .content .product_wrap .contact .contact_box form table tr{height: 60px; }
+.banner .content .product_wrap .contact .contact_box form table tr th{text-align: left; padding-left: 10px; font-weight: 700;}
+.banner .content .product_wrap .contact .contact_box form table tr td{position: relative;}
+.banner .content .product_wrap .contact .contact_box form table tr td i{position: absolute; width: 30px; height: 30px; border-right: 1px solid #ddd;}
+.banner .content .product_wrap .contact .contact_box form table tr td i:before{content:''; position: absolute; top: 8px; left: 8px;  background-size: 100%; width: 14px; height: 14px;}
+.banner .content .product_wrap .contact .contact_box form table tr:nth-of-type(1) td i:before{background-image: url(../img/icon/icon_title.png);}
+.banner .content .product_wrap .contact .contact_box form table tr:nth-of-type(2) td i:before{background-image: url(../img/icon/icon_contact.png);}
+.banner .content .product_wrap .contact .contact_box form table tr:nth-of-type(3) td i:before{background-image: url(../img/icon/icon_number.png);}
+.banner .content .product_wrap .contact .contact_box form table tr:nth-of-type(4) td i:before{background-image: url(../img/icon/icon_notices.png);}
+.banner .content .product_wrap .contact .contact_box form table tr td #question{border: 1px solid #ddd; padding: 20px; height: 300px; width: 100%; margin: 15px 0;}
+.banner .content .product_wrap .contact .contact_box form table tr td [type=text] {border: 1px solid #ddd; width: 100%; height: 30px; padding-left: 40px;}
+.banner .content .product_wrap .contact .contact_box form table tr td label{}
+.banner .content .product_wrap .contact .contact_box form table tr td label.counsel:nth-of-type(2),
+.banner .content .product_wrap .contact .contact_box form table tr td label.counsel:nth-of-type(3),
+.banner .content .product_wrap .contact .contact_box form table tr td label.counsel:nth-of-type(4){margin-left: 20px;}
+.banner .content .product_wrap .contact .contact_box form table tr td label.counsel em{margin-left: 6px;}
+.banner .content .product_wrap .contact .contact_box form p{margin-top: 30px; text-align: center;}
+.banner .content .product_wrap .contact .contact_box form p input{border: 1px solid #ddd; padding: 10px 20px;}
+.banner .content .product_wrap .contact .contact_box form p input:nth-child(1){background-color: #000;}
+.banner .content .product_wrap .contact .contact_box form p input:nth-child(2){background-color: #94162c;}
+
+
+
+
+/************************ media_query ************************/
+
+@media screen and (max-width:1280px){
+	
+
+	.banner .content .tit{margin-bottom: 50px;}
+	.banner .content .img_wrap .img{width: 40%;}
+	.banner .content .img_wrap .img+.img{margin-left: 0;}
+	.banner .content .img_wrap .img:nth-child(2n){margin: 0 6% 0 8%;}
+	.banner .content .img_wrap .img:nth-child(2n-1){margin-left: 6%;}
+	.banner .content .img_wrap .img:nth-child(n+3){margin-top: 50px;}
+	.banner .content .img_wrap .img p{font-size: 0.9em; line-height: 20px; height: 60px;}
+	.banner .content .tit span.big{font-size: 1.5em; padding-left: 32px;}
+	.banner .content .closed .tit span.big:after,
+	.banner .content .redrock .tit span.big:after{width: 26px; height: 26px;}
+	.banner .content .events .tit span.big:after{width: 22px; height: 22px;}
+	.banner .content .product_wrap{padding-bottom: 110px;}
+	/*.banner .content .product_wrap .product{margin-top: 40px;}*/
+	.banner .content .product_wrap .salads .img_wrap .img:nth-child(n+3),
+	.banner .content .product_wrap .pizza .img_wrap .img:nth-child(n+3),
+	.banner .content .product_wrap .pasta .img_wrap .img:nth-child(n+3){margin-top: 30px;}
+	.banner .content .product_wrap .salads .tit span.big:after,
+	.banner .content .product_wrap .pizza .tit span.big:after,
+	.banner .content .product_wrap .pasta .tit span.big:after{width: 24px; height: 24px;}
+}
+
+@media screen and (max-width:1024px){
+	.news table colgroup col:nth-child(3) {width:80px;}
+	.tb_board table thead tr{height: 40px; line-height: 40px;}
+
+
+	/************************ sub_locations ************************/
+	.graph colgroup col:nth-child(1) {width:20%;}
+	.graph colgroup col:nth-child(2) {width:50%;}
+	.graph colgroup col:nth-child(3) {display: none;}
+	.graph colgroup col:nth-child(4) {width:30%;}
+	.graph tr th:nth-child(3) {display: none;}
+	.graph tr td:nth-child(3) {display: none;}
+
+	.banner .content .bx{margin: 12% 0 0 10%;}
+	.banner .content .bx ul li {width: 33.3%; height: 30px; line-height: 30px;}
+	.banner .content .bx ul li:not(:nth-child(5n+1)) {border-left: 1px solid #fff;}
+	.banner .content .bx ul li:nth-child(5n)~li {border-top: 1px solid #fff;}
+	.banner .content .bx ul li:not(:nth-child(3n+1)) {border-left: 0;}
+	.banner .content .bx ul li:nth-child(3n)~li {border-top: 0;}
+	.banner .content .bx ul li label{font-size: 0.9em;}
+	.banner .content .product_wrap .closed_1 .img_wrap img{display: block; width: 100%;}
+
+	.banner .content .bx .area .right{font-size: 0.925em;}
+
+	/************************ sub_closed ************************/
+	.banner .content .closed .img_wrap .img a span img{width: 40px; height: 40px;}
+	.banner .content .closed .img_wrap .img a span em{margin-top: 10px;}
+
+	/************************ sub_story ************************/
+	html{font-size: 15px;}
+	.inner{padding: 0 20px;}
+	.banner .cnt .events ul li{width: 32%;}
+	.banner .cnt .events ul li:nth-child(4n+1){margin-left: 2%;}
+	.banner .cnt .events ul li:nth-child(3n+1){margin-left: 0;}
+	.banner .cnt .events ul li:nth-child(3n)~li{margin-top: 2%;}
+	.banner .cnt .events ul li a .thumb img{padding-bottom: 0;}
+	.banner .content .img_wrap .img p{height: 80px;}
+	.banner .content .events .events_cnt img{width: 24%;}
+	.banner .content .menu .txt_menu{height: 30px; line-height: 28px; width: 80px;}
+	.banner .content .menu .txt{height: 30px; line-height: 28px; width: 130px;}
+	.banner .content .menu .txt:after{top: 6px; left: 10px; width: 14px; height: 14px;}
+	.banner .content .product_wrap{padding-top: 60px;}
+	.banner .content .product_wrap .closed_1{padding-top: 60px;}
+	.banner .content .goose,
+	.banner .content .ob{margin-top: 50px;}
+	.banner .content .closed .img_wrap .img p{font-size: 1em; line-height: 20px; height: 80px;}
+	.banner .content .closed .img_wrap .img p:nth-of-type(1){font-size: 1em; text-align: center; height: 30px; margin-top: 18px;}
+	.banner .content .closed .img_wrap .img p:nth-of-type(2){font-size: 0.9em; text-align: center; line-height: 20px; height: 56px; margin-top: 10px;}
+
+	/************************ sub_beers ************************/
+}
+
+@media screen and (max-width:768px){ /*타블릿*/
+
+	.owl-dots{bottom: 130px;}
+	
+	#main_container {padding-left: 0; background-origin: padding-box;}
+	#pop{display: none !important;}
+	.tb_board table thead tr{height: 34px; line-height: 34px;}
+
+	/************************ header ************************/
+	header{width: auto; height: 100%; z-index: 2;}
+	header .hd{height: 60px;}
+	header .hd h1{display: none;}
+	header .hd .menu{display: block; position: absolute; top: 4px; left: 16px; padding-top: 10px; z-index: 2;}
+	header .hd .menu label{display: block; width: 40px; height: 40px; background-image: url(../img/icon/icon_list.png); background-size: 100% 100%; transition: 0.5s;}
+	header #menu:checked~.hd .menu label{background-image: url(../img/icon/icon_checked.png);}
+	header #menu:checked~nav{left: 0;}
+	header #menu:checked~.sns{left: 15px;}
+	header nav{position: fixed; z-index: 1; top: 0; left: -170px; width: 170px; height: 100%; background-color: #333; transition: left 0.5s;}
+	header nav .home{display: block; position: absolute; top: 20px; right: 20px; width: 28px; height: 28px; border: 1px solid #fff;}
+	header nav .home a{display: block; width: 100%; height: 100%;}
+	header nav .home a img{display: block; width: 100%; height: 100%; padding: 4px;}
+	header nav ul{position: absolute; top: 50px; left: 20px;}
+	header nav ul li.big_tit{font-size: 1.3em; margin: 14px 0;}
+	header nav ul li.line{width: 120px; height: 1px; margin-top: 14px;}
+	header nav ul li.small_tit{margin-left: 20px; font-size: 1.2em;}
+	header .sns{display: none;}
+
+	/************************ sub_locations ************************/
+	.graph{margin-top: 50px;}
+	.banner .content .location .tit{margin-bottom: 50px;}
+	.banner .content .location .tit span.big:after{width: 20px; height: 20px;}
+	.banner .content .locations{margin-bottom: 120px; padding-top: 100px;}
+	.banner .content .bx ul li:not(:nth-child(5n+1)) {border-left: 1px solid #fff;}
+	.banner .content .bx ul li:nth-child(5n)~li {border-top: 1px solid #fff;}
+	.banner .content .bx ul li:not(:nth-child(3n+1)) {border-left: 0;}
+	.banner .content .bx ul li:nth-child(3n)~li {border-top: 0;}
+	
+	/************************ sub_closed ************************/
+	.banner .content .closed .img_wrap .img a:after{top: 30%; left: 42%; width: 44px; height: 44px;}
+	.banner .content .closed .img_wrap .img a span img{width: 50px; height: 50px;}
+	.banner .content .product_wrap .closed_1{padding-top: 40px;}
+	
+	/************************ sub_events ************************/
+	.banner .content .events .events_cnt img{width: 30%;}
+	.banner .content{padding-bottom: 30px;}
+
+	/************************ sub_foods ************************/
+	.banner .content .tit{margin-bottom: 20px;}
+	.banner .content .redrock .tit span.big:after{width: 24px; height: 24px;}
+	.banner .content .goose .tit span.big:after{width: 22px; height: 22px;}
+	.banner .content .ob .tit span.big:after{width: 22px; height: 22px;}
+	.banner .content .product_wrap.beers{padding-top: 100px; margin-bottom: 20px;}
+	.banner .content .product_wrap{padding-top: 80px; margin-bottom: 40px;}
+	.banner .content .product_wrap .salads .tit span.big:after,
+	.banner .content .product_wrap .pizza .tit span.big:after,
+	.banner .content .product_wrap .pasta .tit span.big:after{width: 24px; height: 24px;}
+	
+	/************************ sub_story ************************/
+	#container{padding-left: 0;}
+	.banner .cnt .events{padding-bottom: 160px;}
+	.banner .cnt .events ul li{width: 49%;}
+	.banner .cnt .events ul li:nth-child(3){margin-top: 2%;}
+	.banner .cnt .events ul li:nth-child(3n+1){margin-left: 2%;}
+	.banner .cnt .events ul li:nth-child(2n+1){margin-left: 0;}
+	.banne	.cnt .events ul li:nth-child(2n)~li{margin-top: 2%;}
+	.banner .cnt .events ul li a .info .txt{height: 40px;}
+
+	/************************ sub_beers ************************/
+	.banner .cnt .events ul li a span {line-height: 24px;}
+
+
+
+	footer p{line-height: 14px;}
+
+
+}
+@media screen and (max-width:576px){ /*모바일 - landscape*/
+	
+	.inner{padding: 0 20px;}
+	footer p{line-height: 13px;}
+	.banner .content .product_wrap{padding-top: 60px;}
+	.banner .content .product_wrap .closed_1{padding-top: 0px;}
+
+
+	/************************ sub_locations ************************/
+	.banner .content .location .maps_wrap .maps{float: none; width: 60%; margin: 6% auto 0;}
+	.banner .content .bx{float: none; width: 100%; margin: 30% 0% 0;}
+	.banner .content .bx ul li {width: 50%; height: 24px; line-height: 24px; font-size: 1em;}
+	.banner .content .bx ul li:not(:nth-child(3n+1)) {border-left: 1px solid #fff;}
+	.banner .content .bx ul li:nth-child(3n)~li {border-top: 1px solid #fff;}
+	.banner .content .bx ul li:not(:nth-child(2n+1)) {border-left: 0;}
+	.banner .content .bx ul li:nth-child(2n)~li {border-top: 0;}
+	.banner .content .bx .area .right{width: 160px; padding-left: 30px;}
+	.graph table thead tr{height: 40px;}
+
+
+
+	/************************ sub_events ************************/
+	.banner .content .events .events_cnt img{margin: 160px auto 20px;}
+	.banner .content .menu .txt{height: 32px; line-height: 30px; width: 130px;}
+	.banner .content .menu .txt_menu{height: 32px; line-height: 30px; width: 80px;}
+	.banner .content .closed .img_wrap .img p{height: 40px;}
+	.banner .content .closed .img_wrap .img p:nth-of-type(1){height: 20px; font-size: 1.6em; margin-top: 30px;}
+	.banner .content .closed .img_wrap .img p:nth-of-type(2){font-size: 1.2em; margin-top: 30px;}
+	.banner .content .closed .img_wrap .img a{margin-top: 30px;}
+	.banner .content .closed .img_wrap .img:hover a span em{font-size: 1.2em;}
+
+
+	/************************ sub_foods ************************/
+	.banner .content .tit span.big{font-size: 1.9em;}
+	.banner .content .product_wrap.beers{padding-top: 80px; margin-bottom: 0px;}
+	.banner .content .product_wrap .salads .tit span.big:after,
+	.banner .content .product_wrap .pizza .tit span.big:after,
+	.banner .content .product_wrap .pasta .tit span.big:after{width: 28px; height: 28px;}
+	
+	/************************ sub_beers ************************/
+	html{font-size: 14px;}
+	.banner .content{padding-bottom: 20px;}
+	.banner .content .product_wrap .product{margin: 0;}
+	.banner .content .tit:nth-child(1){margin-bottom: 30px; margin-top: 50px;}
+	.banner .content .img_wrap .img{width: 90%;}
+	.banner .content .img_wrap .img p{margin-top: 16px; font-size: 1em; line-height: 20px; height: 90px;}
+	.banner .content .product_wrap .salads .img_wrap .img p,
+	.banner .content .product_wrap .pizza .img_wrap .img p,
+	.banner .content .product_wrap .pasta .img_wrap .img p{height: 70px;}
+	.banner .content .img_wrap .img:nth-child(n+3){margin-top: 0;}
+	.banner .content .img_wrap .img{margin-top: 0px;}
+	.banner .content .closed .img_wrap .img:nth-child(n+2){margin-top: 8%;}
+	.banner .content .redrock .tit span.big:after{width: 20px; height: 20px;}
+	.banner .content .goose .tit span.big:after{width: 20px; height: 20px;}
+	.banner .content .ob .tit span.big:after{width: 16px; height: 16px;}
+
+	/************************ sub_story ************************/
+	.banner .cnt .events ul li{width: 100%; padding: 20px 0;}
+	.banner .cnt .events ul li+li{margin-top: 2%;}
+	.banner .cnt .events ul li:nth-child(n+1){margin-left: 0;}
+	.banner .cnt .events ul li a{clear:both; text-align: left;}
+	.banner .cnt .events ul li a .thumb{float: left; width: 50%;}
+	.banner .cnt .events ul li a .thumb img{margin-top: 0; margin-right: 20px; padding: 10px 10px 0; }
+	.banner .cnt .events ul li a .info{float: left; width: 50%; margin-bottom: 0; padding: 0 0 0 20px;}
+	.banner .cnt .events ul li a .info .add{display: none;}
+	.banner .cnt .events ul li a .info .desc{margin-bottom: 10px;}
+	.banner .cnt .events ul li a .info .txt{line-height: 20px;}
+
+}
+
+@media screen and (max-width:413px){
+
+	/************************ sub_events ************************/
+	.banner .content .events .events_cnt p{font-size: 1.4em; line-height: 24px;}
+	/************************ sub_story ************************/
+	html{font-size: 12px;}
+
+	/************************ sub_beers ************************/
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************ media_query ************************/
+
+@media screen and (max-width:768px){ /*타블릿*/
+
+	/********* container *********/
+	#main_container{margin-left: 0px;}
+	.banner .img_1{background-image: url(../img/m_banner.png); }
+}
+
+@media screen and (max-width:576px){ /*모바일*/
+}
+
+@media screen and (max-width:390px){
+	
+}

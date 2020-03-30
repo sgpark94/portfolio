@@ -1,0 +1,102 @@
+
+/* CSS RESET */
+* {margin: 0; padding: 0; color: inherit; font-family: inherit; font-size: 1em; font-style: inherit; font-weight: inherit; text-decoration: inherit; border: 0 solid transparent; outline: 0; box-sizing: border-box; background-color: transparent; background-repeat: no-repeat; }
+b, strong {font-weight: bold;}
+::before,::after {border: 0 solid transparent;}
+ul,ol {list-style: none;}
+table {table-layout: fixed; border-collapse: collapse;}
+[type=button],[type=submit],[type=reset],button,a,label {cursor: pointer;}
+
+/* COMMON */
+.clearfix:after {content: ""; display: block; clear: both;}
+.ellipsis {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.hidden {display: none;}
+.bold {font-weight: bold;}
+
+/* GLOBAL */
+#wrap{overflow: hidden; position: relative; height: 100%; font-family: 'Open Sans', 'Nanum Gothic', 'Raleway', sans-serif;}
+.inner {position: relative; margin: auto; padding: 0 30px; max-width: 1200px; height: 100%;}
+.inner:after {content: ""; display: block; clear: both;}
+
+
+/************************ header ************************/
+header{height: 100%; background-color: #333; width: 200px;}
+header .menu{display: none;}
+header .hd{position: relative;}
+header .hd h1{}
+header .hd h1 a{display: block; background-image: url(../img/logo.png); background-size: 100% 100%; text-indent: -9999px; margin: 40px auto; width: 100px; height: 60px;}
+header nav{padding: 0 20px;}
+header nav ul{}
+header nav ul li{}
+header nav ul li.big_tit{font-weight: 500; color:#94162c; font-size: 1.4em; margin: 14px 0;}
+header nav ul li.big_tit:nth-of-type(4){position: relative;}
+header nav ul li.big_tit:nth-of-type(4):after{content:''; position: absolute; top: 0; right: 0; background-image: url(../img/icon/icon_location.png); width: 40px; height: 40px; background-size: 100% 100%;}
+header nav ul li.small_tit{color:#d0d0d0; margin-left: 30px; font-size: 0.95em;}
+header nav ul li.add_tit a{display: block; color:#fff; margin: 4px 0 4px 40px;  opacity: 0.7; font-weight: 100; font-size: 0.8em;}
+header nav ul li.line{background-color: #fff; width: 140px; height: 1px; margin-top: 12px;}
+header nav ul li a{display: block; width: 100%;}
+header .sns{position: absolute; bottom: 0; right: 0; left: 0; width: 140px; height: 90px; margin:0 20px 20px 30px; color:#fff; border:1px solid #fff; border-radius: 20px;}
+header .sns p{text-align: center; line-height: 16px; margin: -16px auto 10px; width: 90px; background-color: #333; font-size: 0.8em;}
+header .sns .link{margin: 0 20px 20px 0;}
+header .sns .link span{display: block; margin-left: 20px; padding-left: 40px; height: 24px; font-family: 'Handlee', cursive; font-weight: 500; font-size: 0.9em;}
+header .sns .link .instagram{}
+header .sns .link .instagram span{position: relative;}
+header .sns .link .instagram span:before{content:''; position: absolute; top: -2px; left: 10px; width: 20px; height: 20px; background-image: url(../img/icon_instagram.png); background-size: 100% 100%;}
+header .sns .link .facebook{margin-top: 6px;}
+header .sns .link .facebook span{position: relative;}
+header .sns .link .facebook span:before{content:''; position: absolute; top: -2px; left: 10px; width: 18px; height: 18px; background-image: url(../img/icon_facebook.png); background-size: 100% 100%;}
+
+/************************ footer ************************/
+footer{position: absolute; bottom: 0; right: 0; left: 200px; margin: 10px 0; padding: 0 10px; font-family: 'NanumSquare';}
+footer p{font-size: 0.8em; color:#fff; text-align: center; font-family: 'Nanum Gothic'; line-height: 18px;}
+footer p+p{margin-top: 6px;}
+
+/* top_icon*/
+#top{position: relative;}
+#top .bx{position: fixed; bottom: 20px; right: -60px; width: 60px; height: 60px; border-radius: 30px; box-shadow: 2px 2px 1px rgba(0,0,0,0.2); background-color: #C1354D; cursor: pointer; transition: right 0.5s;}
+#top .bx.active{right: 20px;}
+#top .bx img{display: block; width: 16px; height: 16px; margin: 10px auto 5px auto; text-indent: -9999px;}
+#top .bx span {display: block; width: 100%; height: 10px; color: #fff; font-size: 0.8em; text-align: center;}
+#top .bx.active {right: 20px;}
+
+/************************ media_query ************************/
+
+@media screen and (max-width:768px){ /*타블릿*/
+	/********* header *********/
+	
+	
+/*	header .sns p{display: none;}
+	header .sns .link{margin: 0;}
+	header .sns .link span{margin-left: 16px; padding-left: 36px; font-size: 0.8em;}
+	header .sns .link .facebook{margin-top: 10px;}*/
+	
+	/********* footer *********/
+	footer{left: 0; padding: 0 10px; margin-top: 20px;}
+	footer .m_link{overflow: hidden; margin-bottom: 10px; text-align: center;}
+	footer .m_link a{display: block; width: 30px; height: 30px; background-size: 100% 100%; }
+	footer .m_link .instagram{display: inline-block;}
+	footer .m_link .instagram a{background-image: url(../img/icon/icon_instagram.png);}
+	footer .m_link .facebook{display: inline-block; margin-left: 10px; }
+	footer .m_link .facebook a{background-image: url(../img/icon/icon_facebook.png);}
+	footer p{font-size: 0.6em; letter-spacing: -0.3px; line-height: 14px;}
+	footer p span{display: block;}
+	
+	/********* container *********/
+	#container{padding-left: 0px;}
+	.banner .img_1{background-image: url(../img/m_banner.png); }
+}
+@media screen and (max-width:576px){ /*모바일*/
+	/********* header *********/
+	header nav ul li.big_tit{font-size: 1.3em; margin: 14px 0;}
+	header nav ul li.small_tit a label{font-size: 0.9em;}
+	header .sns .link span{font-size: 0.8em;}
+
+	/********* footer *********/
+	footer p{font-size: 0.7em;}
+
+	/********* container *********/
+
+}
+@media screen and (max-width:390px){
+	footer p em{display: block;}
+}
