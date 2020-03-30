@@ -1,0 +1,893 @@
+
+/*****************************header*****************************/
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	overflow: hidden;
+	padding: 10px 20px;
+	background-color: rgba(255,255,255,0.8);
+	z-index: 10;
+}
+header nav{
+	float: right;
+}
+header nav ul{
+	overflow: hidden;
+}
+header nav ul li{
+	float: left;
+	margin-left: 20px;
+}
+header nav ul li a{
+	display: block;
+	height: 40px;
+	line-height: 40px;
+	color: #000;
+	font-size: 1.2em;
+}
+header nav ul li a:hover{
+	color: #0B7903;
+}
+
+/*****************************#container*****************************/
+
+/************************section_공통************************/
+section{position: relative;}
+#container section{
+	position: relative;
+	padding: 60px 0;
+}
+#container .cnt .item{
+	width: 40%;
+}
+#container section .cnt{
+	position: relative;
+	height: 100%;
+	margin: 150px auto;
+}
+#container section .tit_wrap{
+	position: relative;
+	height: 62px;
+	margin-top: 50px;
+	text-align: center;
+}
+#container section .tit_wrap:before{
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 30px;
+	right: 30px;
+	height: 1px;
+	background-color: #434462;
+}
+#container section .tit_wrap .tit_inner{}
+#container section .tit_wrap .tit_inner:before{
+	content: "";
+	position: absolute;
+	top: 24px;
+	left: 30px;
+	width: 15px;
+	height: 15px;
+	-webkit-border-radius:7px;
+	-moz-border-radius:7px;
+	border-radius: 7px;
+	background-color: #434462;
+}
+#container section .tit_wrap .tit_inner:after{
+	content: "";
+	position: absolute;
+	top: 24px;
+	right: 30px;
+	width: 15px;
+	height: 15px;
+	border-radius: 7px;
+	background-color: #434462;
+}
+#container section .tit_wrap .tit_inner .tit_area{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	padding: 0 30px;
+	-webkit-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-o-transform: translateX(-50%);
+	transform: translateX(-50%);
+}
+#container section:nth-child(odd) .tit_wrap .tit_inner .tit_area{
+	background-color: #fff;
+}
+#container section:nth-child(even) .tit_wrap .tit_inner .tit_area{
+	background-color: #eaeaea;
+}
+#container section .tit_wrap .tit_inner .tit_area h2{
+	margin: auto;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	font-size: 2em;
+	color: #333;
+}
+#container section .tit_wrap .tit_inner .tit_area p.small_tit{
+	margin: 6px auto 0;
+	text-align: center;
+	letter-spacing: 3px;
+	font-size: 1.1em;
+	color:#777;
+}
+#container section .tit_wrap .line span{
+	position: absolute;
+	bottom: -7px;
+	width: 14px;
+	height: 14px;
+	background-color: #434462;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius:10px;
+}
+#container section .tit_wrap .line{
+	position: absolute;
+	top: 56%;
+	left: 0;
+	width: 90%;
+	height: 2px;
+	margin-left: 5%;
+	background-color: #7073b3;
+}
+
+/************************#Skills************************/
+#Skills{
+	background-color: #eaeaea;
+}
+#Skills .tit .tit_inner{}
+#Skills .cnt{
+	margin-top: 50px;
+}
+#Skills .cnt .skills{
+	position: relative;
+	float: left;
+	margin-left: 4%;
+}
+#Skills .cnt .skills img{
+	width: 430px;
+	-webkit-background-size:cover;
+	background-size: cover;
+}
+#Skills .cnt .skills .skill_txt{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+#Skills .cnt .skills .skill_txt i{
+	position: absolute;
+	font-size: 1.2em;
+}
+#Skills .cnt .skills .skill_txt i:nth-child(1){
+	left: 30%;
+	top: -10%;
+	-webkit-transform: translate(-50%);
+	-moz-transform: translate(-50%);
+	-ms-transform: translate(-50%);
+	-o-transform: translate(-50%);
+	transform: translate(-50%);
+}
+#Skills .cnt .skills .skill_txt i:nth-child(2){
+	right: 36%;
+	top: 12%;
+}
+#Skills .cnt .skills .skill_txt i:nth-child(3){
+	right: 32%;
+	bottom: 30%;
+}
+#Skills .cnt .skills .skill_txt i:nth-child(4){
+	right: 52%;
+	bottom:-10%;
+}
+#Skills .cnt .skills .skill_txt i:nth-child(5){
+	left: 12%;
+	bottom:-10%;
+}
+#Skills .cnt .skills .skill_txt i:nth-child(6){
+	left: -8%;
+	bottom:30%;
+}
+#Skills .cnt .skills .skill_txt i:nth-child(7){
+	left: 0;
+	top: 12%;
+}
+#Skills .cnt .skills .skill_num{
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	color:#fff;
+}
+#Skills .cnt .skills .skill_num i{
+	position: absolute;
+	font-size: 1.2em;
+}
+#Skills .cnt .skills .skill_txt:hover~.skill_num{
+	display: block;
+}
+#Skills .cnt .skills .skill_num:hover{
+	display: block;
+}
+#Skills .cnt .skills .skill_num i:nth-child(1){
+	left: 22%;
+	top: 12%;
+	-webkit-transform: translate(-50%);
+	-moz-transform: translate(-50%);
+	-ms-transform: translate(-50%);
+	-o-transform: translate(-50%);
+	transform: translate(-50%);
+}
+#Skills .cnt .skills .skill_num i:nth-child(2){
+	right: 61%;
+	top: 24%;
+}
+#Skills .cnt .skills .skill_num i:nth-child(3){
+	right: 67%;
+	bottom: 43%;
+}
+#Skills .cnt .skills .skill_num i:nth-child(4){
+	right: 72%;
+	bottom: 30%;
+}
+#Skills .cnt .skills .skill_num i:nth-child(5){
+	left: 12%;
+	bottom: 22%;
+}
+#Skills .cnt .skills .skill_num i:nth-child(6){
+	left: 2%;
+	bottom: 38%;
+}
+#Skills .cnt .skills .skill_num i:nth-child(7){
+	left: 4%;
+	top: 24%;
+}
+#Skills .cnt .graph_txt{
+	float: right;
+	padding-top: 140px;
+	font-size: 1.4em;
+}
+#Skills .cnt .graph_txt dl{
+	overflow: hidden;
+	font-size: 1em;
+}
+#Skills .cnt .graph_txt dl+dl{
+	margin-top: 20px;
+}
+#Skills .cnt .graph_txt dl dt{
+	float: left;
+}
+#Skills .cnt .graph_txt dl dd{
+	float: left;
+	margin-left: 20px;
+}
+
+/************************#History************************/
+#History .cnt{
+	margin: 100px 0 120px 0;
+}
+#History .cnt ul{
+	position: relative;
+	width: 100%;
+}
+#History .cnt ul:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+	width: 1px;
+	margin-left: -1px;
+	background-color: #000;
+}
+#History .cnt ul li{
+	position: relative;
+	padding: 0 0 64px;
+}
+#History .cnt ul li:before{
+	content: "";
+	position: absolute;
+	top: 0;
+	width: 15px;
+	height: 15px;
+	border: 2px solid #000;
+	background-color: #fff;
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	border-radius:50%;
+}
+#History .cnt ul li:nth-of-type(odd):before{
+	right: -9px;
+}
+#History .cnt ul li:nth-of-type(even):before{
+	left: -10px;
+}
+#History .cnt ul li:nth-of-type(odd){
+	margin-right: 50%;
+	padding-right: 30px;
+	text-align: right;
+}
+#History .cnt ul li:nth-of-type(even){
+	margin-left: 50%;
+	padding-left: 30px;
+	text-align: left;
+}
+#History .cnt ul li:last-child{
+	padding-bottom: 0 !important;
+}
+#History .cnt ul li .history_txt{
+	width: 100%;
+}
+
+/************************#Portfolio************************/
+#Portfolio{
+	background-color: #eaeaea;
+}
+#container section#Portfolio{
+	padding-bottom: 0;
+}
+/************************name************************/
+#Portfolio .cnt .name{
+	float: left;
+	width: 40%;
+	margin-left: 40px;
+}
+#Portfolio .cnt .name .part+.part{
+	margin-top: 40px;
+}
+#Portfolio .cnt .name .part .title{
+	letter-spacing: 1px;
+	font-size: 1.1em;
+}
+#Portfolio .cnt .name .part:nth-child(1) p:nth-child(2){
+	margin-top: 10px;
+	color:#626262;
+}
+#Portfolio .cnt .name .part .top{}
+#Portfolio .cnt .name .part .top span{
+	font-size: 1.6em;
+}
+#Portfolio .cnt .name .part .top em{
+	margin-left: 10px;
+	font-size: 1.1rem;
+}
+#Portfolio .cnt .name .part .info{
+	margin-top: 8px;
+	line-height: 24px;
+	letter-spacing: 0.5px;
+	font-size: 0.9em;
+}
+#Portfolio .cnt .name .part:nth-child(4) .info{}
+#Portfolio .cnt .name .part:nth-child(4) .info a{
+	display: block;
+	float: left;
+	margin-top: 10px;
+	padding: 4px 20px;
+	text-align: center;
+	border: 1px dashed #999;
+}
+#Portfolio .cnt .name .part:nth-child(4) .info a+a{
+	margin-left: 20px;
+}
+#Portfolio .cnt .name .part:last-child{
+	margin-top: 100px;
+}
+#Portfolio .cnt .name .btn_area{
+	overflow: hidden;
+}
+#Portfolio .cnt .name .btn_area p{
+	letter-spacing: 4px;
+	opacity: 0.25;
+	cursor: pointer;
+}
+#Portfolio .cnt .name .btn_area p.active{
+	opacity: 1;
+}
+#Portfolio .cnt .name .btn_area p.prev{
+	float: left;
+}
+#Portfolio .cnt .name .btn_area p.next{
+	float: right;
+	margin-right: 50px;
+}
+/************************name************************/
+#Portfolio .cnt .pc_wrap{
+	position: absolute;
+	left: 40%;
+	top: 0;
+	bottom: 0;
+	width: 60%;
+}
+#Portfolio .cnt .pc_wrap .pc{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 90%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+#Portfolio .cnt .pc_wrap .pc img.pc_frm{
+	display: block;
+	max-width: 100%;
+}
+#Portfolio .cnt .pc_wrap .pc img.mobile_frm{
+	display: none;
+	margin: auto;
+	max-width: 70%;
+}
+#Portfolio .cnt .pc_wrap .pc .pc_screen{
+	overflow-y: scroll;
+	position: absolute;
+	top: 5.2%;
+	bottom: 31.1%;
+	left: 4%;
+	right: 4%;
+}
+#Portfolio .cnt .pc_wrap .pc .pc_screen a{
+	display: block;
+	width: 100%;
+}
+#Portfolio .cnt .pc_wrap .pc .pc_screen a img{
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+/************************#Contact************************/
+#Contact{
+	background-color: #fff;
+}
+#container section#Contact .cnt{
+	margin: 160px auto;
+}
+#container section#Contact .cnt .item{
+	float: left;
+	width: 40%;
+	margin-left: 5%;
+}
+#container section#Contact .cnt .item:nth-of-type(2){
+	float: left;
+	width: 40%;
+	margin-left: 10%;
+}
+#container section .cnt form{}
+#container section .cnt form dl{}
+#container section .cnt form dl dt{
+	margin-top: 30px;
+	letter-spacing: 4px;
+}
+#container section .cnt form dl dd{
+	position: relative;
+	margin-top: 30px;
+	border-bottom:1px solid #999;
+}
+#container section .cnt form dl dd textarea{
+	height: 100px;
+	width: 100%;
+}
+#container section .cnt form dl dd i{
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 30px;
+	height: 30px;
+	background-image: url('../img/icon_send.png');
+	-webkit-background-size:100%;
+	background-size: 100%;
+}
+#container section .cnt .profile{
+	padding-top: 60px;
+}
+#container section .cnt .profile p{
+	text-align: center;
+	font-size: 1em;
+	letter-spacing: 2px;
+}
+#container section .cnt .profile p.name{
+	font-size: 1.6em;
+}
+#container section .cnt .profile p+p{
+	margin-top: 30px;
+}
+
+/************************#main************************/
+/************************pg_1************************/
+.pg_1{
+	position: relative;
+	width: 300px;
+	margin: 250px auto;
+	border: 1px solid #222;
+	background-color: #fff;
+	z-index: 2;
+}
+.pg_1 .txt{
+	padding-top: 30px;
+}
+.pg_1 .txt p{
+	font-size: 2em;
+	letter-spacing: 4px;
+	text-align: center;
+}
+.pg_1 .txt p.line{
+	height: 2px;
+	width: 60px;
+	background-color: #000;
+	margin: 20px auto 0;
+}
+.pg_1 .txt p.tit_2{
+	margin-top: 20px;
+}
+.pg_1 .txt p.job{
+	font-size: 1em;
+	margin-top: 10px;
+}
+.pg_1 .first,
+.pg_1 .second,
+.pg_1 .third,
+.pg_1 .fourth{
+	position: absolute;
+	bottom: -7px;
+	right: -7px;
+	width: 14px;
+	height: 14px;
+	background-color: #434462;
+	-webkit-border-radius:10px;
+	-moz-border-radius:10px;
+	border-radius: 10px;
+}
+.pg_1 i{
+	display: block;
+}
+.pg_1 i img{
+	display: block;
+	width: 60px;
+	height: 10px;
+	margin: 30px auto;
+}
+.pg_1 .txt_detail{
+	padding-bottom: 30px;
+}
+.pg_1 .txt_detail p{
+	text-align: center;
+	line-height: 24px;
+	letter-spacing: 1.5px;
+}
+/************************long_line************************/
+.long_line{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	background-color: #000;
+}
+.long_line span{position: absolute;
+	top: 0;
+	right: 0;
+	margin: -40px 50px 0 0;
+	padding-left: 30px;
+	text-align: right;
+	font-size: 1.2em;
+}
+.long_line span:before{content:'';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+	background-image: url('../img/icon_tree.png');
+	-webkit-background-size:100%;
+	background-size: 100%;
+}
+
+/************************footer************************/
+footer{
+	height: 60px;
+	line-height: 60px;
+	background-color: #ddd;
+}
+footer p{
+	text-align: center;
+}
+
+/************************ media_query ************************/
+@media screen and (max-width:1280px){ /* pc */
+	html{
+		font-size: 15px;
+	}
+	.pg_1{
+		margin: 180px auto;
+	}
+	#Skills .cnt .graph_txt{
+		margin-top: 0;
+	}
+	#Skills .cnt .graph_txt dl dt{
+		font-size: 0.8em;
+	}
+	#Skills .cnt .graph_txt dl dd{
+		font-size: 0.8em;
+	}
+	#Skills .cnt .skills img{
+		width: 380px;
+	}
+	#Portfolio .cnt .name .part .top span{
+		font-size: 1.4em;
+	}
+	#Portfolio .cnt .name .part .top em{
+		font-size: 0.9rem;
+	}
+}
+@media screen and (max-width:1024px){ /* pc_small */
+	html{
+		font-size: 14px;
+	}
+	.long_line span{
+		margin: -40px 20px 0 0;
+	}
+	#container section .cnt{
+		margin: 80px auto;
+	}
+	#container section .tit_wrap .tit_inner .tit_area h2{
+
+	}
+	#Skills .cnt .graph_txt{
+		margin-top: 0;
+		padding-top: 70px;
+	}
+	#Skills .cnt .graph_txt dl dt{
+		width: 100%;
+	}
+	#Skills .cnt .graph_txt dl dd{}
+	#Skills .cnt .graph_txt dl+dl{
+		margin-top: 10px;
+	}
+	#Skills .cnt .skills img{
+		width: 310px;
+	}
+	#container section .tit_wrap .tit_inner .tit_area p.small_tit{
+
+	}
+	#container section#Portfolio .cnt{
+		margin: 20px auto;
+	}
+	#Portfolio .cnt .name .part .top span{
+
+	}
+	#Portfolio .cnt .name .part .top em{
+
+	}
+	#Portfolio .cnt .pc_wrap{
+		position: static;
+		width: 100%;
+	}
+	#Portfolio .cnt .pc_wrap .pc{
+		position: static;
+		width: 100%;
+		-webkit-transform: translate(0,0);
+		-moz-transform: translate(0,0);
+		-ms-transform: translate(0,0);
+		-o-transform: translate(0,0);
+		transform: translate(0,0);
+	}
+	#Portfolio .cnt .pc_wrap .pc .pc_screen{
+		overflow: hidden;
+	}
+	#Portfolio .cnt .name{
+		float: none;
+		width: 100%;
+	}
+}
+@media screen and (max-width:768px){ /* tablet */
+	html{
+		font-size: 13px;
+	}
+	header nav ul li a{
+		height: 34px;
+		line-height: 34px;
+	}
+	.long_line span{
+		display: none;
+	}
+	#container section .cnt{
+		margin: 50px auto;
+	}
+	#container section .tit_wrap .tit_inner .tit_area p.small_tit{}
+	#container section .tit_wrap:before{
+		left: 20px;
+		right: 20px;
+	}
+	#container section .tit_wrap .tit_inner:before{
+		left: 20px;
+		top: 26px;
+		width: 12px;
+		height: 12px;
+		-webkit-border-radius:6px;
+		-moz-border-radius:6px;
+		border-radius: 6px;
+	}
+	#container section .tit_wrap .tit_inner:after{
+		right: 20px;
+		top: 26px;
+		width: 12px;
+		height: 12px;
+		-webkit-border-radius:6px;
+		-moz-border-radius:6px;
+		border-radius: 6px;
+	}
+	#container .cnt .skills{
+		float: none;
+		width: 90%;
+	}
+	#container .cnt .graph_txt{
+		float: none;
+		width: 100%;
+
+	}
+	#History .cnt ul:before{
+		left: 60px;
+	}
+	#History .cnt ul li{
+		width: 100% !important;
+		margin: 0 !important;
+		padding: 0 0 76px 90px !important;
+		text-align: left !important;
+	}
+	#History .cnt ul li:before{
+		left: 50px !important;
+	}
+	#History .cnt ul li .history_txt{
+		position: static !important;
+		opacity: 1 !important;
+	}
+	#Skills .cnt .graph_txt{
+		margin-top: 0;
+		padding-top: 20px;
+	}
+	#Skills .cnt .graph_txt dl{
+		margin: 0 10%;
+	}
+	#Skills .cnt .graph_txt dl dt{
+		width: 28%;
+		margin-top: 1px;
+		margin-left: 14%;
+	}
+	#Skills .cnt .graph_txt dl dd{
+		width: 58%;
+		margin-top: 0;
+		margin-left: 0;
+	}
+	#Skills .cnt .skills img{
+		width: 100%;
+	}
+}
+@media screen and (max-width:576px){ /* mobile */
+	html{
+		font-size: 12px;
+	}
+	header nav ul li a{
+		height: 30px;
+		line-height: 30px;
+	}
+	.pg_1{
+		width: 240px;
+		margin: 40px auto;
+	}
+	.pg_1 .txt p{}
+	.long_line{
+		display: none;
+	}
+	#Skills .cnt .graph_txt{
+		margin-top: 20px;
+	}
+	#Skills .cnt .graph_txt dl dt{
+		padding-left:0;
+		margin-top: -1px;
+	}
+	#Skills .cnt .graph_txt dl dd{
+		margin-top: 0;
+	}
+	#History .cnt ul{
+		margin-left: 0;
+	}
+	#History .cnt ul li .history_txt p{}
+	#Portfolio .cnt .pc_wrap .pc img.pc_frm{
+		display: none;
+	}
+	#Portfolio .cnt .pc_wrap .pc img.mobile_frm{
+		display: block;
+		margin: auto;
+		max-width: 70%;
+	}
+	#Portfolio .cnt .pc_wrap .pc .pc_screen{
+		overflow-y: scroll;
+		position: absolute;
+		top: 11.9%;
+		bottom: 11.8%;
+		left: 18.6%;
+		right: 18.6%;
+	}
+	#container section .tit_wrap{
+		margin-top: 0;
+	}
+	#container section .tit_wrap .tit_inner .tit_area h2{
+
+	}
+	#container section .tit_wrap .tit_inner .tit_area p.small_tit{}
+	#container section .tit_wrap .tit_inner .tit_area{
+		padding:0;
+		width: 100%;
+		margin-top: 0;
+	}
+	#container section .tit_wrap:before,
+	#container section .tit_wrap .tit_inner:before,
+	#container section .tit_wrap .tit_inner:after{
+		display: none;
+	}
+	#container section .cnt{
+		margin: 0 auto;
+	}
+	#container section .cnt .profile{
+		padding-top: 0;
+	}
+	#container section .cnt .profile p{}
+	#container section .cnt .profile p.name{}
+	#container section .cnt .profile p+p{
+		margin-top: 14px;
+	}
+	.pg_1 .txt_detail p{}
+	#container section#Contact .cnt{
+		margin: 10px auto 50px;
+	}
+	#container section#Contact .cnt .item{
+		float: none;
+		width: 100%;
+		margin-left: 0;
+	}
+	#container section#Contact .cnt .item:nth-of-type(2){
+		float: none;
+		width: 100%;
+		margin-left: 0;
+		margin-top: 80px;
+	}
+	#History .cnt ul:before{
+		left: 0 !important;
+	}
+	#History .cnt ul li{
+		padding: 0 0 40px 30px !important;
+	}
+	#History .cnt ul li:before{
+		left: -10px !important;
+	}
+}
+@media screen and (max-width:413px){
+	html{
+		font-size: 11px;
+	}
+	header nav ul li a{
+		height: 30px;
+		line-height: 30px;
+	}
+	#Skills .cnt .graph_txt{
+		text-align: center;
+	}
+	#Skills .cnt .graph_txt dl dt{
+		width: 100%;
+		margin-left: 0;
+	}
+	#Skills .cnt .graph_txt dl dd{
+		width: 100%;
+	}
+}
+
