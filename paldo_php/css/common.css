@@ -1,0 +1,93 @@
+
+/* top_icon*/
+#top {position: relative;}
+#top .bx {position: fixed; bottom: 20px; right: -100px; width: 60px; height: 60px; border-radius: 30px; box-shadow: 2px 2px 1px rgba(0,0,0,0.2); background-color: #ddd; cursor: pointer; transition: right 0.5s;}
+#top .bx img{display: block; width: 16px; height: 16px; margin: 10px auto 5px auto;}
+#top .bx span{display: block; width: 100%; height: 10px; color: #fff; font-size: 0.8em; font-weight: bold; text-align: center;}
+#top .bx.active {right: 20px;}
+
+.visual {margin: auto; width: 100%;}
+.inner_ban {height: 200px;}
+
+/* CSS RESET */
+* {margin: 0; padding: 0; color: inherit; font-style: inherit; font-weight: inherit; text-decoration: inherit; border: 0 solid transparent; outline: 0; box-sizing: border-box; background-color: transparent; background-repeat: no-repeat; }
+b, strong {font-weight: bold;}
+::before,::after {border: 0 solid transparent;}
+ul,ol {list-style: none;}
+table {table-layout: fixed; border-collapse: collapse;}
+[type=button],[type=submit],[type=reset],button,a,label {cursor: pointer;}
+:only-child {display: block; width: 100%;} /*깨짐 방지를 하고자 중복으로 써주는 것*/
+
+/* COMMON */
+/*html {font-family: 'Roboto', 'Nanum Gothic', sans-serif;}*/
+html{font-family: 'Nanum Gothic', sans-serif;}
+html, body {width: 100%;}
+.clearfix:after {content: ""; display: block; clear: both;}
+.ellipsis {display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.hidden {display: none;}
+.bold {font-weight: bold;}
+
+/************************ header 공통************************/
+.hd_t{height: 45px; line-height: 45px; color:#666; font-size: 0.875em; background-color: #F2F2F2;}
+.hd_t .top_l{float: left;}
+.hd_t .top_l span:nth-child(2){color:#333;}
+.hd_t .top_r{float: right;}
+.hd_t .top_r ul{overflow: hidden;}
+.hd_t .top_r ul li{float: left; margin: 15px 0; width: 15px; height: 15px;}
+.hd_t .top_r ul li a{width: 100%; height: 100%; background-size: 100%; text-indent: -9999px;}
+.hd_t .top_r ul li+li{margin-left: 15px;}
+.hd_t .top_r ul li:nth-child(1) a{background-image: url(./../img/icon/icon_twitter_black.png);}
+.hd_t .top_r ul li:nth-child(1) a:hover{background-image: url(./../img/icon/icon_twitter_color.png);}
+.hd_t .top_r ul li:nth-child(2) a{background-image: url(./../img/icon/icon_facebook.png);}
+.hd_t .top_r ul li:nth-child(2) a:hover{background-image: url(./../img/icon/icon_facebook_color.png);}
+.hd_t .top_r ul li:nth-child(3) a{background-image: url(./../img/icon/icon_naver_blog.png);}
+.hd_t .top_r ul li:nth-child(3) a:hover{background-image: url(./../img/icon/icon_naver_blog_color_1.png);}
+.hd_t .top_r ul li:nth-child(4) a{background-image: url(./../img/icon/icon_tistory_black.png);}
+.hd_t .top_r ul li:nth-child(4) a:hover{background-image: url(./../img/icon/icon_tistory_color_1.png);}
+.hd_t .top_r ul li:nth-child(5) a{background-image: url(./../img/icon/icon_naver_post.png);}
+.hd_t .top_r ul li:nth-child(5) a:hover{background-image: url(./../img/icon/icon_naver_post_color.png);}
+.hd_t .top_r ul li:nth-child(6) a{background-image: url(./../img/icon/icon_instagram.png);}
+.hd_t .top_r ul li:nth-child(6) a:hover{background-image: url(./../img/icon/icon_instagram_color.png);}
+.hd_t .top_r ul li:nth-child(7) a{background-image: url(./../img/icon/icon_youtube_black.png);}
+.hd_t .top_r ul li:nth-child(7) a:hover{background-image: url(./../img/icon/icon_youtube_color.png);}
+.hd_m{position: relative; margin-top: 40px;}
+.hd_m h3{width: 180px; height: 100px; margin: 0 auto;}
+.hd_m h3 a{background-image: url(./../img/logo_paldo_new.png); background-size: 100%; text-indent: -9999px; width: 100%; height: 100%;}
+.hd_m .nav{margin-top: 10px;}
+.hd_m>.inner{position: static;}
+.hd_m .nav:hover .nav_small_tit{height: 180px; border-bottom:1px solid #ddd;}
+.hd_m .nav .nav_small_tit{transition: 0.5s; background-color: #fff; }
+.hd_m .nav .main_nav .li_nav{float: left; width: 275px; height: 55px; line-height: 50px; font-size: 1em; text-align: center;}
+.hd_m .nav .main_nav .li_nav a{display: block; height: 100%; font-weight: 700;}
+.hd_m .nav .main_nav .li_nav.active,
+.hd_m .nav .main_nav .li_nav:hover{color:#DB0000; font-weight: 700;}
+.hd_m .nav .main_nav .li_nav+.li_nav{position: relative;}
+.hd_m .nav .main_nav .li_nav+.li_nav:before{content:''; position: absolute; top: 13px; left: 0; width: 1px; height: 24px; background-color: #999;}
+.hd_m .nav .nav_small_tit{position: absolute; top: 100%; left: 0; right: 0; overflow: hidden; height: 0; border-top:1px solid #ddd; z-index: 2;}
+.hd_m .nav .nav_small_tit ul{float: left;}
+.hd_m .nav .nav_small_tit ul li{font-size: 0.8em; width: 275px; line-height: 40px; text-align: center;}
+.hd_m .nav .nav_small_tit ul li:hover a{font-weight: 700; text-decoration: underline;}
+.hd_m .nav .nav_small_tit ul li a{}
+.hd_m .nav .nav_small_tit ul li:nth-of-type(1) a{padding-top: 10px;}
+.hd_m .nav .nav_small_tit ul li:last-child a{padding-bottom: 10px;}
+
+/************************ footer 공통************************/
+footer{margin-top:50px; height: 230px; background-color: #fafafa; border-top:1px solid #ddd;}
+footer .ft_l{float: left; width: 300px; padding: 0 30px 0 30px;}
+footer .ft_l h1{width: 120px; height: 60px; text-indent: -9999px; margin: 60px 0 0 50px; background-image: url(./../img/logo_paldo_ft.png); background-size: 100%;}
+footer .ft_r{float: left; width:800px; }
+footer .ft_r .ft_nav{width: 100%; margin-top: 50px;}
+footer .ft_r .ft_nav li{float: left; height: 50px; line-height: 50px; text-align: center; font-weight: 700; font-size: 0.8em; color:#474747;}
+footer .ft_r .ft_nav li span{content:''; margin: 17px 65px 0 65px; width: 1px; height: 16px; background-color: gray;}
+footer .ft_r .ft_txt{font-size: 0.7em; margin-top: 5px; font-weight: 600; color:#595959;}
+footer .ft_r .ft_txt span{display:inline-block;}
+footer .ft_r .ft_txt span:nth-of-type(2),
+footer .ft_r .ft_txt span:nth-of-type(3){margin-left: 10px;}
+footer .ft_r p{margin-top: 20px; color:#A1A1A1; font-size: 0.8em;}
+
+/* GLOBAL */
+body {display: inline-block; min-width: 100%;}
+.inner {position: relative;}
+.inner:after {content: ""; display: block; clear: both;}
+.inner {margin: auto; width: 1100px; height: 100%;}
+#wrap{overflow: hidden; margin: auto; min-width: 1100px;}

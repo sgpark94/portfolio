@@ -1,0 +1,97 @@
+	
+/************************ header ************************/
+
+/************************ footer ************************/
+
+/************************ container ************************/
+#container{}
+h3{text-align: center; margin-top: 30px; font-weight: 700; text-align: center; margin: 0 auto; width: 100px; font-size: 18px; letter-spacing: 4px;}
+h3 span{position: relative; display: inline-block;}
+h3 span:before{content:''; position: absolute; background-size: 100%;}
+#ban_1:checked~.main_banner .img_banner{margin-left: 0;}
+#ban_1:checked~.main_banner .banner_arr .ban_1,
+#ban_2:checked~.main_banner .banner_arr .ban_2{background-color: #DB0000; opacity: 1;}
+#ban_2:checked~.main_banner .img_banner{margin-left: -100%;}
+.main_banner{position: relative; padding: 0; margin-bottom: 30px;}
+.main_banner #ban_btn1:checked~.img_banner .banner_wrap	{margin-left: 0;}
+.main_banner #ban_btn2:checked~.img_banner .banner_wrap	{margin-left: -100%;}
+.main_banner #ban_btn1:checked~.img_banner .banner_btn label:nth-of-type(1),
+.main_banner #ban_btn2:checked~.img_banner .banner_btn label:nth-of-type(2){background-color:red;}
+.main_banner .img_banner{position: relative; overflow: hidden; width: 100%; height: 100%; transition: margin-left 1s;}
+.main_banner .img_banner .banner_wrap{overflow: hidden; width: 200%; transition: margin-left 0.5s;}
+.main_banner .img_banner .banner_wrap .banner{float: left; width: 50%; background-size: 100%;}
+.main_banner .img_banner .banner_wrap .banner img{background-size: 100%; width: 100%; height: 100%;}
+.main_banner .img_banner .banner_btn{position: absolute; bottom: 20px; left: 50%; margin-left: -5%;}
+.main_banner .img_banner .banner_btn label{float: left; width: 16px; height: 16px; background-color: #fff; border-radius: 20px;}
+.main_banner .img_banner .banner_btn label+label{margin-left: 8px;}
+#ramen:checked~.intro_product .box_product .tit_food .ramen,
+#drinks:checked~.intro_product .box_product .tit_food .drinks{border-color: #DB0000; color:#DB0000; font-weight: 700; border-left-width: 1px;}
+#ramen:checked~.intro_product .box_product .mobile_ramen ul,
+#drinks:checked~.intro_product .box_product .mobile_drinks ul{display: block;}
+.intro_product{}
+.intro_product h3 span:before{top: 0; left: -28px; width: 21px; height: 21px; background-image: url(../img/megaphone.png); }
+.intro_product .box_product{}
+.intro_product .box_product .tit_food{overflow: hidden; margin-top: 20px;}
+.intro_product .box_product .tit_food label{float: left; width: 50%; height: 20%; border:1px solid #ddd; text-align: center; line-height: 200%;}
+.intro_product .box_product .tit_food label+label{border-left-width: 0;}
+.intro_product .box_product ul{display: none; margin-top: 20px; overflow: hidden;}
+.intro_product .box_product ul li{float: left; width: 50%;}
+.intro_product .box_product .mobile_ramen ul li img,
+.intro_product .box_product .mobile_drinks ul li img{display: block; width: 80%; margin: 10px auto;}
+.intro_product .box_product ul li span{display: block; text-align: center; }
+.intro_product .box_product ul li span:nth-of-type(1){font-weight: 700; font-size: 1em; margin-top: 5px;}
+.intro_product .box_product ul li span:nth-of-type(2){color:#747474; font-size: 0.8em; line-height: 2.5em;}
+.intro_product .box_product .mobile_drinks{}
+.intro_product .box_product .mobile_drinks ul{}
+.insta{margin: 20px 0 40px 0;}
+.insta h3 span:before{content:''; position: absolute; top: 2px; left: -25%; width: 18px; height: 18px; background-image: url(../img/icon_instagram.png);;}
+.insta .insta_img{margin-top: 20px;}
+.insta .insta_img ul{overflow: hidden;}
+.insta .insta_img ul li{float: left; width: 48%;}
+.insta .insta_img ul li:nth-of-type(3),
+.insta .insta_img ul li:nth-of-type(4){margin-top: 4%;}
+.insta .insta_img ul li:nth-of-type(2n-1){margin-right: 2%;}
+.insta .insta_img ul li:nth-of-type(2n){margin-left: 2%;}
+.insta .insta_img ul li a{position: relative; display: block; margin: 0 auto;}
+.insta .insta_img ul li a img{display: block; width: 100%;}
+.insta .insta_img ul li a span{position: absolute; bottom: 0; right: 0; left: 0; font-weight: 700; padding-left: 5px; background-color: rgba(0,0,0,0.2); line-height: 1.5em;}
+.insta .insta_img ul li a span em{color:#fff;}
+.sub_banner{position: relative;	 padding: 0;}
+.sub_banner #new_1:checked~.ban_frm ul{margin-left: 0;}
+.sub_banner #new_2:checked~.ban_frm ul{margin-left: -100%;}
+.sub_banner #new_1:checked~.bt_btn label:nth-of-type(1),
+.sub_banner #new_2:checked~.bt_btn label:nth-of-type(2){background-color:red;}
+.sub_banner h3{margin-bottom: 20px;}
+.sub_banner h3 span{}
+.sub_banner h3 span:before{top:0; left: -25px; width: 19px; height: 19px; background-image: url(../img/new.png);}
+.sub_banner .ban_frm{overflow: hidden; width: 100%;}
+.sub_banner .ban_frm ul{overflow: hidden; width: 200%; transition: 0.8s;}
+.sub_banner .ban_frm ul li{float: left; width: 50%;}
+.sub_banner .ban_frm ul li img{display: block; width: 100%; height: auto;}
+.sub_banner .bt_btn{position: absolute;	bottom: 20px; left: 46%;}
+.sub_banner .bt_btn label{float: left; width: 14px; height: 14px; background-color: #fff; border-radius: 20px;}
+.sub_banner .bt_btn label+label{margin-left: 8px;}
+.sns{width: 100%; height: 30px;}
+.sns>div{float: left; width: 15%; height: 100%; background-color: black;}
+.sns>div+div{margin-left: 2%;}
+.sns>div a{}
+.sns>div a span{}
+
+/************************ media_query ************************/
+@media screen and (min-width:426px){
+	.insta .insta_img ul li a span em{font-size: 0.825em; line-height: 1.2em;}
+}
+@media screen and (max-width:425px){
+	html{font-size: 14px;}
+	.intro_product .box_product .mobile_drinks ul li img{display: block; width: 40%; height: 50%; margin: 10px auto;}
+	.intro_product .box_product .mobile_ramen ul li img{width: 80%; height: 80%;}
+	.insta .insta_img ul li a{width:100%; height:100%; background-size: 100%;}
+	.insta .insta_img ul li a span em{font-size: 0.8em;}
+	footer ul li a{}
+}
+@media screen and (max-width:375px){
+}
+@media screen and (max-width:320px){
+	html{font-size: 12px;}
+	footer ul li a{}
+}
