@@ -1,361 +1,1191 @@
-
 /************************container************************/
 /************************paldo_is*************************/
-#container{height: auto;}
-.full_banner{position: relative; height: 200px; background-image: url(../img/sub_banner.png); background-size: 100%; padding-top: 45px;}
-.full_banner p{text-align: center;}
-.full_banner .first{font-size: 2.5em; font-weight: 700;}
-.full_banner .second{font-size: 1em; color:#676767; letter-spacing: 2px;}
-.full_banner span{position: absolute; top: 65%; left: 50%; margin-left: -17px; width: 35px; height: 2px; background-color: #555;}
-.tit{margin-bottom: 70px;}
-.tit h3{margin: 70px 0 30px 0; font-weight: 700; font-size: 1.5em;}
-.tit .small_tit{}
-.tit .small_tit ul{overflow: hidden;}
-.tit .small_tit ul li{position: relative; float: left; width: 366px; text-align: center; height: 40px; line-height: 40px; border-width:1px 0 0 1px; border-style:solid; border-color:gray;}
-.tit .small_tit ul li:nth-of-type(3n){border-right-width: 1px;}
-.tit .small_tit ul li:nth-of-type(n+4){border-bottom-width: 1px;}
-.tit .small_tit ul li label{display: none; position: absolute; top: -1px; bottom: -1px; left: -1px; right: -1px; border:1px solid #d32400; z-index: 1;}
-.tit .small_tit ul li:hover label{display: block; }
-.tit .small_tit ul li:hover div{color:#d32400;}
-.tit .small_tit ul li label:hover~div{color:#d32400; font-weight: 700;}
-#intro_company:checked~.tit .small_tit ul li:nth-of-type(1) label,
-#company_mission:checked~.tit .small_tit ul li:nth-of-type(2) label,
-#ceo_greeting:checked~.tit .small_tit ul li:nth-of-type(3) label,
-#history:checked~.tit .small_tit ul li:nth-of-type(4) label,
-#ci:checked~.tit .small_tit ul li:nth-of-type(5) label,
-#business:checked~.tit .small_tit ul li:nth-of-type(6) label{display: block;}
-#intro_company:checked~.tit .small_tit ul li:nth-of-type(1) div,
-#company_mission:checked~.tit .small_tit ul li:nth-of-type(2) div,
-#ceo_greeting:checked~.tit .small_tit ul li:nth-of-type(3) div,
-#history:checked~.tit .small_tit ul li:nth-of-type(4) div,
-#ci:checked~.tit .small_tit ul li:nth-of-type(5) div,
-#business:checked~.tit .small_tit ul li:nth-of-type(6) div{font-weight: 700; color:#d32400;}
-.sec{display: none;}
-#intro_company:checked~.sec_1,
-#company_mission:checked~.sec_2,
-#ceo_greeting:checked~.sec_3,
-#history:checked~.sec_4,
-#ci:checked~.sec_5,
-#business:checked~.sec_6{display: block;}
-.sec{position: relative; margin: 0 70px 70px 70px;}
-.sec .wrap{padding: 50px 0 0 40px;}
-.sec .sec_txt+.sec_txt{margin-top: 20px;}
-.sec h3{font-size: 1.8em;}
-.sec .second{margin: 5px 0 30px 0;}
-.sec h3 em{display: inline; font-weight: 700;}
-.sec p{font-size: 1.1em; font-weight: 700; margin-bottom: 30px;}
-.sec span{display: inline-block; line-height: 30px; font-size: 1em;}
-.sec .paldo_package{position: absolute; bottom: -15%; right: 0; width: 400px; height: 250px;}
+#container {
+  height: auto;
+}
+.full_banner {
+  position: relative;
+  height: 200px;
+  background-image: url(../img/sub_bannerV2.jpg);
+  background-size: 100%;
+  padding-top: 45px;
+}
+.full_banner p {
+  text-align: center;
+}
+.full_banner .first {
+  font-size: 2.5em;
+  font-weight: 700;
+}
+.full_banner .second {
+  font-size: 1em;
+  color: #676767;
+  letter-spacing: 2px;
+}
+.full_banner span {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  margin-left: -17px;
+  width: 35px;
+  height: 2px;
+  background-color: #555;
+}
+.tit {
+  margin-bottom: 70px;
+}
+.tit h3 {
+  margin: 70px 0 30px 0;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.tit .small_tit ul {
+  overflow: hidden;
+}
+.tit .small_tit ul li {
+  position: relative;
+  float: left;
+  width: 366px;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  border-width: 1px 0 0 1px;
+  border-style: solid;
+  border-color: gray;
+}
+.tit .small_tit ul li:nth-of-type(3n) {
+  border-right-width: 1px;
+}
+.tit .small_tit ul li:nth-of-type(n + 4) {
+  border-bottom-width: 1px;
+}
+.tit .small_tit ul li label {
+  display: none;
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid #d32400;
+  z-index: 1;
+}
+.tit .small_tit ul li:hover label {
+  display: block;
+}
+.tit .small_tit ul li:hover div {
+  color: #d32400;
+}
+.tit .small_tit ul li label:hover ~ div {
+  color: #d32400;
+  font-weight: 700;
+}
+#intro_company:checked ~ .tit .small_tit ul li:nth-of-type(1) label,
+#company_mission:checked ~ .tit .small_tit ul li:nth-of-type(2) label,
+#ceo_greeting:checked ~ .tit .small_tit ul li:nth-of-type(3) label,
+#history:checked ~ .tit .small_tit ul li:nth-of-type(4) label,
+#ci:checked ~ .tit .small_tit ul li:nth-of-type(5) label,
+#business:checked ~ .tit .small_tit ul li:nth-of-type(6) label {
+  display: block;
+}
+#intro_company:checked ~ .tit .small_tit ul li:nth-of-type(1) div,
+#company_mission:checked ~ .tit .small_tit ul li:nth-of-type(2) div,
+#ceo_greeting:checked ~ .tit .small_tit ul li:nth-of-type(3) div,
+#history:checked ~ .tit .small_tit ul li:nth-of-type(4) div,
+#ci:checked ~ .tit .small_tit ul li:nth-of-type(5) div,
+#business:checked ~ .tit .small_tit ul li:nth-of-type(6) div {
+  font-weight: 700;
+  color: #d32400;
+}
+.sec {
+  display: none;
+}
+#intro_company:checked ~ .sec_1,
+#company_mission:checked ~ .sec_2,
+#ceo_greeting:checked ~ .sec_3,
+#history:checked ~ .sec_4,
+#ci:checked ~ .sec_5,
+#business:checked ~ .sec_6 {
+  display: block;
+}
+.sec {
+  position: relative;
+  margin: 0 70px 70px 70px;
+}
+.sec .wrap {
+  padding: 50px 0 0 40px;
+}
+.sec .sec_txt + .sec_txt {
+  margin-top: 20px;
+}
+.sec h3 {
+  font-size: 1.8em;
+}
+.sec .second {
+  margin: 5px 0 30px 0;
+}
+.sec h3 em {
+  display: inline;
+  font-weight: 700;
+}
+.sec p {
+  font-size: 1.1em;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.sec span {
+  display: inline-block;
+  line-height: 30px;
+  font-size: 1em;
+}
+.sec .paldo_package {
+  position: absolute;
+  bottom: -15%;
+  right: 0;
+  width: 400px;
+  height: 250px;
+}
 .sec_2 .top,
-.sec_2 .middle{overflow: hidden; border-bottom:1px solid #ddd;}
-.sec_2 .bottom{overflow: hidden;}
-.sec_2 .people_img{position: relative; float: left; width: 500px; height: 400px;}
-.sec_2 .people_img span{position: absolute; top: 48%; left: 31%; width: 200px; text-align: center; color:#fff; font-size: 2.2em; font-weight: 700;}
-.sec_2 .people_img span:after{content:''; position: absolute; top: -30px; left: 50%; margin-left: -25px; width: 50px; height: 2px; background-color: #fff;}
-.sec_2 .txt{float: left; width: 540px; height: 400px; padding-top: 110px; margin-left: 20px;}
-.sec_2 .txt p{font-size: 1.5em;}
-.sec_2 .txt ul li{list-style:disc; list-style-position: inside; letter-spacing: -0.5px; font-size: 0.95em; line-height: 1.8em; padding-left: 20px;}
+.sec_2 .middle {
+  overflow: hidden;
+  border-bottom: 1px solid #ddd;
+}
+.sec_2 .bottom {
+  overflow: hidden;
+}
+.sec_2 .people_img {
+  position: relative;
+  float: left;
+  width: 500px;
+  height: 400px;
+}
+.sec_2 .people_img span {
+  position: absolute;
+  top: 48%;
+  left: 31%;
+  width: 200px;
+  text-align: center;
+  color: #fff;
+  font-size: 2.2em;
+  font-weight: 700;
+}
+.sec_2 .people_img span:after {
+  content: "";
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  margin-left: -25px;
+  width: 50px;
+  height: 2px;
+  background-color: #fff;
+}
+.sec_2 .txt {
+  float: left;
+  width: 540px;
+  height: 400px;
+  padding-top: 110px;
+  margin-left: 20px;
+}
+.sec_2 .txt p {
+  font-size: 1.5em;
+}
+.sec_2 .txt ul li {
+  list-style: disc;
+  list-style-position: inside;
+  letter-spacing: -0.5px;
+  font-size: 0.95em;
+  line-height: 1.8em;
+  padding-left: 20px;
+}
 .sec_3 h3,
 .sec_5 h3,
-.sec_6 h3{margin-bottom: 50px;}
-.sec_3 .paldo_package{position: absolute; bottom: 38%; right: 0; width: 300px; height: 200px;}
-.sec_4{}
-.sec_4 .wrap #graph_1:checked~.history_graph .graph_wrap .graph_1,
-.sec_4 .wrap #graph_2:checked~.history_graph .graph_wrap .graph_2,
-.sec_4 .wrap #graph_3:checked~.history_graph .graph_wrap .graph_3,
-.sec_4 .wrap #graph_4:checked~.history_graph .graph_wrap .graph_4,
-.sec_4 .wrap #graph_5:checked~.history_graph .graph_wrap .graph_5{color:#FF0000; font-weight: 700;}
-.sec_4 .wrap #graph_1:checked~.history_graph .graph_wrap .graph_1:after,
-.sec_4 .wrap #graph_2:checked~.history_graph .graph_wrap .graph_2:after,
-.sec_4 .wrap #graph_3:checked~.history_graph .graph_wrap .graph_3:after,
-.sec_4 .wrap #graph_4:checked~.history_graph .graph_wrap .graph_4:after,
-.sec_4 .wrap #graph_5:checked~.history_graph .graph_wrap .graph_5:after{background-color: #ff0000;}
-.sec_4 .history_graph{margin: 50px 0 50px 0; padding: 0 155px;}
-.sec_4 .history_graph .graph_wrap{float: left; width: 150px; text-align: center;}
-.sec_4 .history_graph .graph_wrap label{position: relative; height: 60px; border-bottom: 1px solid #ddd;}
-.sec_4 .history_graph .graph_wrap label:after{content:''; position: absolute; bottom: -9px; left: 50%; margin-left: -6px; width: 12px; height: 12px; background-color: #fff; border:2px solid #ff0000; border-radius: 50%;}
-.sec_4 .history_graph .graph_wrap label.graph_1:before{content:''; position: absolute; bottom: -1px; left: 0; background-color: #fff; width: 70px; height: 1px;}
-.sec_4 .history_graph .graph_wrap label.graph_5:before{content:''; position: absolute; bottom: -1px; left: 50%; background-color: #fff; width: 80px; height: 1px;}
-.sec_4 .history_graph .graph_wrap label:hover{font-weight: 700;}
-.sec_4 .history_graph .graph_wrap label span{display: block; font-size: 0.9em; line-height: 20px;}
-.sec_4 .history_graph .graph_wrap label .graph_tit{}
-.sec_4 .history_graph .graph_wrap label .year{}
-.sec_4 .history_img{margin-bottom: 50px;}
-.sec_4 .history_img .img{float: left; width: 500px; height: 190px; background-size: 100%;}
-.sec_4 .history_img .img a{display: block; width: 100%; height: 100%;}
-.sec_4 .history_img .img+.img{margin-left: 20px;}
-.sec_4 .history_img .img_1{background-image: url(../img/paldo_history.png);}
-.sec_4 .history_img .img_2{background-image: url(../img/paldo_history_1.jpg);}
-.sec_4 .years_history{overflow: hidden;}
-.sec_4 .years_history span{margin-right: 20px; color:#d32400; font-weight: 700; line-height: 35px;}
-.sec_4 .years_history em{font-size: 1.05em;}
-.sec_4 .years_history em b{color:#222;}
-.sec_4 .years_history .left{float: left; width: 500px; padding-left: 30px;}
-.sec_4 .years_history .right{float: left; width: 500px; padding-left: 50px;}
-.sec_5{}
-.sec_5 span em{display: inline; color:#d32400;}
+.sec_6 h3 {
+  margin-bottom: 50px;
+}
+.sec_3 .paldo_package {
+  position: absolute;
+  bottom: 38%;
+  right: 0;
+  width: 300px;
+  height: 200px;
+}
+.sec_4 {
+}
+.sec_4 .wrap #graph_1:checked ~ .history_graph .graph_wrap .graph_1,
+.sec_4 .wrap #graph_2:checked ~ .history_graph .graph_wrap .graph_2,
+.sec_4 .wrap #graph_3:checked ~ .history_graph .graph_wrap .graph_3,
+.sec_4 .wrap #graph_4:checked ~ .history_graph .graph_wrap .graph_4,
+.sec_4 .wrap #graph_5:checked ~ .history_graph .graph_wrap .graph_5 {
+  color: #ff0000;
+  font-weight: 700;
+}
+.sec_4 .wrap #graph_1:checked ~ .history_graph .graph_wrap .graph_1:after,
+.sec_4 .wrap #graph_2:checked ~ .history_graph .graph_wrap .graph_2:after,
+.sec_4 .wrap #graph_3:checked ~ .history_graph .graph_wrap .graph_3:after,
+.sec_4 .wrap #graph_4:checked ~ .history_graph .graph_wrap .graph_4:after,
+.sec_4 .wrap #graph_5:checked ~ .history_graph .graph_wrap .graph_5:after {
+  background-color: #ff0000;
+}
+.sec_4 .history_graph {
+  margin: 50px 0 50px 0;
+  padding: 0 155px;
+}
+.sec_4 .history_graph .graph_wrap {
+  float: left;
+  width: 150px;
+  text-align: center;
+}
+.sec_4 .history_graph .graph_wrap label {
+  position: relative;
+  height: 60px;
+  border-bottom: 1px solid #ddd;
+}
+.sec_4 .history_graph .graph_wrap label:after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  margin-left: -6px;
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border: 2px solid #ff0000;
+  border-radius: 50%;
+}
+.sec_4 .history_graph .graph_wrap label.graph_1:before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  background-color: #fff;
+  width: 70px;
+  height: 1px;
+}
+.sec_4 .history_graph .graph_wrap label.graph_5:before {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  left: 50%;
+  background-color: #fff;
+  width: 80px;
+  height: 1px;
+}
+.sec_4 .history_graph .graph_wrap label:hover {
+  font-weight: 700;
+}
+.sec_4 .history_graph .graph_wrap label span {
+  display: block;
+  font-size: 0.9em;
+  line-height: 20px;
+}
+.sec_4 .history_graph .graph_wrap label .graph_tit {
+}
+.sec_4 .history_graph .graph_wrap label .year {
+}
+.sec_4 .history_img {
+  margin-bottom: 50px;
+}
+.sec_4 .history_img .img {
+  float: left;
+  width: 500px;
+  height: 190px;
+  background-size: 100%;
+}
+.sec_4 .history_img .img a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.sec_4 .history_img .img + .img {
+  margin-left: 20px;
+}
+.sec_4 .history_img .img_1 {
+  background-image: url(../img/paldo_history.png);
+}
+.sec_4 .history_img .img_2 {
+  background-image: url(../img/paldo_history_1.jpg);
+}
+.sec_4 .years_history {
+  overflow: hidden;
+}
+.sec_4 .years_history span {
+  margin-right: 20px;
+  color: #d32400;
+  font-weight: 700;
+  line-height: 35px;
+}
+.sec_4 .years_history em {
+  font-size: 1.05em;
+}
+.sec_4 .years_history em b {
+  color: #222;
+}
+.sec_4 .years_history .left {
+  float: left;
+  width: 500px;
+  padding-left: 30px;
+}
+.sec_4 .years_history .right {
+  float: left;
+  width: 500px;
+  padding-left: 50px;
+}
+.sec_5 {
+}
+.sec_5 span em {
+  display: inline;
+  color: #d32400;
+}
 .sec_5 .txt_1,
-.sec_5 .sec_txt{padding: 0 35px;}
-.sec_5 .txt_1 span{}
-.sec_5 .txt_1 img{display: block; margin: 50px 0 50px 295px; width: 400px; height: 200px;}
-.sec_5 .txt_2{margin-bottom: 100px;}
-.sec_5 .txt_2 .color{overflow: hidden; padding-left: 145px; margin-top: 50px;}
-.sec_5 .txt_2 .color .rgb{float: left;}
+.sec_5 .sec_txt {
+  padding: 0 35px;
+}
+.sec_5 .txt_1 span {
+}
+.sec_5 .txt_1 img {
+  display: block;
+  margin: 50px 0 50px 295px;
+  width: 400px;
+  height: 200px;
+}
+.sec_5 .txt_2 {
+  margin-bottom: 100px;
+}
+.sec_5 .txt_2 .color {
+  overflow: hidden;
+  padding-left: 145px;
+  margin-top: 50px;
+}
+.sec_5 .txt_2 .color .rgb {
+  float: left;
+}
 .sec_5 .txt_2 .color .green,
-.sec_5 .txt_2 .color .black{margin-left: 10px;}
-.sec_5 .txt_2 .color .color_box{width: 250px; height: 100px;}
-.sec_5 .txt_2 .color .red .color_box{background-color: #e7290f;}
-.sec_5 .txt_2 .color .green .color_box{background-color: #79bd28;}
-.sec_5 .txt_2 .color .black .color_box{background-color: #000;}
-.sec_5 .txt_2 .color .color_txt{margin-top: 10px;}
-.sec_5 .txt_2 .color .color_txt i{font-size: 0.8em; }
-.sec_5 .txt_2 .color .color_txt i:nth-of-type(1){font-weight: 700;}
-.sec_5 .txt_2 .color .color_txt i:nth-of-type(2){font-size: 0.7em; color:#af9e96;}
-.sec_5 .txt_2 .sec_txt:nth-of-type(2){margin-top: 40px;}
-.sec_5 .txt_3{}
-.sec_5 .txt_3 .abroad_img{width: 100%; height: 160px; padding-left: 145px;}
-.sec_5 .txt_3 .abroad_img div{width: 150px; height: 100%; float: left; background-size: 100%;}
-.sec_5 .txt_3 .abroad_img div+div{margin-left: 56px;}
-.sec_5 .txt_3 .abroad_img .img_1{background-image: url(./../img/fun_yum.png); margin-top: 30px;}
-.sec_5 .txt_3 .abroad_img .img_2{background-image: url(./../img/vina.png); margin-top: 30px;}
-.sec_5 .txt_3 .abroad_img .img_3{background-image: url(./../img/america.png); margin-top: 30px;}
-.sec_5 .txt_3 .abroad_img .img_4{background-image: url(./../img/pro_baseball.png); background-size: 100%;}
-.sec_6{}
-.sec_6 h3{line-height: 38px;}
-.sec_6 .business{}
-.sec_6 .business .business_wrap{position: relative; float: left; overflow: hidden; margin-left: 40px; width: 450px; height: 450px ;transition: border-color 0.5s, transform 0.7s;}
-.sec_6 .business .business_wrap:nth-of-type(n+3){margin-top: 40px;}
-.sec_6 .business .business_wrap .line{position: absolute; top: 0; bottom: 0; left: 0; right: 0; border: 10px solid #999; width: 450px; height: 450px;}
-.sec_6 .business .business_wrap .common{width: 450px; height: 450px; padding: 50px; transform: scale(1);}
-.sec_6 .business .business_wrap:hover .line{border-color: #d32400; transition: border-color 0.7s;}
-.sec_6 .business .business_wrap:hover .common{transform: scale(1.03); transition: 0.7s;}
-.sec_6 .business .business_wrap .common:hover h4{color: #d32400; transition: color 0.7s;}
-.sec_6 .business .business_wrap .common h4{position: relative; display: inline-block; font-weight: 700; font-size: 1.6em; margin-bottom: 30px;}
-.sec_6 .business .business_wrap .common span{color:#8C8C8C;}
-.sec_6 .business .business_wrap .common h4:after{position: absolute; top: 0; left: 120%; font-weight: 500; color:#747474;}
-.sec_6 .business .noodle{}
-.sec_6 .business .noodle h4:after{content:'Noodle';}
-.sec_6 .business .beverage{}
-.sec_6 .business .beverage h4:after{content:'Beverage';}
-.sec_6 .business .export{}
-.sec_6 .business .export h4:after{content:'Exportation';}
-.sec_6 .business .logistic{}
-.sec_6 .business .logistic h4:after{content:'Logistic';}
-.tit:nth-of-type(2) .small_tit ul li{width: 366px;}
+.sec_5 .txt_2 .color .black {
+  margin-left: 10px;
+}
+.sec_5 .txt_2 .color .color_box {
+  width: 250px;
+  height: 100px;
+}
+.sec_5 .txt_2 .color .red .color_box {
+  background-color: #e7290f;
+}
+.sec_5 .txt_2 .color .green .color_box {
+  background-color: #79bd28;
+}
+.sec_5 .txt_2 .color .black .color_box {
+  background-color: #000;
+}
+.sec_5 .txt_2 .color .color_txt {
+  margin-top: 10px;
+}
+.sec_5 .txt_2 .color .color_txt i {
+  font-size: 0.8em;
+}
+.sec_5 .txt_2 .color .color_txt i:nth-of-type(1) {
+  font-weight: 700;
+}
+.sec_5 .txt_2 .color .color_txt i:nth-of-type(2) {
+  font-size: 0.7em;
+  color: #af9e96;
+}
+.sec_5 .txt_2 .sec_txt:nth-of-type(2) {
+  margin-top: 40px;
+}
+.sec_5 .txt_3 {
+}
+.sec_5 .txt_3 .abroad_img {
+  width: 100%;
+  height: 160px;
+  padding-left: 145px;
+}
+.sec_5 .txt_3 .abroad_img div {
+  width: 150px;
+  height: 100%;
+  float: left;
+  background-size: 100%;
+}
+.sec_5 .txt_3 .abroad_img div + div {
+  margin-left: 56px;
+}
+.sec_5 .txt_3 .abroad_img .img_1 {
+  background-image: url(./../img/fun_yum.png);
+  margin-top: 30px;
+}
+.sec_5 .txt_3 .abroad_img .img_2 {
+  background-image: url(./../img/vina.png);
+  margin-top: 30px;
+}
+.sec_5 .txt_3 .abroad_img .img_3 {
+  background-image: url(./../img/america.png);
+  margin-top: 30px;
+}
+.sec_5 .txt_3 .abroad_img .img_4 {
+  background-image: url(./../img/pro_baseball.png);
+  background-size: 100%;
+}
+.sec_6 {
+}
+.sec_6 h3 {
+  line-height: 38px;
+}
+.sec_6 .business {
+}
+.sec_6 .business .business_wrap {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  margin-left: 40px;
+  width: 450px;
+  height: 450px;
+  transition: border-color 0.5s, transform 0.7s;
+}
+.sec_6 .business .business_wrap:nth-of-type(n + 3) {
+  margin-top: 40px;
+}
+.sec_6 .business .business_wrap .line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: 10px solid #999;
+  width: 450px;
+  height: 450px;
+}
+.sec_6 .business .business_wrap .common {
+  width: 450px;
+  height: 450px;
+  padding: 50px;
+  transform: scale(1);
+}
+.sec_6 .business .business_wrap:hover .line {
+  border-color: #d32400;
+  transition: border-color 0.7s;
+}
+.sec_6 .business .business_wrap:hover .common {
+  transform: scale(1.03);
+  transition: 0.7s;
+}
+.sec_6 .business .business_wrap .common:hover h4 {
+  color: #d32400;
+  transition: color 0.7s;
+}
+.sec_6 .business .business_wrap .common h4 {
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 1.6em;
+  margin-bottom: 30px;
+}
+.sec_6 .business .business_wrap .common span {
+  color: #8c8c8c;
+}
+.sec_6 .business .business_wrap .common h4:after {
+  position: absolute;
+  top: 0;
+  left: 120%;
+  font-weight: 500;
+  color: #747474;
+}
+.sec_6 .business .noodle {
+}
+.sec_6 .business .noodle h4:after {
+  content: "Noodle";
+}
+.sec_6 .business .beverage {
+}
+.sec_6 .business .beverage h4:after {
+  content: "Beverage";
+}
+.sec_6 .business .export {
+}
+.sec_6 .business .export h4:after {
+  content: "Exportation";
+}
+.sec_6 .business .logistic {
+}
+.sec_6 .business .logistic h4:after {
+  content: "Logistic";
+}
+.tit:nth-of-type(2) .small_tit ul li {
+  width: 366px;
+}
 
 /************************면브랜드*************************/
-.tit:nth-of-type(2){margin-bottom:0;}
-.tit .food_type{}
-.tit .food_type ul{margin-top: 70px;}
-.tit .food_type ul li{position: relative; float: left; width: 50%; height: 40px; text-align: center; border:1px solid gray;}
-.tit .food_type ul li+li{border-left-width: 0;}
-.tit .food_type ul li label{display: none; position: absolute; top: -1px; bottom: -1px; left: -1px; right: -1px; border: 1px solid #d32400;}
-.tit .food_type ul li:hover label{display: block;}
-#noodle:checked~.tit .food_type ul li:nth-of-type(1) label,
-#drinks:checked~.tit .food_type ul li:nth-of-type(2) label{display: block; color: #d32400; font-weight: 700;}
-#noodle:checked~.tit .food_type ul li:nth-of-type(1) div,
-#drinks:checked~.tit .food_type ul li:nth-of-type(2) div{color: #d32400; font-weight: 700;}
-#noodle:checked~.food_wrap .sub_noodle,
-#drinks:checked~.food_wrap .sub_drinks{display: block;}
-.food_wrap .sub_noodle .noodle_wrap{overflow:hidden; height: 0;}
-.food_wrap .sub_drinks .drinks_wrap{overflow:hidden; height: 800px;}
-#noodle:checked~.food_wrap .sub_noodle .noodle_wrap{height: 598px;}
-.tit .food_type ul li:hover div{color:#d32400; font-weight: 700;}
-.tit .food_type ul li div{width: 100%; height: 100%; line-height: 40px; font-size: 1.1em;}
-.food_wrap{}
-.food_wrap .sub_noodle{}
-.food_wrap .food ul{margin: 0 40px; padding-top: 10px; overflow: hidden; height: 510px;}
-.food_wrap .sub_noodle ul li{position: relative; text-align: center;}
-.food_wrap .sub_noodle ul li:after{position: absolute; bottom: 0; left: 0; width: 100%; font-weight: 700; color:#4C4C4C;  font-size: 1.05em;}
-.food_wrap .sub_noodle ul li:not(:nth-of-type(5n+1)){margin-left: 50px;}
-.food_wrap .sub_noodle ul li:nth-of-type(n+6){margin-top: 50px;}
-.food_wrap .sub_noodle .show_noodle{}
-.food_wrap .sub_noodle #ad_btn:checked~.show_noodle ul{height: 1230px; transition: height 0.5s;}
-.food_wrap .sub_drinks #ad_btn2:checked~.show_drinks ul{height: 810px; transition: height 0.5s;}
-.food_wrap .sub_noodle #ad_btn:checked~.show_noodle ul li:nth-of-type(11),
-.food_wrap .sub_noodle #ad_btn:checked~.show_noodle ul li:nth-of-type(12),
-.food_wrap .sub_noodle #ad_btn:checked~.show_noodle ul li:nth-of-type(13),
-.food_wrap .sub_noodle #ad_btn:checked~.show_noodle ul li:nth-of-type(14),
-.food_wrap .sub_noodle #ad_btn:checked~.show_noodle ul li:nth-of-type(15),
-.food_wrap .sub_drinks #ad_btn2:checked~.show_drinks ul li:nth-of-type(11),
-.food_wrap .sub_drinks #ad_btn2:checked~.show_drinks ul li:nth-of-type(12),
-.food_wrap .sub_drinks #ad_btn2:checked~.show_drinks ul li:nth-of-type(13),
-.food_wrap .sub_drinks #ad_btn2:checked~.show_drinks ul li:nth-of-type(14),
-.food_wrap .sub_drinks #ad_btn2:checked~.show_drinks ul li:nth-of-type(15){margin-top: 50px;}
-.food_wrap .sub_noodle #ad_btn:checked~.show_noodle .add_btn,
-.food_wrap .sub_drinks #ad_btn2:checked~.show_drinks .add_btn2{display: none;}
-.food_wrap .sub_noodle #ad_btn:checked~.show_noodle ul label{background-color: #d32400; color:#fff; }
-.food_wrap .sub_noodle #ad_btn:checked~.show_noodle{display: block; transition: 1s;}
-.food_wrap .sub_drinks #ad_btn2:checked~.show_drinks ul label{background-color: #d32400; color:#fff; }
-.food_wrap .sub_drinks #ad_btn2:checked~.show_drinks{display: block; transition: 1s;}
-.food_wrap .food{display: none;}
-.food_wrap .food .show_noodle ul{}
-.food_wrap .food h3{margin: 50px 0; font-weight: 700; font-size: 1.5em;}
-.food_wrap .food ul li{float: left; width: 164px; height: 160px;}
-.food_wrap .food ul li:before{position: absolute; top: -6px; left: 0; background-color: red; font-size: 0.7em; width: auto; height: 20px; line-height: 20px; color:#fff; border-radius: 30px; padding: 0 8px; font-weight: 700;}
-.food_wrap .sub_noodle ul li img{width: 100%; height: 125px;}
+.tit:nth-of-type(2) {
+  margin-bottom: 0;
+}
+.tit .food_type {
+}
+.tit .food_type ul {
+  margin-top: 70px;
+}
+.tit .food_type ul li {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 40px;
+  text-align: center;
+  border: 1px solid gray;
+}
+.tit .food_type ul li + li {
+  border-left-width: 0;
+}
+.tit .food_type ul li label {
+  display: none;
+  position: absolute;
+  top: -1px;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  border: 1px solid #d32400;
+}
+.tit .food_type ul li:hover label {
+  display: block;
+}
+#noodle:checked ~ .tit .food_type ul li:nth-of-type(1) label,
+#drinks:checked ~ .tit .food_type ul li:nth-of-type(2) label {
+  display: block;
+  color: #d32400;
+  font-weight: 700;
+}
+#noodle:checked ~ .tit .food_type ul li:nth-of-type(1) div,
+#drinks:checked ~ .tit .food_type ul li:nth-of-type(2) div {
+  color: #d32400;
+  font-weight: 700;
+}
+#noodle:checked ~ .food_wrap .sub_noodle,
+#drinks:checked ~ .food_wrap .sub_drinks {
+  display: block;
+}
+.food_wrap .sub_noodle .noodle_wrap {
+  overflow: hidden;
+  height: 0;
+}
+.food_wrap .sub_drinks .drinks_wrap {
+  overflow: hidden;
+  height: 800px;
+}
+#noodle:checked ~ .food_wrap .sub_noodle .noodle_wrap {
+  height: 598px;
+}
+.tit .food_type ul li:hover div {
+  color: #d32400;
+  font-weight: 700;
+}
+.tit .food_type ul li div {
+  width: 100%;
+  height: 100%;
+  line-height: 40px;
+  font-size: 1.1em;
+}
+.food_wrap {
+}
+.food_wrap .sub_noodle {
+}
+.food_wrap .food ul {
+  margin: 0 40px;
+  padding-top: 10px;
+  overflow: hidden;
+  height: 510px;
+}
+.food_wrap .sub_noodle ul li {
+  position: relative;
+  text-align: center;
+}
+.food_wrap .sub_noodle ul li:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-weight: 700;
+  color: #4c4c4c;
+  font-size: 1.05em;
+}
+.food_wrap .sub_noodle ul li:not(:nth-of-type(5n + 1)) {
+  margin-left: 50px;
+}
+.food_wrap .sub_noodle ul li:nth-of-type(n + 6) {
+  margin-top: 50px;
+}
+.food_wrap .sub_noodle .show_noodle {
+}
+.food_wrap .sub_noodle #ad_btn:checked ~ .show_noodle ul {
+  height: 1230px;
+  transition: height 0.5s;
+}
+.food_wrap .sub_drinks #ad_btn2:checked ~ .show_drinks ul {
+  height: 810px;
+  transition: height 0.5s;
+}
+.food_wrap .sub_noodle #ad_btn:checked ~ .show_noodle ul li:nth-of-type(11),
+.food_wrap .sub_noodle #ad_btn:checked ~ .show_noodle ul li:nth-of-type(12),
+.food_wrap .sub_noodle #ad_btn:checked ~ .show_noodle ul li:nth-of-type(13),
+.food_wrap .sub_noodle #ad_btn:checked ~ .show_noodle ul li:nth-of-type(14),
+.food_wrap .sub_noodle #ad_btn:checked ~ .show_noodle ul li:nth-of-type(15),
+.food_wrap .sub_drinks #ad_btn2:checked ~ .show_drinks ul li:nth-of-type(11),
+.food_wrap .sub_drinks #ad_btn2:checked ~ .show_drinks ul li:nth-of-type(12),
+.food_wrap .sub_drinks #ad_btn2:checked ~ .show_drinks ul li:nth-of-type(13),
+.food_wrap .sub_drinks #ad_btn2:checked ~ .show_drinks ul li:nth-of-type(14),
+.food_wrap .sub_drinks #ad_btn2:checked ~ .show_drinks ul li:nth-of-type(15) {
+  margin-top: 50px;
+}
+.food_wrap .sub_noodle #ad_btn:checked ~ .show_noodle .add_btn,
+.food_wrap .sub_drinks #ad_btn2:checked ~ .show_drinks .add_btn2 {
+  display: none;
+}
+.food_wrap .sub_noodle #ad_btn:checked ~ .show_noodle ul label {
+  background-color: #d32400;
+  color: #fff;
+}
+.food_wrap .sub_noodle #ad_btn:checked ~ .show_noodle {
+  display: block;
+  transition: 1s;
+}
+.food_wrap .sub_drinks #ad_btn2:checked ~ .show_drinks ul label {
+  background-color: #d32400;
+  color: #fff;
+}
+.food_wrap .sub_drinks #ad_btn2:checked ~ .show_drinks {
+  display: block;
+  transition: 1s;
+}
+.food_wrap .food {
+  display: none;
+}
+.food_wrap .food .show_noodle ul {
+}
+.food_wrap .food h3 {
+  margin: 50px 0;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+.food_wrap .food ul li {
+  float: left;
+  width: 164px;
+  height: 160px;
+}
+.food_wrap .food ul li:before {
+  position: absolute;
+  top: -6px;
+  left: 0;
+  background-color: red;
+  font-size: 0.7em;
+  width: auto;
+  height: 20px;
+  line-height: 20px;
+  color: #fff;
+  border-radius: 30px;
+  padding: 0 8px;
+  font-weight: 700;
+}
+.food_wrap .sub_noodle ul li img {
+  width: 100%;
+  height: 125px;
+}
 .food_wrap .sub_noodle .show_noodle ul li:nth-of-type(11),
 .food_wrap .sub_noodle .show_noodle ul li:nth-of-type(12),
 .food_wrap .sub_noodle .show_noodle ul li:nth-of-type(13),
 .food_wrap .sub_noodle .show_noodle ul li:nth-of-type(14),
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(15){margin-top: 150px;}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(15) {
+  margin-top: 150px;
+}
 .food_wrap .sub_drinks .show_drinks ul li:nth-of-type(11),
 .food_wrap .sub_drinks .show_drinks ul li:nth-of-type(12),
 .food_wrap .sub_drinks .show_drinks ul li:nth-of-type(13),
 .food_wrap .sub_drinks .show_drinks ul li:nth-of-type(14),
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(15){margin-top: 150px;}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(1):after{content:'팔도 부대찌개라면';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(2):after{content:'팔도 사리면';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(3):after{content:'팔도 불짬뽕';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(4):after{content:'틈새라면';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(5):after{content:'일품해물라면';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(6):after{content:'팔도 탄탄면';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(7):after{content:'쫄비빔면';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(8):after{content:'체다치즈 틈새라면';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(9):after{content:'팔도 비빔면';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(10):after{content:'팔도 막국수라면';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(11):after{content:'봉희설렁탕면';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(12):after{content:'진국설렁탕면';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(13):after{content:'맵시면';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(14):after{content:'볼케이노 꼬꼬볶음면';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(15):after{content:'팔도 짜장면';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(16):after{content:'꼬꼬면';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(17):after{content:'팔도 도시락';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(18):after{content:'놀부 부대찌개라면';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(19):after{content:'남자라면';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(20):after{content:'일품짜장면';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(21):after{content:'왕뚜껑';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(22):after{content:'김치 왕뚜껑';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(23):after{content:'짬뽕 왕뚜껑';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(24):after{content:'가쓰오우동 왕뚜껑';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(25):after{content:'철판볶음면 왕뚜껑';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(26):after{content:'볶음김치면';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(27):after{content:'BIG3 볶음김치면';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(28):after{content:'뽀로로짜장';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(29):after{content:'일품해물라면 (컵)';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(30):after{content:'푸짐한 왕컵';}
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(10):before{content:'신제품';}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(15) {
+  margin-top: 150px;
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(1):after {
+  content: "팔도 부대찌개라면";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(2):after {
+  content: "팔도 사리면";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(3):after {
+  content: "팔도 불짬뽕";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(4):after {
+  content: "틈새라면";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(5):after {
+  content: "일품해물라면";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(6):after {
+  content: "팔도 탄탄면";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(7):after {
+  content: "쫄비빔면";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(8):after {
+  content: "체다치즈 틈새라면";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(9):after {
+  content: "팔도 비빔면";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(10):after {
+  content: "팔도 막국수라면";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(11):after {
+  content: "봉희설렁탕면";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(12):after {
+  content: "진국설렁탕면";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(13):after {
+  content: "맵시면";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(14):after {
+  content: "볼케이노 꼬꼬볶음면";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(15):after {
+  content: "팔도 짜장면";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(16):after {
+  content: "꼬꼬면";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(17):after {
+  content: "팔도 도시락";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(18):after {
+  content: "놀부 부대찌개라면";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(19):after {
+  content: "남자라면";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(20):after {
+  content: "일품짜장면";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(21):after {
+  content: "왕뚜껑";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(22):after {
+  content: "김치 왕뚜껑";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(23):after {
+  content: "짬뽕 왕뚜껑";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(24):after {
+  content: "가쓰오우동 왕뚜껑";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(25):after {
+  content: "철판볶음면 왕뚜껑";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(26):after {
+  content: "볶음김치면";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(27):after {
+  content: "BIG3 볶음김치면";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(28):after {
+  content: "뽀로로짜장";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(29):after {
+  content: "일품해물라면 (컵)";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(30):after {
+  content: "푸짐한 왕컵";
+}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(10):before {
+  content: "신제품";
+}
 .food_wrap .sub_noodle .show_noodle ul li:nth-of-type(3):before,
 .food_wrap .sub_noodle .show_noodle ul li:nth-of-type(6):before,
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(15):before{content:'중화요리 시리즈'; background-color: #ED4C00;}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(15):before {
+  content: "중화요리 시리즈";
+  background-color: #ed4c00;
+}
 .food_wrap .sub_noodle .show_noodle ul li:nth-of-type(7):before,
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(9):before{content:'비빔면시리즈'; background-color: #002187;}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(9):before {
+  content: "비빔면시리즈";
+  background-color: #002187;
+}
 .food_wrap .add_btn,
-.food_wrap .add_btn2{position: absolute; top: 440px; left: 50%; margin-left: -100px; text-align: center; font-size: 1.3em; letter-spacing: 6px;}
+.food_wrap .add_btn2 {
+  position: absolute;
+  top: 440px;
+  left: 50%;
+  margin-left: -100px;
+  text-align: center;
+  font-size: 1.3em;
+  letter-spacing: 6px;
+}
 .food_wrap .add_btn label,
-.food_wrap .add_btn2 label{position: relative; width: 200px; height: 50px; line-height: 50px; margin: 0 auto; border:1px dashed #d32400; border-radius: 50px; font-weight: 700; padding-right: 15px;}
+.food_wrap .add_btn2 label {
+  position: relative;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  margin: 0 auto;
+  border: 1px dashed #d32400;
+  border-radius: 50px;
+  font-weight: 700;
+  padding-right: 15px;
+}
 .food_wrap .add_btn label:hover,
-.food_wrap .add_btn2 label:hover{background-color: #d32400; color:#fff;}
+.food_wrap .add_btn2 label:hover {
+  background-color: #d32400;
+  color: #fff;
+}
 .food_wrap .add_btn label:after,
-.food_wrap .add_btn2 label:after{content:'+'; position: absolute; top: 0; right: 40px;background-size: 100% 100%; width: 15px; height: 15px;}
-.food_wrap .sub_noodle .show_noodle{position: relative; margin-top: 50px;}
+.food_wrap .add_btn2 label:after {
+  content: "+";
+  position: absolute;
+  top: 0;
+  right: 40px;
+  background-size: 100% 100%;
+  width: 15px;
+  height: 15px;
+}
+.food_wrap .sub_noodle .show_noodle {
+  position: relative;
+  margin-top: 50px;
+}
 .food_wrap .sub_noodle .show_noodle ul li:nth-of-type(21):before,
 .food_wrap .sub_noodle .show_noodle ul li:nth-of-type(22):before,
 .food_wrap .sub_noodle .show_noodle ul li:nth-of-type(23):before,
 .food_wrap .sub_noodle .show_noodle ul li:nth-of-type(24):before,
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(25):before{content:'왕뚜껑 시리즈'; background-color: #FFE400; color:#000;}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(25):before {
+  content: "왕뚜껑 시리즈";
+  background-color: #ffe400;
+  color: #000;
+}
 .food_wrap .sub_noodle .show_noodle ul li:nth-of-type(16) img,
 .food_wrap .sub_noodle .show_noodle ul li:nth-of-type(17) img,
 .food_wrap .sub_noodle .show_noodle ul li:nth-of-type(18) img,
 .food_wrap .sub_noodle .show_noodle ul li:nth-of-type(19) img,
-.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(20) img{width: 100px; margin: 0 auto;}
+.food_wrap .sub_noodle .show_noodle ul li:nth-of-type(20) img {
+  width: 100px;
+  margin: 0 auto;
+}
 
 /***********************음료브랜드*************************/
-.food_wrap .sub_drinks{}
-.food_wrap .sub_drinks ul{margin: 0 40px;}
-.food_wrap .sub_drinks ul li{position: relative; text-align: center;}
-.food_wrap .sub_drinks ul li:nth-of-type(n+6){margin-top: 50px;}
-.food_wrap .sub_drinks ul li:not(:nth-of-type(5n+1)){margin-left: 50px;}
-.food_wrap .sub_drinks ul li:after{position: absolute; bottom: 0; left: 0; width: 100%; font-weight: 700; color: #4C4C4C; font-size: 1.05em;}
-.food_wrap .sub_drinks ul li img{width: 70%; margin: 0 auto;}
-.food_wrap .sub_drinks ul li+li{}
-.food_wrap .sub_drinks ul li img{}
-.food_wrap .sub_drinks .show_drinks{position: relative;}
-.food_wrap .sub_drinks ul li:before{top: 70%; left: 50%; margin-left: -21%;}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(1):after{content:'비락 오미자';}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(2):after{content:'비락 수정과';}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(3):after{content:'비락 식혜';}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(4):after{content:'밥알없는 식혜';}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(5):after{content:'비락 헛개식혜';}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(6):after{content:'단호박식혜';}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(7):after{content:'뽀롱뽀롱 초코롱';}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(8):after{content:'산타페 헤이즐넛';}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(9):after{content:'산타페 오리지널';}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(10):after{content:'산타페 카페바닐로';}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(11):after{content:'뽀로로 홍삼쏙쏙 (2종)';}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(12):after{content:'얼려먹는 뽀로로 (2종)';}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(13):after{content:'뽀로로 음료 (4종)';}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(14):after{content:'뽀로로 보리차';}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(15):after{content:'뽀로로 샘물';}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(16):after{content:'지리산 맑은샘';}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(17):after{content:'쿠퍼스 헛개차';}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(18):after{content:'녹차두유';}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(19):after{content:'비락 생칡즙';}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(20):after{content:'비락 진홍삼';}
+.food_wrap .sub_drinks {
+}
+.food_wrap .sub_drinks ul {
+  margin: 0 40px;
+}
+.food_wrap .sub_drinks ul li {
+  position: relative;
+  text-align: center;
+}
+.food_wrap .sub_drinks ul li:nth-of-type(n + 6) {
+  margin-top: 50px;
+}
+.food_wrap .sub_drinks ul li:not(:nth-of-type(5n + 1)) {
+  margin-left: 50px;
+}
+.food_wrap .sub_drinks ul li:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  font-weight: 700;
+  color: #4c4c4c;
+  font-size: 1.05em;
+}
+.food_wrap .sub_drinks ul li img {
+  width: 70%;
+  margin: 0 auto;
+}
+.food_wrap .sub_drinks ul li + li {
+}
+.food_wrap .sub_drinks ul li img {
+}
+.food_wrap .sub_drinks .show_drinks {
+  position: relative;
+}
+.food_wrap .sub_drinks ul li:before {
+  top: 70%;
+  left: 50%;
+  margin-left: -21%;
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(1):after {
+  content: "비락 오미자";
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(2):after {
+  content: "비락 수정과";
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(3):after {
+  content: "비락 식혜";
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(4):after {
+  content: "밥알없는 식혜";
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(5):after {
+  content: "비락 헛개식혜";
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(6):after {
+  content: "단호박식혜";
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(7):after {
+  content: "뽀롱뽀롱 초코롱";
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(8):after {
+  content: "산타페 헤이즐넛";
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(9):after {
+  content: "산타페 오리지널";
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(10):after {
+  content: "산타페 카페바닐로";
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(11):after {
+  content: "뽀로로 홍삼쏙쏙 (2종)";
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(12):after {
+  content: "얼려먹는 뽀로로 (2종)";
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(13):after {
+  content: "뽀로로 음료 (4종)";
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(14):after {
+  content: "뽀로로 보리차";
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(15):after {
+  content: "뽀로로 샘물";
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(16):after {
+  content: "지리산 맑은샘";
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(17):after {
+  content: "쿠퍼스 헛개차";
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(18):after {
+  content: "녹차두유";
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(19):after {
+  content: "비락 생칡즙";
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(20):after {
+  content: "비락 진홍삼";
+}
 .food_wrap .sub_drinks .show_drinks ul li:nth-of-type(3):before,
 .food_wrap .sub_drinks .show_drinks ul li:nth-of-type(4):before,
 .food_wrap .sub_drinks .show_drinks ul li:nth-of-type(5):before,
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(6):before{content:'식혜 시리즈'; background-color: #FFE400; color:#000;}
-.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(17):before{content:'신제품';}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(6):before {
+  content: "식혜 시리즈";
+  background-color: #ffe400;
+  color: #000;
+}
+.food_wrap .sub_drinks .show_drinks ul li:nth-of-type(17):before {
+  content: "신제품";
+}
 
 /***********************뉴스&공지사항*************************/
-.tit_2{margin: 70px 0 30px 0; font-weight: 700; font-size: 1.5em;}
-table.news{width: 100%;}
-table.news tr{border-top: 1px solid #BDBDBD; display: table-row !important;}
-table.news tr th{text-align: center; height: 50px;}
-table.news tr td{padding: 15px 0; text-align: center;}
-table.news tr td.num{font-weight: 700;}
-table.news tr td.subject{text-align: left;}
-table.news thead{}
-table.news thead tr{border-top: 1px solid #8C8C8C; font-weight: 700; background-color: #f5f5f5;}
-table.news thead tr th{}
-table.news tbody{}
-table.news tbody tr{}
-table.news tbody tr:last-child{border-bottom: 1px solid #8C8C8C;}
-.paging{overflow: hidden; margin: 40px 0 0 358px}
-.paging>div{overflow: hidden; float: left;}
-.paging label{float: left; text-align: center; font-size: 0.8em;}
-.paging .arrow_l label{border:1px solid #ddd; background: url(../img/icon/icon_arrow_left.png) 11px 10px no-repeat; background-size: 20%; background-color: #f8f8f8; width: 32px; height: 32px;}
-.paging .arrow_r label{border:1px solid #ddd; background: url(../img/icon/icon_arrow_right.png) 12px 11px no-repeat; background-size: 20%; background-color: #f8f8f8; width: 32px; height: 32px;}
-.paging .pg_num{margin-left: 5px;}
-.paging .pg_num ul{}
-.paging .pg_num ul li{position: relative; float: left; width: 32px; height: 32px; }
-.paging .pg_num ul li label{position: absolute; top: 25%; left: 50%; margin-left: -7px; width: 15px; height: 18px;}
-.paging .pg_num ul li label:not(:nth-of-type(1)){margin-left: 5px;}
-.paging .pg_num ul li label:hover{border-bottom: 1px solid #d32400; color:#d32400;}
-.paging .arrow_r{margin-left: 5px;}
-#btn_left:checked~.paging .pg_num ul li:nth-of-type(1) label,
-#btn_right:checked~.paging .pg_num ul li:nth-of-type(2) label{border-bottom: 1px solid #d32400; color:#d32400; font-weight: 700;}
-#btn_left:checked~.paging .pg_num ul li:nth-of-type(1) label,
-#btn_right:checked~.paging .pg_num ul li:nth-of-type(2) label{border-bottom: 1px solid #d32400; color:#d32400; font-weight: 700;}
-
+.tit_2 {
+  margin: 70px 0 30px 0;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+table.news {
+  width: 100%;
+}
+table.news tr {
+  border-top: 1px solid #bdbdbd;
+  display: table-row !important;
+}
+table.news tr th {
+  text-align: center;
+  height: 50px;
+}
+table.news tr td {
+  padding: 15px 0;
+  text-align: center;
+}
+table.news tr td.num {
+  font-weight: 700;
+}
+table.news tr td.subject {
+  text-align: left;
+}
+table.news thead {
+}
+table.news thead tr {
+  border-top: 1px solid #8c8c8c;
+  font-weight: 700;
+  background-color: #f5f5f5;
+}
+table.news thead tr th {
+}
+table.news tbody {
+}
+table.news tbody tr {
+}
+table.news tbody tr:last-child {
+  border-bottom: 1px solid #8c8c8c;
+}
+.paging {
+  overflow: hidden;
+  margin: 40px 0 0 358px;
+}
+.paging > div {
+  overflow: hidden;
+  float: left;
+}
+.paging label {
+  float: left;
+  text-align: center;
+  font-size: 0.8em;
+}
+.paging .arrow_l label {
+  border: 1px solid #ddd;
+  background: url(../img/icon/icon_arrow_left.png) 11px 10px no-repeat;
+  background-size: 20%;
+  background-color: #f8f8f8;
+  width: 32px;
+  height: 32px;
+}
+.paging .arrow_r label {
+  border: 1px solid #ddd;
+  background: url(../img/icon/icon_arrow_right.png) 12px 11px no-repeat;
+  background-size: 20%;
+  background-color: #f8f8f8;
+  width: 32px;
+  height: 32px;
+}
+.paging .pg_num {
+  margin-left: 5px;
+}
+.paging .pg_num ul {
+}
+.paging .pg_num ul li {
+  position: relative;
+  float: left;
+  width: 32px;
+  height: 32px;
+}
+.paging .pg_num ul li label {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  margin-left: -7px;
+  width: 15px;
+  height: 18px;
+}
+.paging .pg_num ul li label:not(:nth-of-type(1)) {
+  margin-left: 5px;
+}
+.paging .pg_num ul li label:hover {
+  border-bottom: 1px solid #d32400;
+  color: #d32400;
+}
+.paging .arrow_r {
+  margin-left: 5px;
+}
+#btn_left:checked ~ .paging .pg_num ul li:nth-of-type(1) label,
+#btn_right:checked ~ .paging .pg_num ul li:nth-of-type(2) label {
+  border-bottom: 1px solid #d32400;
+  color: #d32400;
+  font-weight: 700;
+}
+#btn_left:checked ~ .paging .pg_num ul li:nth-of-type(1) label,
+#btn_right:checked ~ .paging .pg_num ul li:nth-of-type(2) label {
+  border-bottom: 1px solid #d32400;
+  color: #d32400;
+  font-weight: 700;
+}
 
 /***********************이벤트*************************/
-table.event{width: 100%; height: 300px;}
-table.event tr{border-top: 1px solid #BDBDBD;}
-table.event tr th{text-align: center; }
-table.event tr td{}
-table.event tr td p:nth-of-type(1){font-weight: 700; font-size: 1.2em; line-height: 30px; margin: -5px 0 5px 0;}
-table.event tr td p:nth-of-type(1) a{letter-spacing: -1px;}
-table.event tr td.img{text-align: center;}
-table.event tr td.img img{display: block; width: 300px; padding: 20px 0;}
-table.event tr td.subject{text-align: left;}
-table.event tr td.subject p span{}
-table.event tr td.subject p span:nth-child(1){position: relative; margin-right: 28px; font-size: 0.8em; color:#000;}
-table.event tr td.subject p span:nth-child(1):after{content:':'; position: absolute; top: 1px; right: -17px; font-weight: 700;}
-table.event tr td.subject p span:nth-child(2){font-size: 0.8em; color:#8C8C8C;}
-table.event thead{}
-table.event thead tr{border-top: 1px solid black;}
-table.event tr:nth-of-type(2){border-bottom: 1px solid #BDBDBD;}
-table.event thead tr th{}
-table.event tbody{}
-table.event tbody tr{}
-#btn_l:checked~.paging .pg_num ul li:nth-of-type(1) label,
-#btn_r:checked~.paging .pg_num ul li:nth-of-type(2) label{border-bottom: 1px solid #d32400; color:#d32400; font-weight: 700;}
-#btn_l:checked~.paging .pg_num ul li:nth-of-type(1) label,
-#btn_r:checked~.paging .pg_num ul li:nth-of-type(2) label{border-bottom: 1px solid #d32400; color:#d32400; font-weight: 700;}
+table.event {
+  width: 100%;
+  height: 300px;
+}
+table.event tr {
+  border-top: 1px solid #bdbdbd;
+}
+table.event tr th {
+  text-align: center;
+}
+table.event tr td {
+}
+table.event tr td p:nth-of-type(1) {
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 30px;
+  margin: -5px 0 5px 0;
+}
+table.event tr td p:nth-of-type(1) a {
+  letter-spacing: -1px;
+}
+table.event tr td.img {
+  text-align: center;
+}
+table.event tr td.img img {
+  display: block;
+  width: 300px;
+  padding: 20px 0;
+}
+table.event tr td.subject {
+  text-align: left;
+}
+table.event tr td.subject p span {
+}
+table.event tr td.subject p span:nth-child(1) {
+  position: relative;
+  margin-right: 28px;
+  font-size: 0.8em;
+  color: #000;
+}
+table.event tr td.subject p span:nth-child(1):after {
+  content: ":";
+  position: absolute;
+  top: 1px;
+  right: -17px;
+  font-weight: 700;
+}
+table.event tr td.subject p span:nth-child(2) {
+  font-size: 0.8em;
+  color: #8c8c8c;
+}
+table.event thead {
+}
+table.event thead tr {
+  border-top: 1px solid black;
+}
+table.event tr:nth-of-type(2) {
+  border-bottom: 1px solid #bdbdbd;
+}
+table.event thead tr th {
+}
+table.event tbody {
+}
+table.event tbody tr {
+}
+#btn_l:checked ~ .paging .pg_num ul li:nth-of-type(1) label,
+#btn_r:checked ~ .paging .pg_num ul li:nth-of-type(2) label {
+  border-bottom: 1px solid #d32400;
+  color: #d32400;
+  font-weight: 700;
+}
+#btn_l:checked ~ .paging .pg_num ul li:nth-of-type(1) label,
+#btn_r:checked ~ .paging .pg_num ul li:nth-of-type(2) label {
+  border-bottom: 1px solid #d32400;
+  color: #d32400;
+  font-weight: 700;
+}
 
 /***********************이벤트 페이지*************************/
-.event_pg{}
-.event_pg img{display: block; width: 700px; height: auto; margin: 50px auto;}
-.event_pg a{display: block; width: 140px; height: 40px; margin: 0 auto; line-height: 40px; font-weight: 700; text-align: center; background-color: #df0e00; color:#fff; font-size: 1.2em; box-shadow: 2px 2px 1px rgba(0,0,0,0.5); border-radius: 20px;}
+.event_pg {
+}
+.event_pg img {
+  display: block;
+  width: 700px;
+  height: auto;
+  margin: 50px auto;
+}
+.event_pg a {
+  display: block;
+  width: 140px;
+  height: 40px;
+  margin: 0 auto;
+  line-height: 40px;
+  font-weight: 700;
+  text-align: center;
+  background-color: #df0e00;
+  color: #fff;
+  font-size: 1.2em;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
