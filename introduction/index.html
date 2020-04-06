@@ -80,7 +80,7 @@
           </nav>
         </header>
       </div>
-      <div id="container" style="font-family: 'Jeju Gothic'">
+      <div id="container" style="font-family: 'Jeju Gothic';">
         <section id="Main" class="moving moving1">
           <div class="pg_1">
             <div class="txt">
@@ -366,20 +366,20 @@
     </div>
     <!-- /#wrap -->
     <script type="text/javascript">
-      (function() {
+      (function () {
         // 화면 스크롤 처리
         var $menu = $(".menuBtn"),
           $contents = $(".moving");
 
         $(window)
-          .scroll(function() {
+          .scroll(function () {
             var winSc = $(window).scrollLeft();
             $("#headerWrap").css("left", -winSc);
             var scltop = $(window).scrollTop();
 
             //                var clientsTop = $('.moving5').offset().top;
 
-            $.each($contents, function(idx) {
+            $.each($contents, function (idx) {
               var $target = $contents.eq(idx),
                 i = $target.index(),
                 targetTop = $target.offset().top;
@@ -391,9 +391,7 @@
                 //                    if (documentTop - windowTop == scltop){
                 $menu.removeClass("menuBg2");
                 //                        $menu.eq(4).addClass('menuBg2');
-                $(".menu")
-                  .find(".menuBtn:last")
-                  .addClass("menuBg2");
+                $(".menu").find(".menuBtn:last").addClass("menuBg2");
               } else if (targetTop <= scltop + 130) {
                 $menu.removeClass("menuBg2");
                 $menu.eq(idx).addClass("menuBg2");
@@ -403,8 +401,8 @@
           .scroll();
 
         var anim = {
-          set: function() {
-            $(".item").each(function() {
+          set: function () {
+            $(".item").each(function () {
               var O = $(this);
               var top = O.offset().top;
               O.attr("data-top", top);
@@ -419,7 +417,7 @@
               if (!ease) ease = "ease";
               if (isNaN(speed)) speed = 1;
               if (isNaN(delay)) delay = 0;
-              $(window).scroll(function() {
+              $(window).scroll(function () {
                 O.css(
                   "transition",
                   "all " + speed + "s " + ease + " " + delay + "s"
@@ -431,8 +429,8 @@
               O.addClass("type_" + type);
             });
           },
-          play: function() {
-            $(".item").each(function() {
+          play: function () {
+            $(".item").each(function () {
               var base = $(document).scrollTop() + $(window).height();
               var top = $(this).attr("data-top");
               var type = $(this).attr("data-type");
@@ -443,11 +441,11 @@
                 $(this).addClass("type_" + type);
               }
             });
-          }
+          },
         };
         anim.set();
         $(window)
-          .scroll(function() {
+          .scroll(function () {
             if ($(window).width() < 768) {
               return false;
             }
@@ -456,7 +454,7 @@
           .scroll();
 
         $(window)
-          .resize(function() {
+          .resize(function () {
             if (window.innerWidth < 768) {
               $(".type_up").removeClass("type_up");
               $(".type_left").removeClass("type_left");
@@ -465,14 +463,12 @@
           })
           .resize();
 
-        $(".main_nav_btn a").on("click", function() {
+        $(".main_nav_btn a").on("click", function () {
           var nm = $(this).attr("href");
 
           var offset = $(nm).offset().top;
 
-          $("html, body")
-            .stop()
-            .animate({ scrollTop: offset }, 800);
+          $("html, body").stop().animate({ scrollTop: offset }, 800);
 
           // $('.main_nav_btn li a').css({
           // 	"color" : "#000"
@@ -486,7 +482,7 @@
         });
       })();
 
-      (function() {
+      (function () {
         // 포트폴리오 버튼 처리
 
         var pf_list = [
@@ -497,8 +493,8 @@
             work: "2019. 03. 22  ~ 2019. 04. 26",
             tool: "HTML5, CSS3, Javascript, Jquery",
             view_W: "./img/pf_10.jpg",
-            view_M: "./img/m_pf_10.png",
-            url1: "https://bigissue.kr"
+            view_M: "./img/m_pf_10.jpg",
+            url1: "https://bigissue.kr",
           },
           {
             name: "CMS Admin | Part : Dashboard, board, comment, User, Setting",
@@ -506,7 +502,7 @@
             descript: "홈페이지 리뉴얼 제작 및 유지/보수",
             work: "2019. 01. 10 ~ 2019. 03. 21",
             tool: "HTML5, CSS3, Javascript, Jquery",
-            view_W: "./img/pf_11.png"
+            view_W: "./img/pf_11.jpg",
             // view_M : './img/m_pf_10.png',
             // url1 : '',
           },
@@ -518,7 +514,7 @@
             tool: "HTML5, CSS3, Javascript, Jquery",
             view_W: "./img/pf_9.jpg",
             view_M: "./img/m_pf_9.jpg",
-            url1: "https://publishsoft.io"
+            url1: "https://publishsoft.io",
           },
           {
             name: "토큰포스트 위키 TokenPost Wiki",
@@ -529,7 +525,7 @@
             tool: "HTML5, CSS3, Javascript, Jquery",
             // view_W : './img/pf_9.jpg',
             // view_M : './img/m_pf_9.jpg',
-            url1: "https://publishsoft.io"
+            url1: "https://publishsoft.io",
           },
           {
             name: "퍼플 스완 PURPLE SWAN",
@@ -539,7 +535,7 @@
             tool: "HTML5, CSS3, Javascript, Jquery",
             view_W: "./img/pf_8.jpg",
             view_M: "./img/m_pf_8.jpg",
-            url1: "http://purpleswan.io"
+            url1: "http://purpleswan.io",
           },
           {
             name: "위즈덤 콘서트 WISDOM CONCERT",
@@ -548,8 +544,8 @@
             work: "2018. 10. 27 ~ 2018. 11. 14",
             tool: "HTML5, CSS3, Javascript, Jquery",
             view_W: "./img/pf_7.jpg",
-            view_M: "./img/m_pf_7.png",
-            url1: "http://purpleswan.io/wisdomconcert"
+            view_M: "./img/m_pf_7.jpg",
+            url1: "http://purpleswan.io/wisdomconcert",
           },
           {
             name: "팔도 PALDO",
@@ -558,9 +554,10 @@
             work: "2018. 07. 10 ~ 2018. 08. 05",
             tool: "HTML5, CSS3, Javascript, Jquery, Photoshop, Illustrator",
             view_W: "./img/pf_1.jpg",
-            view_M: "./img/m_pf_1.png",
+            view_M: "./img/m_pf_1.jpg",
             url1: "https://sungnung.github.io/portfolio/paldo/web/index.html",
-            url2: "https://sungnung.github.io/portfolio/paldo/mobile/index.html"
+            url2:
+              "https://sungnung.github.io/portfolio/paldo/mobile/index.html",
           },
           {
             name: "레드락 RED-ROCK",
@@ -568,8 +565,8 @@
             descript: "리뉴얼 기획 및 디자인",
             work: "2018. 08. 06 ~ 2018. 08. 30",
             tool: "HTML5, CSS3, Javascript, Jquery, Photoshop, Illustrator",
-            view_W: "./img/pf_2.png",
-            view_M: "./img/m_pf_2.png"
+            view_W: "./img/pf_2.jpg",
+            view_M: "./img/m_pf_2.jpg",
             // url1: "http://may.dothome.co.kr/portfolio/redrock/index.php"
           },
           {
@@ -578,16 +575,17 @@
             descript: "기획 및 디자인",
             work: "2018. 08. 31 ~ 2018. 09. 05",
             tool: "HTML5, CSS3, Photoshop, Illustrator",
-            view_W: "./img/pf_3.png",
+            view_W: "./img/pf_3.jpg",
             // view_M: "./img/m_pf_3.png",
-            url1: "https://sungnung.github.io/portfolio/introduction/index.html"
+            url1:
+              "https://sungnung.github.io/portfolio/introduction/index.html",
           },
           {
             name: "수박씨닷컴 soobakc",
             descript: "기존 홈페이지 카피작업",
             work: "2018. 08. 20 ~ 2018. 08. 29",
             tool: "HTML5, CSS3, Photoshop, Illustrator",
-            view_W: "./img/pf_4.jpg"
+            view_W: "./img/pf_4.jpg",
             // view_M: "./img/m_pf_4.png"
             // url1: "http://may.dothome.co.kr/portfolio/soobakc/"
           },
@@ -596,7 +594,7 @@
             descript: "기존 홈페이지 카피작업",
             work: "2018. 08. 01 ~ 2018. 08. 17",
             tool: "HTML5, CSS3, Photoshop, Illustrator",
-            view_W: "./img/pf_5.jpg"
+            view_W: "./img/pf_5.jpg",
             // view_M: "./img/m_pf_5.png"
             // url1: "http://may.dothome.co.kr/portfolio/naver/"
           },
@@ -605,15 +603,15 @@
             descript: "기존 홈페이지 카피작업",
             work: "2018. 07. 11 ~ 2018. 07. 31",
             tool: "HTML5, CSS3, Photoshop, Illustrator",
-            view_W: "./img/pf_6.jpg"
+            view_W: "./img/pf_6.jpg",
             // view_M: "./img/m_pf_6.png"
             // url1: "http://may.dothome.co.kr/portfolio/coupang/"
-          }
+          },
         ];
 
         var idx = 0;
 
-        $(".btn_area p").click(function() {
+        $(".btn_area p").click(function () {
           if (!$(this).hasClass("active")) return false;
 
           $(".btn_area p").addClass("active");
@@ -621,17 +619,12 @@
           if ($(this).index() == 0) {
             idx--;
             if (!pf_list[idx]) idx++;
-            if (idx == 0)
-              $(".btn_area p")
-                .eq(0)
-                .removeClass("active");
+            if (idx == 0) $(".btn_area p").eq(0).removeClass("active");
           } else {
             idx++;
             if (!pf_list[idx]) idx--;
             if (idx == pf_list.length - 1)
-              $(".btn_area p")
-                .eq(1)
-                .removeClass("active");
+              $(".btn_area p").eq(1).removeClass("active");
           }
 
           var O = pf_list[idx];
@@ -664,7 +657,7 @@
         });
 
         $(window)
-          .resize(function() {
+          .resize(function () {
             var O = pf_list[idx];
 
             var W = $(window).width();
