@@ -1,0 +1,24 @@
+
+/* CSS RESET */
+* {margin: 0; padding: 0; color: inherit; font-family: inherit; font-size: 1em; font-style: inherit; font-weight: inherit;  font-family: '맑은 고딕', sans-serif; text-decoration: inherit; border: 0 solid transparent; outline: 0; box-sizing: border-box; background-color: transparent; background-repeat: no-repeat; }
+b, strong {font-weight: bold;}
+::before,::after {border: 0 solid transparent;}
+ul,ol {list-style: none;}
+table {table-layout: fixed; border-collapse: collapse;}
+[type=button],[type=submit],[type=reset],button,a,label {cursor: pointer;}
+:only-child {display: block; width: 100%;} /*깨짐 방지를 하고자 중복으로 써주는 것*/
+
+/* COMMON */
+.clearfix:after {content: ""; display: block; clear: both;}
+.ellipsis {display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+.hidden {display: none;}
+.bold {font-weight: bold;}
+
+/* GLOBAL */
+body {display: inline-block; min-width: 100%; font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif;}
+.inner {position: relative;}
+.inner:after {content: ""; display: block; clear: both;}
+#wrap{overflow: hidden;}
+
+.bg_01{background-image: url(../img/bg_01.png); text-indent: -9999px;}
+.bg_02{background-image: url(../img/bg_02.png); text-indent: -9999px;}
