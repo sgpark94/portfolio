@@ -20,17 +20,17 @@ header nav ul li {
 	float: left;
 	margin-left: 20px;
 }
-header nav ul li a {
+header nav ul li span{
 	display: block;
 	height: 40px;
 	line-height: 40px;
 	color: #000;
 	font-size: 1.2em;
 }
-header nav ul li a:hover {
+header nav ul li span:hover {
 	color: #0B7903;
 }
-header .menuBg2 a{
+header .menuBg2 span{
 	color: rgb(11, 121, 3);
 }
 
@@ -286,7 +286,7 @@ section{
 #History .cnt ul{
 	position: relative;
 	width: 2px;
-	height: 840px;
+	height: 960px;
 	margin-left: 50%;
 	background-color: #000;
 }
@@ -324,6 +324,9 @@ section{
 }
 #History .cnt ul li:nth-of-type(8){
 	top:840px;
+}
+#History .cnt ul li:nth-of-type(9){
+	top:960px;
 }
 #History .cnt ul li .history_txt{
 	position: absolute;
@@ -491,15 +494,15 @@ section{
 	width: 40%;
 	margin-left: 10%;
 }
-#container section .cnt form dl.submit{
+#container section .cnt form div{
 	margin-top: 20px;
 	text-align: right;
 }
-#container section .cnt form dl.submit input{
+#container section .cnt form [type="submit"]{
 	border: 1px dashed #333;
 	padding: 10px 20px;
 }
-#container section .cnt form dl.submit input:hover{
+#container section .cnt form [type="submit"]:hover{
 	color:#fff;
 	border-color: #333;
 	background-color: #747474;
@@ -555,6 +558,11 @@ section{
 .pg_1 .txt{
 	padding-top: 30px;
 }
+.pg_1 .txt h2{
+	text-align: center;
+	font-size: 2em;
+	letter-spacing: 4px;
+}
 .pg_1 .txt p{
 	text-align: center;
 	font-size: 2em;
@@ -578,14 +586,28 @@ section{
 .pg_1 .third,
 .pg_1 .fourth{
 	position: absolute;
-	bottom: -7px;
-	right: -7px;
 	width: 14px;
 	height: 14px;
 	background-color: #434462;
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
 	border-radius: 10px;
+}
+.pg_1 .first{
+	bottom: -7px;
+	right: -7px;
+}
+.pg_1 .second{
+	bottom: -7px;
+	left: -7px;
+}
+.pg_1 .third{
+	top: -7px;
+	right: -7px;
+}
+.pg_1 .fourth{
+	top: -7px;
+	left: -7px;
 }
 .pg_1 i{
 	display: block;
