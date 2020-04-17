@@ -99,7 +99,7 @@
 .ramen .m_ramen ul li:nth-of-type(30):after{content:'뽀로로짜장';}
 .ramen .m_ramen ul li:nth-of-type(31):after{content:'일품해물라면 (컵)';}
 .ramen .m_ramen ul li:nth-of-type(32):after{content:'푸짐한 왕컵';}
-.ramen .m_ramen ul li:nth-of-type(7)~li {display: none;} /*.ramen .m_ramen ul li 8번째~31번째까지 선택*/
+.ramen .m_ramen ul li:nth-of-type(7)~li {display: none;}
 .ramen .m_ramen ul li:nth-of-type(7){margin-top: 10px;}
 .ramen #r_btn:checked~.m_ramen ul li:nth-of-type(7)~li {display: block;}
 .ramen #r_btn:checked~.m_ramen ul li.btn {display: none;}

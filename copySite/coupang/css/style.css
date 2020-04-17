@@ -291,8 +291,6 @@ footer .copy .sns a {float: left; margin-right: 8px; width: 34px; height: 34px; 
 #recent_item .section_cnt #recent_item_tab_04:checked~ul li.recent_item_04 .btn:after{content:"";}
 
 #recent_item .section_cnt>ul>li .btn label{display: block; padding: 18px; height: 102px;}
-/*#recent_item .section_cnt ul li .btn label .thumb {width: 66px; height: 66px; float: left;}
-#recent_item .section_cnt ul li .btn label .info{font-size: 11px;}*/ /*float때문에 m-l가 안 먹는다. */
 #recent_item .section_cnt>ul>li .btn label .thumb {float: left;}
 #recent_item .section_cnt>ul>li .btn label .info{float: left; padding-left: 10px; font-size: 11px; width: 141px;}
 #recent_item .section_cnt>ul>li .btn label .info .tit{margin-top: 3px;}
@@ -300,14 +298,14 @@ footer .copy .sns a {float: left; margin-right: 8px; width: 34px; height: 34px; 
 #recent_item .section_cnt>ul>li .btn label .info i{color:#0073e9;}
 #recent_item .section_cnt>ul>li .btn label .info i:hover{text-decoration: underline;}
 
-#recent_item .section_cnt>ul>li .cnt{display: none; position: absolute; top: 103px; left: 0; right: 0; bottom: 0; border:1px solid #0085da; padding: 0 29px;}/*#recent_item .section_cnt ul -> position:relative, ul말고 li에 주면 하나하나 다 잡아줘야함. 그리고 li에 주면 border 줄 때가 문제가 생겨서 label이나 .btn에 준다.*/
+#recent_item .section_cnt>ul>li .cnt{display: none; position: absolute; top: 103px; left: 0; right: 0; bottom: 0; border:1px solid #0085da; padding: 0 29px;}
 #recent_item .section_cnt>ul>li .cnt h4{height: 39px; background-position: 0 -35px;}
 #recent_item .section_cnt>ul>li .cnt ul{}
 #recent_item .section_cnt>ul>li .cnt ul li{float: left; width: 168px;}
 #recent_item .section_cnt>ul>li .cnt ul li+li{margin-left: 20px;}
-#recent_item .section_cnt>ul>li .cnt ul li a{overflow: hidden; display: block;} /*overflow: hidden; -> 왜 주지 a태그가 price 부분까지 인식하기 위한 것이라는데.....??*/
+#recent_item .section_cnt>ul>li .cnt ul li a{overflow: hidden; display: block;}
 #recent_item .section_cnt>ul>li .cnt ul li a .thumb{display: block; border:1px solid #ddd;}
-#recent_item .section_cnt>ul>li .cnt ul li a .thumb img{display: block;} /*img버그 해체를 위해 작성*/
+#recent_item .section_cnt>ul>li .cnt ul li a .thumb img{display: block;}
 #recent_item .section_cnt>ul>li .cnt ul li a .info{}
 #recent_item .section_cnt>ul>li .cnt ul li a .info .tit{margin-top: 12px; color:#111; font-size: 12px;}
 #recent_item .section_cnt>ul>li .cnt ul li a .info .price{float: left; font-size: 14px; margin-top: 8px;}
@@ -318,7 +316,7 @@ footer .copy .sns a {float: left; margin-right: 8px; width: 34px; height: 34px; 
 
 #hot_trend {}
 #hot_trend h3 {width: 230px; height: 52px; background: url(../img/hot_trend.png) 0 0; text-indent: -9999px;}
-#hot_trend nav{position: absolute; left: 50%; bottom: 10px; transform: translateX(-50%); font-size: 0; white-space: nowrap;} /*transform: translate(-50%) -> 버튼의 개수와 상관없이 무조건 중앙정렬됨*/
+#hot_trend nav{position: absolute; left: 50%; bottom: 10px; transform: translateX(-50%); font-size: 0; white-space: nowrap;}
 #hot_trend nav label{display: inline-block; width: 10px; height: 10px; background-color: #000; border-radius:5px; opacity: 0.3;}
 #hot_trend .section_cnt .trend_list .trend_visual nav i{animation: trend_nav 18s infinite;;}
 #hot_trend .section_cnt .trend_list .trend_visual:hover nav i{animation-play-state: paused;}
@@ -342,7 +340,7 @@ footer .copy .sns a {float: left; margin-right: 8px; width: 34px; height: 34px; 
 #hot_trend .section_cnt .trend_list .trend_tit_area dl dd a{font-size: 12px; line-height: 28px;}
 #hot_trend .section_cnt .trend_list .trend_tit_area dl dd a:before{content:"#";}
 
-#hot_trend .section_cnt .trend_list .trend_visual{overflow: hidden; position: relative; float: left; width: 325px; height: 100%;} /*#hot_trend nav{position: absolute;} 에 대한 po-r*/
+#hot_trend .section_cnt .trend_list .trend_visual{overflow: hidden; position: relative; float: left; width: 325px; height: 100%;}
 #hot_trend .section_cnt .trend_list .trend_visual ul{}
 #hot_trend .section_cnt .trend_list .trend_visual:hover ul li{animation-play-state: paused;}
 #hot_trend .section_cnt .trend_list .trend_visual ul li{position: absolute; top: 0; left: 1000%; animation: trend_visual 18s infinite;}
@@ -385,7 +383,7 @@ footer .copy .sns a {float: left; margin-right: 8px; width: 34px; height: 34px; 
 #hot_trend .section_cnt .trend_list .trend_cnt ul li:nth-child(6n+1),
 #hot_trend .section_cnt .trend_list .trend_cnt ul li:nth-child(6n+2),
 #hot_trend .section_cnt .trend_list .trend_cnt ul li:nth-child(6n+3){border-bottom: 1px solid #ddd;}
-#hot_trend .section_cnt .trend_list .trend_cnt ul li a{padding: 22px 8px 0 15px; height: 292px;} /*li에 padding넣으면 padding 부분은 클릭이 안되니까 a태그에 padding 주기*/
+#hot_trend .section_cnt .trend_list .trend_cnt ul li a{padding: 22px 8px 0 15px; height: 292px;}
 #hot_trend .section_cnt .trend_list .trend_cnt ul li a .thumb{}
 #hot_trend .section_cnt .trend_list .trend_cnt ul li a .info{}
 #hot_trend .section_cnt .trend_list .trend_cnt ul li a .info .tit{display: block; margin-top: 6px; color:#111; font-size: 12px;}
@@ -456,7 +454,7 @@ footer .copy .sns a {float: left; margin-right: 8px; width: 34px; height: 34px; 
 #beauty .trend_visual ul li a em{}
 
 /* KEYFRAMES */
-@keyframes trend_visual{ /*6s*/
+@keyframes trend_visual{
 	0% {left: 0;}
 	16.665% {left: 0;}
 	16.666% {left: 100%;}
@@ -468,5 +466,3 @@ footer .copy .sns a {float: left; margin-right: 8px; width: 34px; height: 34px; 
 	16.666% {opacity: 0.3;}
 	100% {opacity: 0.3;}
 }
-
-/* MEDIAQUERY */

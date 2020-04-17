@@ -16,7 +16,7 @@ b, strong {font-weight: bold;}
 ul,ol {list-style: none;}
 table {table-layout: fixed; border-collapse: collapse;}
 [type=button],[type=submit],[type=reset],button,a,label {cursor: pointer;}
-:only-child {display: block; width: 100%;} /*깨짐 방지를 하고자 중복으로 써주는 것*/
+:only-child {display: block; width: 100%;}
 
 /* COMMON */
 /*html {font-family: 'Roboto', 'Nanum Gothic', sans-serif;}*/

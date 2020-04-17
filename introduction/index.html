@@ -99,12 +99,10 @@
                   <p>https://sungnung.github.io/</p>
                </div>
             </div>
-            <!-- /.pg_1 -->
             <div class="long_line">
                <span>MY LITTLE STORY</span>
             </div>
          </section>
-         <!-- /.Main -->
          <section id="Skills" class="moving moving2">
             <div class="inner">
                <div class="tit_wrap">
@@ -286,7 +284,6 @@
                </div>
             </div>
          </section>
-
          <section id="Contact" class="moving moving5">
             <div class="inner">
                <div class="tit_wrap">
@@ -333,19 +330,14 @@
                         </div>
                      </form>
                   </div>
-                  <!-- /.item -->
                </div>
-               <!-- /.cnt -->
             </div>
-            <!-- /.inner -->
          </section>
       </div>
-      <!-- /#container -->
       <footer>
          <p>Copyright © Seul Gi Park. All rights reserved.</p>
       </footer>
    </div>
-   <!-- /#wrap -->
    <script>
    var idx = 0;
    var pf_list = [{
@@ -518,17 +510,14 @@
 
    var webSize = 'W';
 
-   // 이미지 유무에 따른 height css 처리
    function heightChange(item) {
       var substring = 'noImage';
       if (item['pf_view_' + webSize].indexOf(substring) > 0) {
-         // 이미지 없는 경우
          $("#Portfolio .cnt .pc_wrap .pc .pc_screen a").css(
             "height",
             "100%"
          );
       } else {
-         // 이미지 있는 경우
          $("#Portfolio .cnt .pc_wrap .pc .pc_screen a").css(
             "height",
             "auto"
@@ -576,14 +565,10 @@
    };
 
    (function() {
-      // 포트폴리오 버튼 처리
       $(".btn_area p").click(function() {
          var value = $(this).data('value');
-
          if (!$(this).hasClass("active")) return false;
-
          idx += value;
-
          slideFunc();
       });
 
@@ -608,11 +593,10 @@
          heightChange(pf_list[idx]);
       }).resize();
 
-      slideFunc(); // 강제적으로 처음에 실행시켜 준 것.
+      slideFunc();
    })();
 
    (function() {
-      // 화면 스크롤 처리
       var $menu = $(".menuBtn"),
          $contents = $(".moving");
 
