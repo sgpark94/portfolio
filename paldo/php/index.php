@@ -5,8 +5,8 @@
 			<div class="inner_ban" style="background-image: url(./img/big_banner/banner_1.png);"></div>
 			<div class="inner_ban" style="background-image: url(./img/big_banner/banner_2.png);"></div>
 			<div class="inner_ban" style="background-image: url(./img/big_banner/banner_3.png);"></div>
-		</div><!-- /.big_banner -->
-	</div> <!-- /.visual -->
+		</div
+	</div>
 	<div class="prod_intro">
 		<h1>
 			<span>제품소개</span><br>
@@ -112,8 +112,8 @@
 						</li>
 					</ul>
 				</div>
-			</div> <!-- /.inner -->
-		</div> <!-- /.noodle_img -->
+			</div>
+		</div>
 		<div class="drink_img img">
 			<div class="inner">
 				<input type="radio" name="drink_noodle_ar" id="pg_01" class="hidden" checked>
@@ -207,8 +207,8 @@
 					</ul>
 				</div>
 			</div> 
-		</div> <!-- /.drink_img -->
-	</div> <!-- /.prod_intro -->
+		</div>
+	</div>
 	<div class="cf">
 		<h3>
 			<span>소리까지 즐거운 </span>
@@ -222,19 +222,19 @@
 				<div class="click_btn clearfix">
 					<label for="cf_ramen" class="ramen_btn">라면</label>
 					<label for="cf_drink" class="drink_btn">음료</label>
-					<!-- <label for="cf_add" class="add_btn">더보기</label> -->
+				
 				</div>
 				<div class="cf_frm clearfix">
 					<section>
 						<div class="inner">
 							<iframe src="https://www.youtube.com/embed/minp-KMqL1o"></iframe>
 							<iframe src="https://www.youtube.com/embed/NFnEPyXapEQ"></iframe>
-						</div> <!-- /.inner -->
+						</div>
 					</section>
-				</div> <!-- /.cf_frm -->
-			</div> <!-- /.tit -->
-		</div> <!-- /.inner -->
-	</div> <!-- /.cf -->
+				</div>
+			</div>
+		</div>
+	</div>
 	<div class="instagram">
 		<h3>#PALDO</h3>
 		<div class="insta_img">
@@ -281,9 +281,9 @@
 						</span>
 					</a>
 				</div>
-			</div> <!-- /.inner -->
+			</div>
 		</div>
-	</div> <!-- /.instagram -->
+	</div>
 	<div class="sns">
 		<div class="inner">
 			<div class="btn_naver">
@@ -390,5 +390,5 @@
 			</div>
 		</div>
 	</div>
-</div> <!-- /.container -->
+</div>
 <?php include_once './inc/footer_main.php'?>

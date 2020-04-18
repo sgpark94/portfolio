@@ -1,9 +1,4 @@
 
-/************************ header ************************/
-
-/************************ footer ************************/
-
-/************************ container ************************/
 #container{
 	padding-bottom: 50px;
 }
@@ -139,9 +134,6 @@
 	border-radius: 50px;
 	font-weight: 700;
 }
-#container .prod_intro .noodle_img{
-
-}
 #container .prod_intro .noodle_img #pg_1:checked~.noodle_arrow .btn_1,
 #container .prod_intro .noodle_img #pg_2:checked~.noodle_arrow .btn_2,
 #container .prod_intro .noodle_img #pg_3:checked~.noodle_arrow .btn_3,
@@ -185,9 +177,6 @@
 #container .prod_intro #drink:checked~.drink_img{
 	display: block;
 }
-#container .prod_intro .img .noodle_arrow{
-
-}
 #container .prod_intro .img .arrow label{
 	display: none;
 	position: absolute;
@@ -230,9 +219,6 @@
 }
 #container .prod_intro .img .wrap .frm li+li{
 	margin-left: 50px;
-}
-#container .prod_intro .img .wrap .frm li a{
-
 }
 #container .prod_intro .img .wrap .frm li a img{
 	width: 160px;
@@ -654,9 +640,6 @@
 #container .sub_banner .news{
 	float: left;
 }
-#container .sub_banner .news .news_cnt{
-
-}
 #container .sub_banner .news .news_cnt ul{
 	width: 300px;
 }
@@ -674,9 +657,6 @@
 }
 #container .sub_banner .news .news_cnt ul li:nth-of-type(3) a span.thumb{
 	background-image: url('./../img/thumb_3.png');
-}
-#container .sub_banner .news .news_cnt ul li a{
-
 }
 #container .sub_banner .news .news_cnt ul li a span.thumb{
 	float:left;
@@ -708,9 +688,6 @@
 }
 #container .sub_banner .new_product{
 	float: left;
-}
-#container .sub_banner .new_product .prod{
-
 }
 #container .sub_banner .new_product #pg_001:checked~.prod .prod_img .img_btn .btn_wrap label:nth-child(1),
 #container .sub_banner .new_product #pg_002:checked~.prod .prod_img .img_btn .btn_wrap label:nth-child(2){
@@ -777,4 +754,3 @@
 #container .sub_banner .new_product .prod .prod_img .img_btn label+label{
 	margin-left: 10px;
 }
-/************************ media_query ************************/

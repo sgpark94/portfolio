@@ -5,7 +5,6 @@
 /* HEADER */
 header {position: relative; z-index: 11;}
 header .hd_top {background-color: #f0f0f0;}
-header .hd_top ul {}
 header .hd_top ul.top_l {float: left; margin-left: 12px;}
 header .hd_top ul.top_r {float: right; margin-right: 37px;}
 header .hd_top ul li {float: left; position: relative; height: 32px;}
@@ -44,7 +43,6 @@ header .hd_cnt .category .nv_cnt ul.depth_2 li p {padding-left: 20px; width: 100
 header .hd_cnt .category .nv_cnt ul.depth_3 {display: none; position: absolute; top: 0; bottom: 0; left: 157px; z-index: 3; border-left: 1px solid #ddd;}
 header .hd_cnt .category .nv_cnt ul.depth_2>li:hover ul.depth_3 {display: block;}
 header .hd_cnt .cnt_main {float: left; margin: 28px 0 0 30px; }
-header .hd_cnt .cnt_main .search_wrap {}
 header .hd_cnt .cnt_main .search_wrap h1 {float: left; margin-top: 2px;}
 header .hd_cnt .cnt_main .search_wrap h1 a {display: block; width: 174px; height: 41px; text-indent: -9999px; background-image: url(../img/logo_00.png); background-size: 100% 100%;}
 header .hd_cnt .cnt_main .search_wrap .search {float: left; margin-left: 20px; width: 522px; height: 41px; border: 2px solid #4285f4;}
@@ -55,7 +53,6 @@ header .hd_cnt .cnt_main .search_wrap .search .search_select :not(:checked)~.sel
 header .hd_cnt .cnt_main .search_wrap .search .search_select :checked~.select_btn:after {margin-top: -9px; border-bottom-color: #999;}
 header .hd_cnt .cnt_main .search_wrap .search .search_select .select_list {display: none; overflow-y: scroll; position: absolute; top: 37px; left: -2px; right: -1px; padding: 10px 0; height: 782px; border: 1px solid #ddd; box-shadow: 0 4px 5px rgba(0,0,0,0.3); background-color: #fff;}
 header .hd_cnt .cnt_main .search_wrap .search .search_select :checked~.select_list {display: block;}
-header .hd_cnt .cnt_main .search_wrap .search .search_select .select_list ul {}
 header .hd_cnt .cnt_main .search_wrap .search .search_select .select_list ul li {font-size: 12px; letter-spacing: -1px; padding: 7px 0 7px 13px; cursor: pointer;}
 header .hd_cnt .cnt_main .search_wrap .search .search_select .select_list ul li:hover {color: #008cff; text-decoration: underline;}
 header .hd_cnt .cnt_main .search_wrap .search .search_txt {float: left;}
@@ -92,11 +89,9 @@ header .hd_cnt .cnt_my div .pop_list a:hover {color: #4285F4; text-decoration: u
 header .hd_cnt .cnt_my div .pop_list span {font-size: 12px; line-height: 70px; white-space: nowrap;}
 
 #bestmenu {position: fixed; top: 42px; left: 50%; z-index: 11; margin-left: -556px; width: 36px; border: 1px solid #ddd;}
-#bestmenu .best_list {}
 #bestmenu .best_list a {overflow: hidden; display: block; width: 34px; height: 34px; font-size: 12px; color: white; white-space: nowrap; text-indent: 44px; line-height: 34px; background-image: url(../img/hot_nav.png); background-position-x: -1px;}
 #bestmenu .best_list a:not(:hover) {background-color: #fff !important;}
 #bestmenu .best_list a:hover {width: 154px; background-position-x: -51px;}
-#bestmenu .best_set {}
 #bestmenu .best_set .set_btn {display: block; width: 34px; height: 55px; border-top: 1px solid #ddd; background-color: #fafafa; background-position: 0px -265px;}
 #bestmenu .best_set .set_list {display: none; position: absolute; top: 0; left: 100%; margin-left: 10px; width: 302px; border: 1px solid #ddd; background-color: #fff;}
 #bestmenu .best_set :checked~.set_list {display: block;}
@@ -107,7 +102,6 @@ header .hd_cnt .cnt_my div .pop_list span {font-size: 12px; line-height: 70px; w
 #bestmenu .best_set .set_list .set_list_top p span {display: block; padding-top: 4px; color: #888; font-size: 11px;}
 #bestmenu .best_set .set_list .set_list_top [type='reset'] {float: right; width: 62px; height: 100%; color: #555;  font-size: 12px; background-color: #fafafa;}
 #bestmenu .best_set .set_list .set_list_mid {padding: 0 20px;}
-#bestmenu .best_set .set_list .set_list_mid ul {}
 #bestmenu .best_set .set_list .set_list_mid ul li {text-indent: 0; border-bottom: 1px solid #ddd; background-image: url(../img/bg_03.png); background-position-x: 226px, 48px;}
 #bestmenu .best_set .set_list .set_list_mid ul li label {overflow: hidden; padding-left: 20px; display: block;}
 #bestmenu .best_set .set_list .set_list_mid ul li label [type='checkbox'] {float: left; margin-top: 13px;}
@@ -121,14 +115,11 @@ header .hd_cnt .cnt_my div .pop_list span {font-size: 12px; line-height: 70px; w
 /* FOOTER */
 footer {border-top: 2px solid #ddd;}
 footer .fz11 {font-size: 11px;}
-footer .ft_top {}
 footer .ft_top nav {padding-top: 15px; height: 49px; text-align: center;}
 footer .ft_top nav a {padding: 0 35px; color: #555; font-size: 12px;}
 footer .ft_top nav a+a {border-left: 1px solid #888;}
 footer .ft_cnt {border-top: 1px solid #ddd;}
-footer .ft_cnt>div {}
 footer .ft_cnt .cnt_info {overflow: hidden; margin: 30px 0; color: #555; font-size: 12px; line-height: 1.5;}
-footer .ft_cnt .cnt_info p {}
 footer .ft_cnt .cnt_info a {text-decoration: underline;}
 footer .ft_cnt .cnt_info>* {float: left;}
 footer .ft_cnt .cnt_info h2 {width: 150px;}
@@ -175,19 +166,15 @@ footer .copy .sns a {float: left; margin-right: 8px; width: 34px; height: 34px; 
 #visual .bg_6 {background-image: url(../img/visual_06.jpg);}
 #visual .visual_bg a {text-indent: -9999px;}
 
-#content {}
 #content section {padding-top: 40px;}
-#content section h3 {}
 #content section .section_cnt {margin-top: 15px;}
 
 #content aside {position: absolute; top: 65px; right: -90px; z-index: 1; width: 102px;}
 #content aside .aside_ad {display: block;}
 #content aside .my_view {margin-top: 10px;}
 #content aside .my_view i {position: absolute; top: 0; right: 14px; text-indent: 0; color: #3abbff; font-family: Arial; font-size: 12px; font-weight: bold; line-height: 33px;}
-#content aside .my_view .my_cart {}
 #content aside .my_view .my_cart a {position: relative; display: block; height: 33px; background-position: -31px 0;}
 #content aside .my_view .my_cart a:hover {background-position-y: -33px;}
-#content aside .my_view .my_recent {}
 #content aside .my_view .my_recent>.tit {position: relative; height: 33px; background-position: -31px -66px;}
 #content aside .my_view .my_recent .cnt {border-width: 0 1px 1px 1px; border-color: #ddd;}
 #content aside .my_view .my_recent .cnt ul {position: relative; padding: 10px 0 8px; margin: auto; width: 76px; height: 346px;}
@@ -269,7 +256,6 @@ footer .copy .sns a {float: left; margin-right: 8px; width: 34px; height: 34px; 
 
 #recent_item {padding-right: 40px;}
 #recent_item h3 {height: 25px; background-position: 0 0;}
-#recent_item .section_cnt {}
 #recent_item .section_cnt>ul{position: relative; overflow: hidden; height: 403px;}
 #recent_item .section_cnt>ul>li{float: left; width: 25%; }
 #recent_item .section_cnt>ul>li .btn{position: relative; border:1px solid #ddd; border-bottom: 0;}
@@ -300,13 +286,11 @@ footer .copy .sns a {float: left; margin-right: 8px; width: 34px; height: 34px; 
 
 #recent_item .section_cnt>ul>li .cnt{display: none; position: absolute; top: 103px; left: 0; right: 0; bottom: 0; border:1px solid #0085da; padding: 0 29px;}
 #recent_item .section_cnt>ul>li .cnt h4{height: 39px; background-position: 0 -35px;}
-#recent_item .section_cnt>ul>li .cnt ul{}
 #recent_item .section_cnt>ul>li .cnt ul li{float: left; width: 168px;}
 #recent_item .section_cnt>ul>li .cnt ul li+li{margin-left: 20px;}
 #recent_item .section_cnt>ul>li .cnt ul li a{overflow: hidden; display: block;}
 #recent_item .section_cnt>ul>li .cnt ul li a .thumb{display: block; border:1px solid #ddd;}
 #recent_item .section_cnt>ul>li .cnt ul li a .thumb img{display: block;}
-#recent_item .section_cnt>ul>li .cnt ul li a .info{}
 #recent_item .section_cnt>ul>li .cnt ul li a .info .tit{margin-top: 12px; color:#111; font-size: 12px;}
 #recent_item .section_cnt>ul>li .cnt ul li a .info .price{float: left; font-size: 14px; margin-top: 8px;}
 #recent_item .section_cnt #recent_item_tab_01:checked~ul li.recent_item_01 .cnt{display: block;}
@@ -314,7 +298,6 @@ footer .copy .sns a {float: left; margin-right: 8px; width: 34px; height: 34px; 
 #recent_item .section_cnt #recent_item_tab_03:checked~ul li.recent_item_03 .cnt{display: block;}
 #recent_item .section_cnt #recent_item_tab_04:checked~ul li.recent_item_04 .cnt{display: block;}
 
-#hot_trend {}
 #hot_trend h3 {width: 230px; height: 52px; background: url(../img/hot_trend.png) 0 0; text-indent: -9999px;}
 #hot_trend nav{position: absolute; left: 50%; bottom: 10px; transform: translateX(-50%); font-size: 0; white-space: nowrap;}
 #hot_trend nav label{display: inline-block; width: 10px; height: 10px; background-color: #000; border-radius:5px; opacity: 0.3;}
@@ -327,7 +310,6 @@ footer .copy .sns a {float: left; margin-right: 8px; width: 34px; height: 34px; 
 #hot_trend .section_cnt .trend_list .trend_visual nav label:nth-child(5){animation-delay: 12s;}
 #hot_trend .section_cnt .trend_list .trend_visual nav label:nth-child(6){animation-delay: 15s;}
 #hot_trend nav label+label{margin-left: 10px;}
-#hot_trend .section_cnt {}
 #hot_trend .section_cnt .trend_list{height: 603px; border-width: 2px 0 1px; border-bottom-color:#ddd;}
 #hot_trend .section_cnt .trend_list+.trend_list{margin-top: 20px;}
 #hot_trend .section_cnt .trend_list .trend_tit_area{position: relative; padding-left: 22px; float: left; width: 145px; height: 100%; color:#888; border-right:1px solid #ddd;}
@@ -341,7 +323,6 @@ footer .copy .sns a {float: left; margin-right: 8px; width: 34px; height: 34px; 
 #hot_trend .section_cnt .trend_list .trend_tit_area dl dd a:before{content:"#";}
 
 #hot_trend .section_cnt .trend_list .trend_visual{overflow: hidden; position: relative; float: left; width: 325px; height: 100%;}
-#hot_trend .section_cnt .trend_list .trend_visual ul{}
 #hot_trend .section_cnt .trend_list .trend_visual:hover ul li{animation-play-state: paused;}
 #hot_trend .section_cnt .trend_list .trend_visual ul li{position: absolute; top: 0; left: 1000%; animation: trend_visual 18s infinite;}
 #hot_trend .section_cnt .trend_list .trend_visual ul li:nth-child(1){animation-delay: 0s;}
@@ -350,7 +331,6 @@ footer .copy .sns a {float: left; margin-right: 8px; width: 34px; height: 34px; 
 #hot_trend .section_cnt .trend_list .trend_visual ul li:nth-child(4){animation-delay: 9s;}
 #hot_trend .section_cnt .trend_list .trend_visual ul li:nth-child(5){animation-delay: 12s;}
 #hot_trend .section_cnt .trend_list .trend_visual ul li:nth-child(6){animation-delay: 15s;}
-#hot_trend .section_cnt .trend_list .trend_visual ul li+li{}
 #hot_trend .section_cnt .trend_list .trend_visual ul li a{position: relative;}
 #hot_trend .section_cnt .trend_list .trend_visual ul li a img{display: block;}
 #hot_trend .section_cnt .trend_list .trend_visual ul li a em{position: absolute; left: 22px; bottom: 50px; padding: 20px 22px; width: 280px; color:#fff; text-align: center; opacity: 0.9;}
@@ -384,8 +364,6 @@ footer .copy .sns a {float: left; margin-right: 8px; width: 34px; height: 34px; 
 #hot_trend .section_cnt .trend_list .trend_cnt ul li:nth-child(6n+2),
 #hot_trend .section_cnt .trend_list .trend_cnt ul li:nth-child(6n+3){border-bottom: 1px solid #ddd;}
 #hot_trend .section_cnt .trend_list .trend_cnt ul li a{padding: 22px 8px 0 15px; height: 292px;}
-#hot_trend .section_cnt .trend_list .trend_cnt ul li a .thumb{}
-#hot_trend .section_cnt .trend_list .trend_cnt ul li a .info{}
 #hot_trend .section_cnt .trend_list .trend_cnt ul li a .info .tit{display: block; margin-top: 6px; color:#111; font-size: 12px;}
 #hot_trend .section_cnt .trend_list .trend_cnt ul li a:hover .info .tit{color:#0085da; text-decoration: underline;}
 #hot_trend .section_cnt .trend_list .trend_cnt ul li a .info .total{color:#888; font-size: 11px;}
@@ -393,7 +371,6 @@ footer .copy .sns a {float: left; margin-right: 8px; width: 34px; height: 34px; 
 #hot_trend .section_cnt .trend_list .trend_cnt ul li a .info .total:not(:empty):after{content:"종";}
 #hot_trend .section_cnt .trend_list .trend_cnt ul li a .info .price{display: block; margin-top: 8px; font-size: 14px;}
 #hot_trend .section_cnt .trend_list .trend_cnt ul li a .info .price:after{font-family: '돋움', Dotum, sans-serif; font-size: 11px; font-weight: normal;}
-#hot_trend .section_cnt .trend_list .trend_cnt .trend_arrow{}
 #hot_trend .section_cnt .trend_list .trend_cnt .trend_arrow label{display: none; position: absolute; top: 50%; margin-top: -25px; width: 30px; height: 50px; background-position-y: -13px; text-indent: -9999px;}
 #hot_trend .section_cnt .trend_list .trend_cnt:hover #fashion_W_view_01:checked~.trend_arrow label.pg_01,
 #hot_trend .section_cnt .trend_list .trend_cnt:hover #fashion_W_view_02:checked~.trend_arrow label.pg_02,
@@ -417,7 +394,6 @@ footer .copy .sns a {float: left; margin-right: 8px; width: 34px; height: 34px; 
 #hot_trend .section_cnt .trend_list .trend_cnt:hover #fashion_B_view_05:checked~.trend_arrow label.pg_05{display: block;}
 #hot_trend .section_cnt .trend_list .trend_cnt .trend_arrow label.prev{left: 0; background-position-x: 0;}
 #hot_trend .section_cnt .trend_list .trend_cnt .trend_arrow label.next{right: 0; background-position-x: -50px;}
-#hot_trend .section_cnt .trend_list .trend_cnt nav {}
 #hot_trend .section_cnt .trend_list .trend_cnt #fashion_W_view_01:checked~nav label:nth-child(1),
 #hot_trend .section_cnt .trend_list .trend_cnt #fashion_W_view_01:checked~nav label:nth-child(2),
 #hot_trend .section_cnt .trend_list .trend_cnt #fashion_W_view_01:checked~nav label:nth-child(3),
@@ -447,11 +423,7 @@ footer .copy .sns a {float: left; margin-right: 8px; width: 34px; height: 34px; 
 #fashion_M dl dd{color: #1992df;}
 #fashion_M .trend_visual ul li a em{background-color: #1992df;}
 
-#fashion_B dl dd{}
-#fashion_B .trend_visual ul li a em{}
 
-#beauty dl dd{}
-#beauty .trend_visual ul li a em{}
 
 /* KEYFRAMES */
 @keyframes trend_visual{
@@ -465,4 +437,3 @@ footer .copy .sns a {float: left; margin-right: 8px; width: 34px; height: 34px; 
 	16.665% {opacity: 0.6;}
 	16.666% {opacity: 0.3;}
 	100% {opacity: 0.3;}
-}

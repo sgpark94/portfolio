@@ -28,7 +28,6 @@
 #container .prod_intro .food_wrap label:hover{position: relative; background-position-y: -78px; background-color: #464646; transition: background-color 1s; border-radius: 50px;}
 #container .prod_intro #noodle:checked~.food_wrap .noodle{position: relative; background-position-y: -78px; background-color: #464646; transition: background-color 1s; border-radius: 50px; font-weight: 700;}
 #container .prod_intro #drink:checked~.food_wrap .drink{position: relative; background-position-y: -78px; background-color: #464646; transition: background-color 1s; border-radius: 50px; font-weight: 700;}
-#container .prod_intro .noodle_img{}
 #container .prod_intro .noodle_img #pg_1:checked~.noodle_arrow .btn_1,
 #container .prod_intro .noodle_img #pg_2:checked~.noodle_arrow .btn_2,
 #container .prod_intro .noodle_img #pg_3:checked~.noodle_arrow .btn_3,
@@ -48,7 +47,6 @@
 #container .prod_intro .img{display: none;}
 #container .prod_intro #noodle:checked~.noodle_img,
 #container .prod_intro #drink:checked~.drink_img{display: block;}
-#container .prod_intro .img .noodle_arrow{}
 #container .prod_intro .img .arrow label{display: none; position: absolute; top: 50%; margin-top: -20px; width: 40px; height: 40px; background-size: 100%; opacity: 0.2;}
 #container .prod_intro .img .arrow label:hover{opacity: 1; transition: opacity 1s;}
 #container .prod_intro .img .arrow label.prev{left: -100px; background-image: url(./../img/icon/icon_arrow_l.png);}
@@ -57,7 +55,6 @@
 #container .prod_intro .img .wrap .frm{width: 1790px; transition: margin-left 1s;}
 #container .prod_intro .img .wrap .frm li{float: left; width: 180px;}
 #container .prod_intro .img .wrap .frm li+li{margin-left: 50px;}
-#container .prod_intro .img .wrap .frm li a{}
 #container .prod_intro .img .wrap .frm li a img{width: 160px; height: 120px; margin-left: 10px;}
 #container .prod_intro .img .wrap .noodle_frm li:nth-of-type(3){position: relative;}
 #container .prod_intro .img .wrap .noodle_frm li:nth-of-type(3):after{content:'신제품'; position:absolute; top: 0; left: 10px; width: 45px; height: 18px; line-height: 18px; border-radius: 10px; color:#fff; background-color: #FF2424; font-size:0.7em; text-align: center;}
@@ -136,21 +133,18 @@
 #container .sub_banner .event div{width: 300px; height: 340px; background-image: url(./../img/sub_banner_3_300x340.png);}
 #container .sub_banner .event div a{width: 100%; height: 100%; }
 #container .sub_banner .news{float: left;}
-#container .sub_banner .news .news_cnt{}
 #container .sub_banner .news .news_cnt ul{width: 300px;}
 #container .sub_banner .news .news_cnt ul li{height: 80px;}
 #container .sub_banner .news .news_cnt ul li+li{margin-top: 50px;}
 #container .sub_banner .news .news_cnt ul li:nth-of-type(1) a span.thumb{background-image: url(./../img/thumb_1.png);}
 #container .sub_banner .news .news_cnt ul li:nth-of-type(2) a span.thumb{background-image: url(./../img/thumb_2.jpg);}
 #container .sub_banner .news .news_cnt ul li:nth-of-type(3) a span.thumb{background-image: url(./../img/thumb_3.png);}
-#container .sub_banner .news .news_cnt ul li a{}
 #container .sub_banner .news .news_cnt ul li a span.thumb{float:left; width: 70px; height: 70px; background-size: 100% 100%;}
 #container .sub_banner .news .news_cnt ul li a span.news_txt{float:left; width: 230px; height:80px; padding-left: 20px; }
 #container .sub_banner .news .news_cnt ul li a span.news_txt em{float:left; font-size: 0.90em; margin-top: 10px; font-weight: 700;}
 #container .sub_banner .news .news_cnt ul li:nth-of-type(3) a span.news_txt em{margin-top: 20px;}
 #container .sub_banner .news .news_cnt ul li a span.news_txt i{float:left; font-size: 0.8em; margin-top: 8px; color:#8C8C8C;}
 #container .sub_banner .new_product{float: left;}
-#container .sub_banner .new_product .prod{}
 #container .sub_banner .new_product #pg_001:checked~.prod .prod_img .img_btn .btn_wrap label:nth-child(1),
 #container .sub_banner .new_product #pg_002:checked~.prod .prod_img .img_btn .btn_wrap label:nth-child(2){background-color: rgba(255,255,255,0.5);}
 #container .sub_banner .new_product #pg_001:checked~.prod .prod_img .img_wrap ul{margin-left: 0;}
