@@ -5,7 +5,6 @@
 .inner {margin: auto; width: 1200px; height: 100%;}
 
 /************************ header ************************/
-header{}
 /* header_top */
 header .hd_t{overflow: hidden; height: 40px; font-size: 0; border-bottom: 1px solid #ebecf0; border-top: 1px solid #ebecf0; background: #f6f6f6;}
 header .hd_t a{padding: 8px 0 9px 0; font-size: 14px; color: #323232; letter-spacing: -0.5px;}
@@ -32,7 +31,6 @@ header .hd_m h3{position: absolute; top: 0; left: 509px; background: url(./../im
 header .hd_m h3 a{width: 100%; height: 100%;}
 header .hd_m .search_area{float: right; height: 50px; margin: 25px 5px 0 0;}
 header .hd_m .search_area [type=text]{float: left; width: 225px; height: 100%; text-align: right; padding: 0 10px; font-size: 14px; color: #717171;}
-/*1학기 기말 시험특강에 focus했을 때 생기는 border*/
 header .hd_m .search_area [type=text]:focus{outline:2px solid #a6c8ff;}
 header .hd_m .search_area a{position: relative; float: left; width: 46px; height: 50px;}
 header .hd_m .search_area a span{position: absolute; top: 9px; left: 10px; float: left; width: 26px; height: 32px; background: url(./../img/bg_01.png) 0 -48px no-repeat;}
@@ -168,7 +166,6 @@ footer .ft_cnt ul li{position: relative; float: left; font-weight: bold; font-si
 footer .ft_cnt ul li+li:before{content:''; position: absolute; top: 5px; left: -15px; width: 1px; height: 11px; background-color: #ddd;}
 footer .ft_cnt ul li:nth-of-type(1){margin-left: 0;}
 footer .ft_cnt ul li:nth-of-type(9){margin-right: 0;}
-footer .ft_cnt ul li a{}
 footer .ft_cnt .addr{overflow: hidden; margin-top: 17px;}
 footer .ft_cnt .addr .addr_l{float: left; width: 636px; font-size: 0;}
 footer .ft_cnt .addr .addr_l span{color:#aaa; font-size: 12px; line-height: 19px;}
@@ -186,7 +183,6 @@ footer .ft_cnt .family_cnt .ft_cnt_b{float: left; width: 270px; padding-left: 20
 footer .ft_cnt .family_cnt dl{overflow: hidden; font-size: 12px; line-height: 20px;}
 footer .ft_cnt .family_cnt dl dt{float: left; width: 70px; color: #555658;}
 footer .ft_cnt .family_cnt dl dd{float: left; width: 180px; color: #8a8d90;}
-footer .ft_cnt .family_cnt dl dd a{}
 /************************ container ************************/
 #container{height: 2555px;}
 #container .big_banner{overflow: hidden; height: 430px; margin-top: 30px; }
@@ -250,7 +246,6 @@ footer .ft_cnt .family_cnt dl dd a{}
 #container .box_txt .box_wrap .add_wrap .col_2_float{position: absolute; top: 0; right: 0; z-index: 1; }
 #container .box_txt .box_wrap .add_wrap .col_2_float a{position: relative; display: block; font-size: 15px; color: #323232; font-weight: bold; text-align: center; background-color: #f3f3f3; border-bottom:1px solid #d7d7d7; width: 175px; height: 55px; padding-top: 16px; border-left:1px solid #d7d7d7;}
 #container .box_txt .box_wrap .add_wrap .col_2_float a:after{content:''; display: inline-block; width: 14px; height: 14px; background: url(./../img/bg_02.png) 0 -101px no-repeat; vertical-align: -2px; margin: 0 -20px 0 5px;}
-#container .box_txt .box_wrap .add_wrap .col_2_float a{}
 #container .box_txt .box_wrap .add_wrap ul.add{width: 700px; height: 110px; transition: margin-left 1s;}
 #container .box_txt .box_wrap .add_wrap ul.add li{float: left; width: 350px; height: 110px; background-color: #f3f3f3; }
 #container .box_txt .box_wrap .add_wrap ul.add li a{position: relative; float: left; padding-top: 16px; width: 175px; height: 55px; font-size: 15px; color:#323232; font-weight: bold; text-align: center;}
@@ -308,7 +303,6 @@ footer .ft_cnt .family_cnt dl dd a{}
 #container .column_3 .cnt_left .event .event_wrap .event_box img{width: 100%; height: 139px;}
 #container .column_3 .cnt_left .event .event_wrap .event_box .event_txt{height: 47px; padding: 13px 28px; letter-spacing: -1px; font-size: 13px; font-family: '맑은 고딕', sans-serif; border-top: 1px solid #d7d7d7;}
 #container .column_3 .cnt_left .event .event_wrap .event_box .event_txt span{font-weight: bold;}
-#container .column_3 .cnt_left .event .event_wrap .event_box .event_txt em{}
 #container .column_3 .cnt_right{position: relative; margin-left: 29px; float: left; width: 305px;}
 #container .column_3 .cnt_right .tit{height: 53px; font-size: 22px; color:#000; font-family: 'Noto Sans KR'; letter-spacing: -1.5px; border-bottom: 2px solid #000; padding: 11px 0 0 15px;}
 #container .column_3 .cnt_right>a{position: absolute; top: 18px; right: 0; width: 19px; height: 19px; background: url(./../img/bg_01.png) -129px -101px no-repeat;}
@@ -341,7 +335,6 @@ footer .ft_cnt .family_cnt dl dd a{}
 #container .column_4 #highsch:checked~.title .highsch:after,
 #container .column_4 .title label:hover:after{content:''; position: absolute; top: 100%; left: 0; right: 0; background-color: #fff; height: 1px;}
 #container .column_4 .title label:nth-child(1){border-left-width:1px;}
-#container .column_4 .title label a{}
 #container .column_4 .cnt_l_wrap{float: left;}
 #container .column_4 .cnt_l_wrap .cnt_l{display: none; float: left;}
 #container .column_4 #mid_1:checked~.cnt_l_wrap .cnt_l:nth-of-type(1),
@@ -406,7 +399,7 @@ footer .ft_cnt .family_cnt dl dd a{}
 #container .column_4 .cnt_l .sub_details .publisher ul li{float: left; width: 65px; color:#fff; font-size: 14px; color: #e9ecef; margin-bottom: 7px;}
 #container .column_4 .cnt_l .sub_details .publisher ul li:hover{text-decoration: underline; font-weight: bold;}
 #container .column_4 .cnt_l .subject_list .subject h3:hover{background-color: #7e838d;}
-/*****************col_5_선생님 이미지 기본셋팅*******************/
+
 #container .column_4 .cnt_l .cnt_img .tc{position: relative; float: left; width: 205px; height: 246px; margin-left: 10px; background-size: 350px auto; background-position: 50% 30px; border: 1px solid #dedfe3; background-color: #eaebef;}
 #container .column_4 .cnt_l .cnt_img .tc .img_txt{position: absolute; z-index: 11; width: 100%;}
 #container .column_4 .cnt_l .cnt_img .tc .img_txt:nth-child(1) span{float: left; color:#fff; font-size: 14px; font-weight: bold; padding: 10px 10px 0 11px;}
@@ -604,11 +597,6 @@ footer .ft_cnt .family_cnt dl dd a{}
 #container .column_5 .video_list ul li a span:nth-of-type(1){margin-top: 10px;}
 #container .column_5 .video_list ul li a span:nth-of-type(2){line-height: 22.5px;}
 #container .column_5 .video_list ul li a em{display: block; color: #2864b9; font-size: 15px;}
-#container .column_5 .video_list .video_1{}
-#container .column_5 .video_list .video_2{}
-#container .column_5 .video_list .video_3{}
-#container .column_5 .video_list .video_4{}
-#container .column_5 .video_list .video_5{}
 #container .column_5 .btn{float: right; margin: 10px 0 0 9px;}
 /*****************col_5_btn*******************/
 #container .column_5 .btn label{display: none;}
@@ -630,7 +618,6 @@ footer .ft_cnt .family_cnt dl dd a{}
 #container .column_6>a:after{content:''; position: absolute; top: 6px; right: -9px; width: 4px; height: 10px; background: url(./../img/bg_02.png) -78px -206px no-repeat;}
 #container .column_6 .txt_top{position: absolute; top: -20px; left: 330px; text-align: center; width: 540px; background-color: #fff;}
 #container .column_6 .txt_top span{font-size: 25px; font-family: 'Noto Sans KR';}
-#container .column_6 .txt_top span:nth-child(1){}
 #container .column_6 .txt_top span:nth-child(2){font-weight: 300;}
 #container .column_6 .stu_img{overflow: hidden; margin: 71px 0 0 80px;}
 #container .column_6 .stu_img .thumb{float: left; width: 116px; height: 116px; margin-right: 12px;}
@@ -664,7 +651,6 @@ footer .ft_cnt .family_cnt dl dd a{}
 #container .column_7 .col_l .info a{position: relative; display: block; font-size: 15px; font-weight: bold; padding: 7px 0 7px 18px; margin: 12px 0; border: 1px solid #d7d7d7; width: 185px;}
 #container .column_7 .col_l .info a:after{content:''; position: absolute; top: 50%; right: 14px; margin-top: -7px; width: 15px; height: 15px; background: url(./../img/bg_02.png) -104px -254px no-repeat;}
 #container .column_7 .col_m{float: left; width: 306px; margin-top: 15px;}
-#container .column_7 .col_m ul{}
 #container .column_7 .col_m ul li{position: relative; color:#323232; font-size: 15px; font-weight: bold; letter-spacing: -1px; padding: 10px 30px; border: 1px solid #d7d7d7;}
 #container .column_7 .col_m ul li:after{content:''; position: absolute; top: 50%; right: 21px; margin-top: -6px; width: 7px; height: 13px; background: url(./../img/bg_02.png) -78px -230px no-repeat;}
 #container .column_7 .col_m ul li+li{border-top-width: 0;}
@@ -678,16 +664,7 @@ footer .ft_cnt .family_cnt dl dd a{}
 #container .column_7 .col_r a:nth-of-type(2) span:nth-of-type(1){background-position: -104px -331px;}
 #container .column_7 .col_r a:nth-of-type(3) span:nth-of-type(1){background-position: -208px -331px;}
 #container .column_7 .col_r a span:nth-of-type(1){width: 90px; height: 90px;}
-#container .column_7 .col_r a span:nth-of-type(2){}
 #container .column_7 .col_r a span:nth-of-type(3){margin-top: 5px; color:#646464;}
-
-
-
-
-
-
-
-
 
 
 /************************ KEYFRAMES ************************/

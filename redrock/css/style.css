@@ -104,19 +104,6 @@ header nav .home{display: none;}
 .banner .content .product_wrap .pasta .tit span.big:after{background-image: url(../img/icon/icon_special.png); width: 30px; height: 30px;}
 .banner .content .events .tit span.big:after{background-image: url(../img/icon/icon_progress.png); width: 30px; height: 30px;}
 .banner .content .tit span em{display: inline-block; font-size: 0.6em; font-weight: 500;}
-/*.banner .content .menu{padding-top: 100px;}
-.banner .content .menu .txt_menu{font-size: 1.1em; float: left; height: 36px; line-height: 34px; width: 80px; border-color: #fff; border-width: 1.5px 0 1.5px 1.5px; padding-left: 10px;}
-.banner .content .menu .txt{position: relative; font-size: 1.1em; float: left; height: 36px; line-height: 34px; width: 150px; color:#fff; border-color: #fff; border-width: 1.5px; padding-left: 32px;}
-.banner .content .menu .txt .list {}
-.banner .content .menu .txt .list li {cursor: pointer;}
-.banner .content .menu .txt .list2 {position: absolute; top: 100%; left: 0; right: 0; z-index: 1; background-color: #ddd;}
-.banner .content .menu .txt .list2 li {cursor: pointer;}
-.banner .content .menu .txt .list2 li:hover {background-color: red;}
-.banner .content .menu .txt:after{content:''; position: absolute; z-index: 1; top: 7px; left: 10px; width: 16px; height: 16px; background-size: 100% 100%;}
-.banner .content .menu .txt_beers:after{background-image: url(../img/icon/icon_beer.png);}
-.banner .content .menu .txt_salads:after{background-image: url(../img/icon/icon_spoon.png);}
-.banner .content .menu .txt_events:after{background-image: url(../img/icon/icon_progress.png);}
-.banner .content .menu .txt_closed:after{background-image: url(../img/icon/icon_finish.png);}*/
 .banner .content .product_wrap .red_rock{width: 100%; margin: 60px 0 70px;}
 .banner .content .goose,
 .banner .content .ob{margin-top: 100px;}
@@ -189,7 +176,7 @@ header nav .home{display: none;}
 #btn_right:checked~.paging .pg_num ul li:nth-of-type(2) label{border-bottom: 1px solid #d32400; color:#d32400; font-weight: 700;}
 
 .banner .content .bx ul{overflow: hidden;}
-.banner .content .bx ul li{float: left; width: 18%; text-align: center; border: 1px solid #fff; /*border-color: #fff; border-style: solid; border-width: 1px 0 0 1px;*/ height: 40px; line-height: 40px;}
+.banner .content .bx ul li{float: left; width: 18%; text-align: center; border: 1px solid #fff; height: 40px; line-height: 40px;}
 .banner .content .bx ul li.active {background-color: #94162c;}
 .banner .content .bx ul li:not(:nth-child(5n+1)) {border-left: 0;}
 .banner .content .bx ul li:nth-child(5n)~li {border-top: 0;}
@@ -260,8 +247,6 @@ header nav .home{display: none;}
 /************************ media_query ************************/
 
 @media screen and (max-width:1280px){
-	
-
 	.banner .content .tit{margin-bottom: 50px;}
 	.banner .content .img_wrap .img{width: 40%;}
 	.banner .content .img_wrap .img+.img{margin-left: 0;}
@@ -274,7 +259,6 @@ header nav .home{display: none;}
 	.banner .content .redrock .tit span.big:after{width: 26px; height: 26px;}
 	.banner .content .events .tit span.big:after{width: 22px; height: 22px;}
 	.banner .content .product_wrap{padding-bottom: 110px;}
-	/*.banner .content .product_wrap .product{margin-top: 40px;}*/
 	.banner .content .product_wrap .salads .img_wrap .img:nth-child(n+3),
 	.banner .content .product_wrap .pizza .img_wrap .img:nth-child(n+3),
 	.banner .content .product_wrap .pasta .img_wrap .img:nth-child(n+3){margin-top: 30px;}
@@ -490,19 +474,6 @@ header nav .home{display: none;}
 
 	/************************ sub_beers ************************/
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /************************ media_query ************************/

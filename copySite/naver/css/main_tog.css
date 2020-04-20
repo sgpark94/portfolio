@@ -28,7 +28,7 @@ header .hd_cnt .search_area .search_bar .search_btn [type=submit] {height: 100%;
 header .hd_cnt .search_area .search_bar .auto_complete_pop {display: none; position: absolute; top: 43px; left: 0; right: 0; border: 1px solid #bec8d8; background-color: #fff;}
 header .hd_cnt .search_area .search_bar :checked~.auto_complete_pop {display: block;}
 header .hd_cnt .search_area .search_bar .auto_complete_pop .acp_cnt {padding: 17px 15px 15px; color: #666; font-size: 12px; line-height: 23px;}
-header .hd_cnt .search_area .search_bar .auto_complete_pop .acp_tail {padding: 8px 0; border-top: 1px solid #ebeef3; background-color: #f9fafc; color: #666; font-size: 11px; letter-spacing: -1px; line-height: 16px; text-align: rig0ht;}
+header .hd_cnt .search_area .search_bar .auto_complete_pop .acp_tail {padding: 8px 0; border-top: 1px solid #ebeef3; background-color: #f9fafc; color: #666; font-size: 11px; letter-spacing: -1px; line-height: 16px; text-align: right;}
 header .hd_cnt .search_area .search_bar .auto_complete_pop .acp_tail a {float: left; margin-left: 14px;}
 0
 header .hd_cnt .search_area .search_bar .auto_complete_pop .acp_tail a+a {position: relative;}
