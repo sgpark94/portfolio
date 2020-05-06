@@ -349,6 +349,73 @@ section{
 	padding-left: 20px;
 }
 
+.history{
+	position: relative;
+	float: right;
+	width: calc(100% - 730px);
+	margin-right: 100px;
+	padding: 70px 40px 0 50px;
+	background-color: #fff;
+	z-index: 2;
+}
+.history > div{
+	overflow: hidden;
+}
+.history .career{
+	float: left;
+	width: 56%;
+}
+.history .skill{
+	float: left;
+	width: 38%;
+	margin-left: 6%;
+}
+.history .title{
+	margin-bottom: 70px;
+}
+.history .title img{
+	display: inline-block;
+	width: 36px;
+	vertical-align: middle;
+}
+.history .title span{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 2rem;
+	font-weight: 700;
+}
+.history .subTitle{
+	margin-bottom: 15px;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+.history .subTitle img{
+	width: 25px;
+	vertical-align: middle;
+}
+.history .subTitle span{
+	vertical-align: middle;
+}
+.history dl{
+	margin-top: 20px;
+	letter-spacing: -10px;
+}
+.history dt, dd{
+	display: inline-block;
+	vertical-align: top;
+	line-height: 2;
+	letter-spacing: -.5px;
+	font-size: 1rem;
+}
+.history dt{
+	width: 160px;
+	margin-right: 10px;
+}
+.history dd{
+	width: calc(100% - 170px);
+}
+
+
 /************************#Portfolio************************/
 #Portfolio{
 	background-color: #eaeaea;
@@ -548,10 +615,15 @@ section{
 
 /************************ #main ************************/
 /************************ pg_1 ************************/
+section#Main > div:first-of-type{
+	overflow: hidden;
+}
 .pg_1{
 	position: relative;
+	float: left;
 	width: 300px;
-	margin: 250px auto;
+	margin: 70px 0 0 300px;
+	padding: 0 15px;
 	border: 1px solid #222;
 	background-color: #fff;
 	z-index: 2;
@@ -591,10 +663,11 @@ section{
 	position: absolute;
 	width: 14px;
 	height: 14px;
-	background-color: #434462;
+	border:1px solid #434462;
 	-webkit-border-radius:10px;
 	-moz-border-radius:10px;
 	border-radius: 10px;
+	background-color: #fff;
 }
 .pg_1 .first{
 	bottom: -7px;
@@ -627,12 +700,13 @@ section{
 .pg_1 .txt_detail p{
 	text-align: center;
 	line-height: 24px;
-	letter-spacing: 1.5px;
+	letter-spacing: .5px;
+	word-wrap: break-word;
 }
 /************************long_line************************/
 .long_line{
 	position: absolute;
-	top: 50%;
+	top: 380px;
 	left: 0;
 	width: 100%;
 	height: 1px;
@@ -641,8 +715,9 @@ section{
 .long_line span{
 	position: absolute;
 	top: 0;
-	right: 0;
-	margin: -40px 50px 0 0;
+	left: 0;
+	/*margin: -40px 50px 0 0;*/
+	margin: -40px 0 0 30px;
 	padding-left: 30px;
 	text-align: right;
 	font-size: 1.2em;
@@ -670,12 +745,52 @@ footer p{
 	font-size: 0.8em;
 }
 
+@media screen and (max-width: 1800px){
+	.history dd{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 1300px){
+	.history{
+		width: calc(100% - 660px);
+		margin-top: 10px;
+		padding: 50px 0 0 50px;
+	}
+	.history .career{
+		float: none;
+		width: 100%;
+	}
+	.history .skill{
+		float: none;
+		width: 100%;
+		margin-top: 50px;
+		margin-left: 0;
+	}
+	.history .subTitle{
+		cursor: pointer;
+	}
+	.pg_1{
+		margin-left: 250px;
+	}
+}
+@media screen and (max-width:1000px){
+	.pg_1{
+		float: none;
+		margin: 20px auto;
+	}
+	.history{
+		float: none;	
+		width: 100%;
+		padding-left: 0;
+		text-align: center;
+	}
+}
 
 /************************ media_query ************************/
 @media screen and (max-width:1280px){
  /* pc */
 	.pg_1{
-		margin: 180px auto;
+		/*margin: 180px auto;*/
 	}
 	#Skills .cnt .graph_txt{
 		margin-top: 0;
@@ -699,7 +814,7 @@ footer p{
 @media screen and (max-width:1024px){
  /* pc_small */
 	.long_line span{
-		margin: -40px 20px 0 0;
+		margin-left: 20px;
 	}
 	#container section .cnt{
 		margin: 80px auto;
