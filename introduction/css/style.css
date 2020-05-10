@@ -408,6 +408,12 @@ section:nth-of-type(odd){
 	margin-top: 20px;
 	letter-spacing: -10px;
 }
+.history .career dt{
+	width: 180px;
+}
+.history .career dd{
+	width: calc(100% - 180px);
+}
 .history dt, dd{
 	display: inline-block;
 	vertical-align: top;
@@ -416,12 +422,12 @@ section:nth-of-type(odd){
 	font-size: 1rem;
 }
 .history .graph_txt dt{
-	width: 160px;
+	width: 100px;
 	margin-right: 10px;
 	font-size: 0.875rem;
 }
 .history dd{
-	width: calc(100% - 170px);
+	width: calc(100% - 110px);
 }
 
 
@@ -561,6 +567,14 @@ section:nth-of-type(odd){
 	width: 40%;
 	margin-left: 5%;
 }
+#container section#Contact .cnt .item .pic{
+	width: 200px;
+	margin: 0 auto;
+}
+#container section#Contact .cnt .item .pic img{
+	max-width: 100%;
+	border-radius: 50%;
+}
 #container section#Contact .cnt .item:nth-of-type(2){
 	float: left;
 	width: 40%;
@@ -607,7 +621,7 @@ section:nth-of-type(odd){
 	background-image: url('../img/icon_send.png');
 }
 #container section .cnt .profile{
-	padding-top: 60px;
+	padding-top: 20px;
 }
 #container section .cnt .profile p{
 	text-align: center;
@@ -754,7 +768,12 @@ footer p{
 }
 
 @media screen and (max-width: 1800px){
-	.history dd{
+	.history .career dt,
+	.history .skill dt{
+		width: 100%;
+	}
+	.history .career dd,
+	.history .skill dd{
 		width: 100%;
 	}
 }
@@ -828,7 +847,8 @@ footer p{
 		margin: 80px auto;
 	}
 	#container section .tit_wrap .tit_inner .tit_area h2 {
-		font-size: 1.4em;
+		font-size: 2rem;
+		line-height: 1.6;
 	}
 	#Skills .cnt .graph_txt{
 		margin-top: 0;
@@ -1037,7 +1057,7 @@ footer p{
 		margin-top: 0;
 	}
 	#container section .tit_wrap .tit_inner .tit_area h2 {
-		font-size: 1.2em;
+		font-size: 2rem;
 	}
 	#container section .tit_wrap .tit_inner .tit_area p.small_tit{
 		font-size: 0.8em;
@@ -1103,3 +1123,9 @@ footer p{
 	}
 }
 
+.show{
+	display: block;
+}
+.hide{
+	display: none;
+}
