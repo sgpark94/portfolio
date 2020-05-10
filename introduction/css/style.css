@@ -596,6 +596,7 @@ section:nth-of-type(odd){
 #container section .cnt form dl dt{
 	margin-top: 30px;
 	letter-spacing: 4px;
+	font-weight: 700;
 }
 #container section .cnt form dl dd{
 	position: relative;
