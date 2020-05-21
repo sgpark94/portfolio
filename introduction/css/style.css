@@ -1,4 +1,8 @@
 
+*{
+	font-family: 'Sunflower', sans-serif;
+}
+
 /***************************** header *****************************/
 header {
 	position: fixed;
@@ -8,7 +12,7 @@ header {
 	z-index: 10;
 	overflow: hidden;
 	padding: 10px 20px;
-	background-color: rgba(255,255,255,0.8);
+	background-color: rgba(255,255,255,0.5);
 }
 header nav {
 	float: right;
@@ -63,7 +67,6 @@ section:nth-of-type(odd){
 #container section .tit_wrap{
 	position: relative;
 	height: 62px;
-	margin-top: 50px;
 	text-align: center;
 }
 #container section .tit_wrap:before {
@@ -359,7 +362,7 @@ section:nth-of-type(odd){
 .history{
 	position: relative;
 	float: right;
-	width: calc(100% - 730px);
+	width: calc(100% - 900px);
 	margin-right: 100px;
 	padding: 70px 40px 0 50px;
 	background-color: #fff;
@@ -370,12 +373,12 @@ section:nth-of-type(odd){
 }
 .history .career{
 	float: left;
-	width: 56%;
+	width: 55%;
 }
 .history .skill{
 	float: left;
-	width: 38%;
-	margin-left: 6%;
+	width: 40%;
+	margin-left: 5%;
 }
 .history .title{
 	margin-bottom: 70px;
@@ -389,7 +392,6 @@ section:nth-of-type(odd){
 	display: inline-block;
 	vertical-align: middle;
 	font-size: 2rem;
-	font-weight: 700;
 	letter-spacing: 2px;
 }
 .history .subTitle{
@@ -408,36 +410,89 @@ section:nth-of-type(odd){
 	margin-top: 20px;
 	letter-spacing: -10px;
 }
-.history .career dt{
-	width: 180px;
+.history dt{
+	font-size: 0.875rem;
+	font-weight: 100;
+	color: #999;
 }
-.history .career dd{
-	width: calc(100% - 180px);
+.history dd{
+	font-family: 'Noto Sans KR', sans-serif;
 }
 .history dt, dd{
-	display: inline-block;
 	vertical-align: top;
 	line-height: 2;
 	letter-spacing: -.5px;
-	font-size: 1rem;
-}
-.history .graph_txt dt{
-	width: 100px;
-	margin-right: 10px;
-	font-size: 0.875rem;
-}
-.history dd{
-	width: calc(100% - 110px);
 }
 
 
 /************************#Portfolio************************/
 #container section#Portfolio {
-	padding-bottom: 0;
+	padding: 50px 50px 0;
 }
 #container section#Portfolio .cnt{
-	padding: 150px 0;
+	padding: 80px 0;
 	margin: 0 auto;
+}
+#Portfolio .tabWrap ul{
+	margin-top: 70px;
+	text-align: center;
+}
+#Portfolio .tabWrap li{
+	display: inline-block;
+	margin:0 40px 20px;
+	padding: 10px 30px;
+	font-size: 1.25rem;
+	font-weight: 500;
+	font-family: 'Noto Sans KR', sans-serif;
+	border: 1px solid #999;
+	cursor: pointer;
+}
+#Portfolio .tabWrap li:hover,
+#Portfolio .tabWrap li.selected{
+	color: #fff;
+	background-color: #999;
+}
+#Portfolio .cnt ul li{
+	position: relative;
+	float: left;
+	width: 22%;
+	box-shadow: 1px 1px 10px rgba(0,0,0,.1);
+	border: 5px solid transparent;
+}
+#Portfolio .cnt ul li:not(:nth-of-type(4n+1)){
+	margin-left: 4%;
+}
+#Portfolio .cnt ul li:nth-of-type(n+5){
+	margin-top: 80px;
+}
+#Portfolio .cnt ul li .thumb a{
+	display: block;
+}
+#Portfolio .cnt ul li .thumb img{
+	max-width: 100%;
+}
+#Portfolio .cnt ul li .info{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 15px;
+	background-color: rgba(0,0,0,.7);
+	color: #fff;
+}
+#Portfolio .cnt ul li .info .title{
+	margin-bottom: 10px;
+	font-size: 1.25rem;
+	font-weight: 700;
+	font-family: 'Noto Sans KR', sans-serif;
+}
+#Portfolio .cnt ul li .info .txt{
+	line-height: 1.6;
+	font-size: 0.875rem;
+}
+#Portfolio .cnt ul li .info .txt span{
+	display: block;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 /************************name************************/
 #Portfolio .cnt .name{
@@ -723,9 +778,13 @@ section#Main > div:first-of-type{
 .pg_1 .txt_detail p{
 	text-align: center;
 	line-height: 1.8;
+	font-size: 0.875rem;
 	letter-spacing: .5px;
 	word-wrap: break-word;
 }
+.pg_1 .txt_detail p a{
+	border-bottom: 1px solid #222;
+}	
 /************************long_line************************/
 .long_line{
 	position: absolute;
@@ -796,6 +855,26 @@ footer p{
 	}
 	.history .subTitle{
 		cursor: pointer;
+	}
+	#Portfolio .cnt ul li{
+		width: 30%;
+	}
+	#Portfolio .cnt ul li:not(:nth-of-type(4n+1)){
+		margin-left: 0;
+	}
+	#Portfolio .cnt ul li:not(:nth-of-type(3n+1)) {
+   	margin-left: 5%;
+	}
+	#Portfolio .cnt ul li:nth-of-type(n+4){
+		margin-top: 80px;
+	}
+	#Portfolio .cnt ul li .info .title{
+		font-size: 1rem;
+	}
+	#Portfolio .tabWrap li{
+		margin: 0 10px 15px;
+		padding: 6px 15px;
+		font-size: 1rem;
 	}
 	.pg_1{
 		margin-left: 250px;
@@ -996,6 +1075,21 @@ footer p{
 		padding-left: 20px;
 		text-align: left;
 	}
+	#Portfolio .cnt ul li{
+		width: 46%;
+	}
+	#Portfolio .cnt ul li:not(:nth-of-type(3n+1)){
+		margin-left: 0;
+	}
+	#Portfolio .cnt ul li:not(:nth-of-type(odd)){
+		margin-left: 8%;
+	}
+	#Portfolio .cnt ul li:nth-of-type(n+3){
+		margin-top: 40px;
+	}
+	#Portfolio .cnt ul li .info .title{
+		font-size: 0.875rem;
+	}
 }
 @media screen and (max-width:576px){
   /* mobile */
@@ -1031,6 +1125,15 @@ footer p{
 	}
 	#History .cnt ul li .history_txt p{
 		font-size: 0.75em;
+	}
+	#Portfolio .cnt ul li{
+		width: 100%;
+		margin-top: 0 !important;
+		margin-left: 0 !important;
+		margin-bottom: 60px;
+	}
+	#Portfolio .cnt ul li .info .title{
+		font-size: 0.875rem;
 	}
 	#Portfolio .cnt .pc_wrap .pc img.pc_frm {
 		display: none;

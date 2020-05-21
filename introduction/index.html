@@ -4,12 +4,11 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-   <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
-   <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">
    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
    <title>박슬기의 포트폴리오</title>
    <link rel="stylesheet" href="./css/common.min.css">
-   <link rel="stylesheet" href="./css/style.min.css">
+   <link rel="stylesheet" href="./css/style.css">
    <style>
       * {margin: 0; padding: 0; color: inherit; text-decoration: inherit; list-style: none;}
       .item {position: relative; top: 0; left: 0; opacity: 1;}
@@ -67,7 +66,9 @@
                      <p>Live in Anyang, Gyeonggi-do</p>
                      <p>peach_crush@kakao.com</p>
                      <br><br>
-                     <p>https://github.com/sungnung/portfolio/tree/master/introduction</p>
+                     <p>
+                        <a href="https://github.com/sungnung/portfolio" target="_blank">https://github.com/sungnung/portfolio</a>
+                     </p>
                   </div>
                </div>
                <div class="history">
@@ -102,7 +103,7 @@
                               <dl class="career_txt">
                                  <dt>2018. 10 ~</dt>
                                  <dd>
-                                    토큰포스트 | TokenPost<br>웹퍼블리셔 - 자사 홈페이지 제작 및 유지/보수
+                                    토큰포스트 | TokenPost<br>웹퍼블리셔 - 자사 홈페이지 제작 및 유지 / 보수
                                  </dd>
                               </dl>
                            </li>
@@ -192,56 +193,273 @@
             </div>
          </section>
          <section id="Portfolio" class="moving moving2">
-            <div class="inner">
-               <div class="tit_wrap">
-                  <div class="tit_inner">
-                     <div class="tit_area">
-                        <h2>Portfolio</h2>
-                     </div>
+            <div class="tit_wrap">
+               <div class="tit_inner">
+                  <div class="tit_area">
+                     <h2>Portfolio</h2>
                   </div>
                </div>
-               <div class="cnt clearfix">
-                  <div class="item pc_wrap">
-                     <div class="pc">
-                        <img class="pc_frm" src="./img/frm_mac.png" alt="pcFrame">
-                        <img class="mobile_frm" src="./img/frm_iphone_b.png" alt="mobileFrame">
-                        <div class="pc_screen">
-                           <a class="pf_link">
-                              <img class="pf_view_W" alt="portfolioWebView" src="./img/pf_12.jpg">
-                              <img class="pf_view_M" alt="portfolioMobileView" src="./img/m_pf_12.jpg">
-                           </a>
-                        </div>
+            </div>
+            <div class="tabWrap">
+               <ul>
+                  <li class="selected" data-target="all">전체</li>
+                  <li data-target="new">신규사이트</li>
+                  <li data-target="maintenance">유지 / 보수</li>
+                  <li data-target="renewal">리뉴얼</li>
+                  <li data-target="copy">카피사이트</li>
+               </ul>
+            </div>
+            <div class="cnt clearfix">
+               <ul>
+                  <li class="list all renewal">
+                     <div class="thumb">
+                        <a href="https://yeosijae.org/" target="_blank">
+                           <img src="./img/imgThumb1.png" alt="yeosijaeImage">
+                        </a>
                      </div>
-                  </div>
-                  <div class="item name">
-                     <div class="part">
-                        <p class="title top">
-                           <span class="pf_name"></span><br>
-                           <em class="pf_type"></em>
+                     <div class="info hide">
+                        <a href="https://yeosijae.org/" target="_blank">
+                           <p class="title">여시재 Yeosijae</p>
+                           <p class="txt">   
+                              <span>web + mobile 리뉴얼 사이트 퍼블리싱</span>
+                              <span>web 20%, mobile 100%</span>
+                           </p>
+                        </a>
+                     </div>
+                  </li>
+                  <li class="list all maintenance">
+                     <div class="thumb">
+                        <a href="https://www.tokenpost.kr/" target="_blank">
+                           <img src="./img/imgThumb10.jpg" alt="tokenpostKoreanImage">
+                        </a>
+                     </div>
+                     <div class="info hide">
+                        <a href="https://www.tokenpost.kr/" target="_blank">
+                           <p class="title">토큰포스트 국문판 Tokenpost KR</p>
+                           <p class="txt">
+                              <span>web + mobile 사이트 유지 / 보수</span>
+                           </p>
+                        </a>
+                     </div>
+                  </li>
+                  <li class="list all maintenance">
+                     <div class="thumb">
+                        <a href="https://www.tokenpost.com/" target="_blank">
+                           <img src="./img/imgThumb11.jpg" alt="tokenpostEnglishImage">
+                        </a>
+                     </div>
+                     <div class="info hide">
+                        <a href="https://www.tokenpost.com/" target="_blank">
+                           <p class="title">토큰포스트 영문판 Tokenpost EN</p>
+                           <p class="txt">
+                              <span>web + mobile 사이트 유지 / 보수</span>
+                           </p>
+                        </a>
+                     </div>
+                  </li>
+                  <li class="list all maintenance">
+                     <div class="thumb">
+                        <a href="https://www.tokenpost.jp/" target="_blank">
+                           <img src="./img/imgThumb12.jpg" alt="tokenpostJapanImage">
+                        </a>
+                     </div>
+                     <div class="info hide">
+                        <a href="https://www.tokenpost.jp/" target="_blank">
+                           <p class="title">토큰포스트 일문판 Tokenpost JP</p>
+                           <p class="txt">
+                              <span>web + mobile 사이트 유지 / 보수</span>
+                           </p>
+                        </a>
+                     </div>
+                  </li>
+                  <li class="list all maintenance">
+                     <div class="thumb">
+                        <a href="http://econotimes.com/" target="_blank">
+                           <img src="./img/imgThumb13.jpg" alt="econotimesImage">
+                        </a>
+                     </div>
+                     <div class="info hide">
+                        <a href="http://econotimes.com/" target="_blank">
+                           <p class="title">이코노타임즈 Econotimes</p>
+                           <p class="txt">
+                              <span>web + mobile 사이트 유지 / 보수</span>
+                           </p>
+                        </a>
+                     </div>
+                  </li>
+                  <li class="list all maintenance">
+                     <div class="thumb">
+                        <a href="http://sop.or.kr/" target="_blank">
+                           <img src="./img/imgThumb14.jpg" alt="ksopImage">
+                        </a>
+                     </div>
+                     <div class="info hide">
+                        <a href="http://sop.or.kr/" target="_blank">
+                           <p class="title">한국필란프로티 소사이어티 KSop</p>
+                           <p class="txt">
+                              <span>web + mobile 사이트 유지 / 보수</span>
+                           </p>
+                        </a>
+                     </div>
+                  </li>
+                  <li class="list all renewal">
+                     <div class="thumb">
+                        <a href="https://bigissue.kr/" target="_blank">
+                           <img src="./img/imgThumb2.png" alt="bigissueImage">
+                        </a>
+                     </div>
+                     <div class="info hide">
+                        <a href="https://bigissue.kr/" target="_blank">
+                           <p class="title">빅이슈 코리아 Bigissue Korea</p>
+                           <p class="txt">
+                              <span>리뉴얼 사이트 퍼블리싱</span>
+                              <span>web + mobile 100%</span>
+                           </p>
+                        </a>
+                     </div>
+                  </li>
+                  <li class="list all new">
+                     <div class="thumb">
+                        <img src="./img/imgThumb3.png" alt="cmsImage">
+                     </div>
+                     <div class="info hide">
+                        <p class="title">Publishsoft CMS Admin 관리페이지</p>
+                        <p class="txt">
+                           <span>신규 사이트 퍼블리싱</span>
+                           <span>web 4 ~ 50%</span>
                         </p>
-                        <p class="pf_descript"></p>
                      </div>
-                     <div class="part">
-                        <p class="title"></p>
-                        <p class="info pf_work"></p>
+                  </li>
+                  <li class="list all new">
+                     <div class="thumb">
+                        <a href="https://publishsoft.io/" target="_blank">
+                           <img src="./img/imgThumb4.png" alt="publishsoftImage">
+                        </a>
                      </div>
-                     <div class="part">
-                        <p class="title"></p>
-                        <p class="info pf_tool"></p>
+                     <div class="info hide">
+                        <a href="https://publishsoft.io/" target="_blank">
+                           <p class="title">Publishsoft introduction</p>
+                           <p class="txt">
+                              <span>신규 사이트 퍼블리싱</span>
+                              <span>web + mobile 100%</span>
+                           </p>
+                        </a>
                      </div>
-                     <div class="part">
-                        <p class="title info_url_title">Go to Website</p>
-                        <p class="info">
-                           <a class="pf_info_url_W info_url">Web</a>
-                           <a class="pf_info_url_M info_url">Mobile</a>
+                  </li>
+                  <li class="list all new">
+                     <div class="thumb">
+                        <a href="http://purpleswan.io/" target="_blank">
+                           <img src="./img/imgThumb5.png" alt="purpleswanImage">
+                        </a>
+                     </div>
+                     <div class="info hide">
+                        <a href="http://purpleswan.io/" target="_blank">
+                           <p class="title">퍼플스완 PurpleSwan</p>
+                           <p class="txt">
+                              <span>신규 사이트 퍼블리싱</span>
+                              <span>mobile 100%</span>
+                           </p>
+                        </a>
+                     </div>
+                  </li>
+                  <li class="list all new">
+                     <div class="thumb">
+                        <a href="http://purpleswan.io/wisdomconcert" target="_blank">
+                           <img src="./img/imgThumb6.png" alt="wisdomconcertImage">
+                        </a>
+                     </div>
+                     <div class="info hide">
+                        <a href="http://purpleswan.io/wisdomconcert" target="_blank">
+                           <p class="title">위즈덤콘서트 Wisdomconcert</p>
+                           <p class="txt">
+                              <span>신규 사이트 퍼블리싱</span>
+                              <span>web + mobile 100%</span>
+                           </p>
+                        </a>
+                     </div>
+                  </li>
+                  <li class="list all renewal">
+                     <div class="thumb">
+                        <img src="./img/imgThumb8.png" alt="paldoImage">
+                     </div>
+                     <div class="info hide">
+                        <a href="" target="_blank">
+                           <p class="title">레드락 Redrock</p>
+                           <p class="txt">
+                              <span>기존 사이트 리뉴얼 퍼블리싱</span>
+                              <span>responsive page 100% (php 제작)</span>
+                           </p>
+                        </a>
+                     </div>
+                  </li>
+                  <li class="list all renewal">
+                     <div class="thumb">
+                        <a href="" target="_blank">
+                           <img src="./img/imgThumb7.png" alt="redrockImage">
+                        </a>
+                     <div class="info hide">
+                        <p class="title">팔도 Paldo</p>
+                        <p class="txt">
+                           <span>기존 사이트 리뉴얼 퍼블리싱</span>
+                           <span>web + mobile 100%</span>
                         </p>
                      </div>
-                     <div class="part btn_area">
-                        <p class="prev" data-type="prev" data-value="-1">&lt; PREV</p>
-                        <p class="next active" data-type="next" data-value="1">NEXT &gt;</p>
                      </div>
-                  </div>
-               </div>
+                  </li>
+                  <li class="list all new">
+                     <div class="thumb">
+                        <img src="./img/imgThumb9.png" alt="introductionImage">
+                     </div>
+                     <div class="info hide">
+                        <p class="title">Portfolio Introduction 소개페이지</p>
+                        <p class="txt">
+                           <span>신규 사이트 퍼블리싱</span>
+                           <span>responsive page 100%</span>
+                        </p>
+                     </div>
+                  </li>
+                  <li class="list all copy">
+                     <div class="thumb">
+                        <a href="https://sungnung.github.io/portfolio/copySite/coupang/index.html" target="_blank">
+                           <img src="./img/imgThumb15.jpg" alt="coupangImage">
+                        </a>
+                     <div class="info hide">
+                        <p class="title">쿠팡 Coupang</p>
+                        <p class="txt">
+                           <span>카피사이트 퍼블리싱</span>
+                           <span>web 100%</span>
+                        </p>
+                     </div>
+                     </div>
+                  </li>
+                  <li class="list all copy">
+                     <div class="thumb">
+                        <a href="https://sungnung.github.io/portfolio/copySite/naver/index.html" target="_blank">
+                           <img src="./img/imgThumb16.jpg" alt="naverImage">
+                        </a>
+                     </div>
+                     <div class="info hide">
+                        <p class="title">네이버 Naver</p>
+                        <p class="txt">
+                           <span>카피사이트 퍼블리싱</span>
+                           <span>web 100%</span>
+                        </p>
+                     </div>
+                  </li>
+                  <li class="list all copy">
+                     <div class="thumb">
+                        <a href="https://sungnung.github.io/portfolio/copySite/soobakc/index.html" target="_blank">
+                           <img src="./img/imgThumb17.jpg" alt="soobakcImage">
+                        </a>
+                     <div class="info hide">
+                        <p class="title">수박씨 Soobakc</p>
+                        <p class="txt">
+                           <span>카피사이트 퍼블리싱</span>
+                           <span>web 100%</span>
+                        </p>
+                     </div>
+                  </li>
+               </ul>
             </div>
          </section>
          <section id="Contact" class="moving moving3">
@@ -302,7 +520,7 @@
       {
          pf_name: "여시재 Yeosijae | Renewal",
          pf_type: "Web / Mobile",
-         pf_descript: "홈페이지 리뉴얼 제작 및 유지/보수",
+         pf_descript: "홈페이지 리뉴얼 제작 및 유지 / 보수",
          pf_work: "2020. 02. 03  ~ 2020. 04. 24",
          pf_tool: "HTML5, CSS3, Javascript, Jquery",
          pf_view_W: "./img/pf_12.jpg",
@@ -315,7 +533,7 @@
       {
          pf_name: "빅이슈 코리아 BigIssue Korea | Renewal",
          pf_type: "Web / Mobile",
-         pf_descript: "홈페이지 리뉴얼 제작 및 유지/보수",
+         pf_descript: "홈페이지 리뉴얼 제작 및 유지 / 보수",
          pf_work: "2019. 03. 22  ~ 2019. 04. 26",
          pf_tool: "HTML5, CSS3, Javascript, Jquery",
          pf_view_W: "./img/pf_10.jpg",
@@ -328,7 +546,7 @@
       {
          pf_name: "CMS Admin | Part : Dashboard, board, comment, User, Setting",
          pf_type: "Web",
-         pf_descript: "홈페이지 리뉴얼 제작 및 유지/보수",
+         pf_descript: "홈페이지 리뉴얼 제작 및 유지 / 보수",
          pf_work: "2019. 01. 10 ~ 2019. 03. 21",
          pf_tool: "HTML5, CSS3, Javascript, Jquery",
          pf_view_W: "./img/pf_11.jpg",
@@ -658,6 +876,12 @@
          return false;
       });
    })();
+
+   $('#Portfolio .list').hover(function(){
+      $(this).find('.info').slideDown();
+   }, function(){
+      $(this).find('.info').slideUp();
+   });
    </script>
 </body>
 
