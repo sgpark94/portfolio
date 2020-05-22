@@ -663,7 +663,7 @@ dd {
    vertical-align: top;
    box-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
    -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
-    -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
+   -moz-box-shadow: 1px 1px 10px rgba(0, 0, 0, .1);
    border: 5px solid transparent;
    transition: all 1s;
 }
@@ -686,16 +686,21 @@ dd {
    color: #fff;
 }
 
-#Portfolio .cnt ul li .info p{
+#Portfolio .cnt ul li .info p {
    text-align: left;
 }
+
 #Portfolio .cnt ul li .info .title {
    margin-bottom: 10px;
    font-size: 1.25rem;
    font-weight: 700;
    font-family: 'Noto Sans KR', sans-serif;
 }
+
 #Portfolio .cnt ul li .infoM .title {
+   padding: 10px;
+   background-color: #fff;
+   font-weight: 700;
    font-family: 'Noto Sans KR', sans-serif;
 }
 
@@ -933,17 +938,19 @@ dd {
 
 #container section .cnt .profile p {
    text-align: center;
+   line-height: 1.8;
    font-size: 1em;
    letter-spacing: 2px;
+}
+
+#container section .cnt .profile p+p {
+   margin-top: 35px;
 }
 
 #container section .cnt .profile p.name {
    font-size: 1.6em;
 }
 
-#container section .cnt .profile p+p {
-   margin-top: 30px;
-}
 
 /************************ #main ************************/
 /************************ pg_1 ************************/
@@ -1583,6 +1590,7 @@ footer p {
 .hide {
    display: none;
 }
+
 #Portfolio .cnt ul li.hide {
    display: none;
 }
