@@ -4,11 +4,20 @@
 <head>
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+   <meta property="og:type" content="website">
+   <meta property="og:title" content="박슬기의 포트폴리오">
+   <meta property="og:url" content="https://sungnung.github.io/portfolio/introduction/index.html">
+   <meta property="og:description" content="박슬기의 포트폴리오 사이트 입니다.">
+   <meta property="og:image:width" content="800" />
+   <meta property="og:image:height" content="400" />
+   <meta property="og:image" content="./img/snsShare.png" />
    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Sunflower:wght@300;500;700&display=swap" rel="stylesheet">
    <script src="https://code.jquery.com/jquery-1.11.3.js"></script>
    <title>박슬기의 포트폴리오</title>
    <link rel="stylesheet" href="./css/common.min.css">
    <link rel="stylesheet" href="./css/style.css">
+   <link rel="shortcut icon" href="./img/favicon.png">
+   <script src="./js/lib/typed.min.js"></script>
    <style>
       * {margin: 0; padding: 0; color: inherit; text-decoration: inherit; list-style: none;}
       .item {position: relative; top: 0; left: 0; opacity: 1;}
@@ -21,8 +30,8 @@
 <body>
    <div id="wrap">
       <div id="headerWrap">
-         <header>
-            <nav>
+         <div id="header">
+            <div class="nav">
                <ul class="main_nav_btn">
                   <li class="menuBtn menuBtn1">
                      <a href="#Main">
@@ -40,10 +49,22 @@
                      </a>
                   </li>
                </ul>
-            </nav>
-         </header>
+            </div>
+            <div id="clock">
+               <img src="./img/iconClock.png" alt="시계아이콘" />
+               <span></span>
+            </div>
+         </div>
       </div>
-      <div id="container" style="font-family: 'Nanum Gothic'">
+      <div id="container">
+         <div class="type-wrap">
+            <div id="typed-strings">
+               <span>안녕하세요👀</span>
+               <span>오늘보다 내일 더 성장하는,</span>
+               <span>웹퍼블리셔<br><b>'박슬기'</b>입니다😊</span>
+            </div>
+            <span id="typed"></span>
+         </div>
          <section id="Main" class="moving moving1">
             <div>
                <div class="pg_1">
@@ -160,8 +181,8 @@
                      <div class="skill">
                         <p class="subTitle">
                            <img src="img/iconList.png" alt="listIcon">
-                              <span>Qualifications</span>
-                           </p>
+                           <span>Qualifications</span>
+                        </p>
                         <div class="graph_txt">
                            <dl>
                               <dt>2018. 04.</dt>
@@ -220,7 +241,7 @@
                      <div class="info hide">
                         <a href="https://yeosijae.org/" target="_blank">
                            <p class="title">여시재 Yeosijae</p>
-                           <p class="txt">   
+                           <p class="txt">
                               <span>web + mobile 리뉴얼 사이트 퍼블리싱</span>
                               <span>web 20%, mobile 100%</span>
                            </p>
@@ -397,13 +418,13 @@
                         <a href="" target="_blank">
                            <img src="./img/imgThumb7.png" alt="redrockImage">
                         </a>
-                     <div class="info hide">
-                        <p class="title">팔도 Paldo</p>
-                        <p class="txt">
-                           <span>기존 사이트 리뉴얼 퍼블리싱</span>
-                           <span>web + mobile 100%</span>
-                        </p>
-                     </div>
+                        <div class="info hide">
+                           <p class="title">팔도 Paldo</p>
+                           <p class="txt">
+                              <span>기존 사이트 리뉴얼 퍼블리싱</span>
+                              <span>web + mobile 100%</span>
+                           </p>
+                        </div>
                      </div>
                   </li>
                   <li class="list all new">
@@ -423,13 +444,13 @@
                         <a href="https://sungnung.github.io/portfolio/copySite/coupang/index.html" target="_blank">
                            <img src="./img/imgThumb15.jpg" alt="coupangImage">
                         </a>
-                     <div class="info hide">
-                        <p class="title">쿠팡 Coupang</p>
-                        <p class="txt">
-                           <span>카피사이트 퍼블리싱</span>
-                           <span>web 100%</span>
-                        </p>
-                     </div>
+                        <div class="info hide">
+                           <p class="title">쿠팡 Coupang</p>
+                           <p class="txt">
+                              <span>카피사이트 퍼블리싱</span>
+                              <span>web 100%</span>
+                           </p>
+                        </div>
                      </div>
                   </li>
                   <li class="list all copy">
@@ -451,13 +472,13 @@
                         <a href="https://sungnung.github.io/portfolio/copySite/soobakc/index.html" target="_blank">
                            <img src="./img/imgThumb17.jpg" alt="soobakcImage">
                         </a>
-                     <div class="info hide">
-                        <p class="title">수박씨 Soobakc</p>
-                        <p class="txt">
-                           <span>카피사이트 퍼블리싱</span>
-                           <span>web 100%</span>
-                        </p>
-                     </div>
+                        <div class="info hide">
+                           <p class="title">수박씨 Soobakc</p>
+                           <p class="txt">
+                              <span>카피사이트 퍼블리싱</span>
+                              <span>web 100%</span>
+                           </p>
+                        </div>
                   </li>
                </ul>
             </div>
@@ -516,8 +537,7 @@
    </div>
    <script>
    var idx = 0;
-   var pf_list = [
-      {
+   var pf_list = [{
          pf_name: "여시재 Yeosijae | Renewal",
          pf_type: "Web / Mobile",
          pf_descript: "홈페이지 리뉴얼 제작 및 유지 / 보수",
@@ -855,16 +875,16 @@
             $(".type_left").removeClass("type_left");
          }
 
-         if($(window).width() < 1300){
+         if ($(window).width() < 1300) {
             $('.history .subTitle').addClass('toggle').toggleClass('off');
-            $(this).on('click', function(){
-               if($(this).hasClass('off')){
+            $(this).on('click', function() {
+               if ($(this).hasClass('off')) {
                   $(this).siblings('ul').slideUp();
-               } else{
+               } else {
                   $(this).siblings('ul').slideDown();
                }
             });
-         } else{
+         } else {
             $('.history .subTitle').removeClass('toggle').toggleClass('off');
          }
       }).resize();
@@ -877,11 +897,65 @@
       });
    })();
 
-   $('#Portfolio .list').hover(function(){
+   $('#Portfolio .list').hover(function() {
       $(this).find('.info').slideDown();
-   }, function(){
+   }, function() {
       $(this).find('.info').slideUp();
    });
+
+
+   function clock() {
+      var date = new Date(),
+         hours = date.getHours(),
+         minutes = date.getMinutes(),
+         seconds = date.getSeconds();
+
+      if (window.innerWidth >= 500) {
+         document.querySelector('#clock span').textContent = `현재 시간 ${
+            hours < 10 ? `0${hours}` : hours
+         } : ${
+            minutes < 10 ? `0${minutes}` : minutes
+         } : ${
+            seconds < 10 ? `0${seconds}` : seconds
+         }`;
+         document.querySelector('#clock').style.cssFloat = 'left';
+      } else {
+         document.querySelector('#clock span').textContent = `${
+            hours < 10 ? `0${hours}` : hours
+         } : ${
+            minutes < 10 ? `0${minutes}` : minutes
+         } : ${
+            seconds < 10 ? `0${seconds}` : seconds
+         }`;
+         document.querySelector('#clock').style.cssFloat = 'right';
+      }
+
+   }
+
+   function init() {
+      clock();
+      setInterval(clock, 1000);
+   }
+
+   init();
+
+   $(function() {
+      $("#typed").typed({
+         stringsElement: $('#typed-strings'),
+         typeSpeed: 100,
+         backDelay: 500,
+         loop: true,
+         contentType: 'html', // or text
+         // defaults to false for infinite loop
+         loopCount: false,
+         callback: function() { foo(); },
+         resetCallback: function() { newTyped(); }
+      });
+   });
+
+   function foo() {}
+
+   function newTyped() {}
    </script>
 </body>
 
