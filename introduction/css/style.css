@@ -181,10 +181,6 @@ section:nth-of-type(odd) {
    padding: 60px 0;
 }
 
-#container .cnt .item {
-   width: 40%;
-}
-
 #container section .cnt {
    position: relative;
    margin: 150px auto;
@@ -676,6 +672,14 @@ dd {
    max-width: 100%;
 }
 
+#Portfolio .cnt ul li .link{
+   position: absolute;
+   top: 10px;
+   right: 10px;
+   width: 30px;
+   height: auto;
+}
+
 #Portfolio .cnt ul li .info {
    position: absolute;
    bottom: 0;
@@ -1110,6 +1114,27 @@ footer {
 footer p {
    text-align: center;
    font-size: 0.8em;
+}
+
+
+/************************top icon************************/
+#top{
+    position: relative;
+    z-index: 99;
+}
+#top span{
+    position: fixed;
+    bottom: 80px;
+    right: -100px;
+    transition: right 0.5s;
+}
+#top img{
+   width: 50px;
+   height: 50px;
+    cursor: pointer;
+}
+#top span.active{
+    right: 33px;
 }
 
 @media screen and (max-width: 1800px) {
