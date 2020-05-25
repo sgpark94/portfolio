@@ -62,7 +62,7 @@
 }
 
 .type-wrap {
-   margin-top: 100px;
+   margin-top: 60px;
    padding: 80px 0;
    text-align: center;
    background-color: #194052;
@@ -758,8 +758,6 @@ dd {
    font-size: 0.9em;
 }
 
-#Portfolio .cnt .name .part:nth-child(4) .info {}
-
 #Portfolio .cnt .name .part:nth-child(4) .info a {
    display: block;
    float: left;
@@ -1135,6 +1133,14 @@ footer p {
 }
 #top span.active{
     right: 33px;
+}
+
+.theme{
+   float: right;
+}
+.theme span{
+   line-height: 40px;
+   font-family: 'Noto Sans KR', sans-serif;
 }
 
 @media screen and (max-width: 1800px) {

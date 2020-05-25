@@ -17,6 +17,7 @@
    <link rel="stylesheet" href="./css/common.min.css">
    <link rel="stylesheet" href="./css/style.css">
    <link rel="shortcut icon" href="./img/favicon.png">
+   <link rel="stylesheet" href="./css/dark.css">
    <script src="./js/lib/typed.min.js"></script>
    <style>
       * {margin: 0; padding: 0; color: inherit; text-decoration: inherit; list-style: none;}
@@ -24,6 +25,20 @@
       .item.type_up {top: 500px; opacity: 0;}
       .item.type_left {left: 500px; opacity: 0;}
       .item.type_right {left: -500px; opacity: 0;}
+      :root {
+        --dark: #333;
+        --light: #fff;
+        --background: var(--light);
+        --color: var(--dark);
+      }
+      .DarkMode {
+        --color: var(--light);
+        --background: var(--dark);
+      }
+      html {
+        background: var(--background);
+        color: var(--color);
+      }
    </style>
 </head>
 
@@ -49,6 +64,12 @@
                      </a>
                   </li>
                </ul>
+            </div>
+            <div class="theme">
+               <input type="checkbox" name="Toggle" id="darkmode" />
+               <label for="darkmode">
+                  <span>테마 전환</span>
+               </label>
             </div>
             <div id="clock">
                <img src="./img/iconClock.png" alt="시계아이콘" />
@@ -778,9 +799,9 @@
    $(function() {
       $("#typed").typed({
          stringsElement: $('#typed-strings'),
-         typeSpeed: 100,
-         backDelay: 500,
-         loop: true,
+         typeSpeed: 200,
+         backDelay: 1500,
+         loop: false,
          contentType: 'html',
          loopCount: false,
          callback: function() { foo(); },
@@ -789,7 +810,6 @@
    });
 
    function foo() {}
-
    function newTyped() {}
 
    $('.tabWrap li').on('click', function() {
@@ -799,6 +819,43 @@
       $('.' + tabTarget).siblings('li').addClass('hide');
       $('.' + tabTarget).removeClass('hide');
    });
+
+   const checkbox = document.querySelector('input[type="checkbox"]');
+   const root = document.querySelector("html");
+
+   function checkSystem() {
+      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      if (prefersDark) {
+         root.classList.add("DarkMode");
+      } else {
+         root.classList.remove("DarkMode");
+      }
+   }
+
+   function initDarkMode() {
+      checkSystem();
+
+      if (root.classList.contains("DarkMode")) {
+         checkbox.setAttribute("checked", true);
+      }
+
+      checkbox.addEventListener("change", (event) => {
+         root.classList.toggle("DarkMode");
+         const isDarkMode = root.classList.contains("DarkMode");
+         checkbox.setAttribute("checked", isDarkMode)
+      });
+   }
+   initDarkMode();
+
+   /*
+   window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+      if (e.matches) {
+         console.log('dark mode is enabled');
+      } else {
+         console.log('dark mode is disabled');
+      }
+   });
+   */
    </script>
 </body>
 
