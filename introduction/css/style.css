@@ -28,7 +28,7 @@
 #header #clock span {
 	vertical-align: middle;
 	line-height: 40px;
-	font-size: 0.875rem;
+	font-size: 0.87595rem;
 	font-family: "Noto Sans KR", sans-serif;
 }
 
@@ -592,9 +592,25 @@ section:nth-of-type(odd) {
 	vertical-align: middle;
 }
 
+.history .subTitle2 {
+	position: relative;
+	margin: 12px 0;
+	padding: 12px 0;
+	font-size: 1.3rem;
+	font-weight: 700;
+	border-top: 1px dashed #999;
+	border-bottom: 1px dashed #999;
+	cursor: pointer;
+}
+
 .history dl {
-	margin-top: 20px;
 	letter-spacing: -10px;
+}
+.history li + li {
+	margin-top: 16px;
+}
+.history li:last-child {
+	margin-bottom: 20px;
 }
 
 .history dt {
@@ -613,6 +629,43 @@ dd {
 	vertical-align: top;
 	line-height: 2;
 	letter-spacing: -0.5px;
+}
+
+.history .skill dl {
+	margin-top: 12px;
+}
+.arrow {
+	position: absolute;
+	top: 20px;
+	right: 0;
+	width: 12px;
+	height: 12px;
+	margin-right: 12px;
+	font-size: 12px;
+}
+.arrow span {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 8px;
+	height: 2px;
+	background-color: rgba(0, 0, 0, 0.85);
+	display: inline-block;
+	transition: all 0.5s ease;
+}
+.arrow span:first-of-type {
+	left: 0;
+	transform: scale(0.9) rotate(45deg);
+}
+.arrow span:last-of-type {
+	right: 0;
+	transform: scale(0.9) rotate(-45deg);
+}
+.arrow.active span:first-of-type {
+	transform: scale(0.9) rotate(-45deg);
+}
+.arrow.active span:last-of-type {
+	transform: scale(0.9) rotate(45deg);
 }
 
 /************************#Portfolio************************/

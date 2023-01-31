@@ -122,3 +122,7 @@
 .DarkMode .long_line {
    background-color: #fff;
 }
+
+.DarkMode .arrow span {
+   background-color: #fff;
+}
