@@ -20,14 +20,18 @@
 	<link rel="stylesheet" href="./css/style.css" />
 	<link rel="shortcut icon" href="./img/favicon.png" />
 	<link rel="stylesheet" href="./css/dark.css" />
-	<script src="./js/lib/typed.min.js"></script>
+	<script src="./js/lib/typed.js"></script>
 	<style>
 		* {
 			margin: 0;
 			padding: 0;
 			color: inherit;
 			text-decoration: inherit;
-			list-style: none;
+		}
+
+		html {
+			background: let(--background);
+			color: let(--color);
 		}
 
 		.item {
@@ -55,18 +59,13 @@
 		:root {
 			--dark: #333;
 			--light: #fff;
-			--background: var(--light);
-			--color: var(--dark);
+			--background: let(--light);
+			--color: let(--dark);
 		}
 
 		.DarkMode {
-			--color: var(--light);
-			--background: var(--dark);
-		}
-
-		html {
-			background: var(--background);
-			color: var(--color);
+			--color: let(--light);
+			--background: let(--dark);
 		}
 	</style>
 </head>
@@ -161,13 +160,14 @@
 										<span></span>
 									</span>
 								</p>
-								<ul style="display: none;">
+								<ul style="display: none">
 									<li>
 										<dl class="career_txt">
 											<dt>2022. 10 ~</dt>
 											<dd>
-												(주)네스트온오프 | 웹퍼블리셔(프리랜서)<br />- 한화생명금융서비스 앱 (한화FP리쿠르팅, 오렌지터치) / 웹 (라이프캔버스-가제) 프로젝트
-												퍼블리싱 SM 담당
+												(주)네스트온오프 | 웹퍼블리셔(프리랜서)<br />-
+												한화생명금융서비스 앱 (한화FP리크루팅, 오렌지터치) /
+												웹 (라이프캔버스) 프로젝트 퍼블리싱 SM 담당
 											</dd>
 										</dl>
 									</li>
@@ -175,7 +175,9 @@
 										<dl class="career_txt">
 											<dt>2022. 05 ~ 2022. 09</dt>
 											<dd>
-												(주)리플렉션 | 웹퍼블리셔(프리랜서)<br />- 현대카드 Universal 프로젝트<br />- 퍼블리싱 (Vue.js, Vuetify 기반)
+												(주)리플렉션 | 웹퍼블리셔(프리랜서)<br />- 현대카드
+												Universal 프로젝트<br />- 퍼블리싱 (Vue.js, Vuetify
+												기반)
 											</dd>
 										</dl>
 									</li>
@@ -184,7 +186,8 @@
 											<dt>2021. 11 ~ 2022. 04</dt>
 											<dd>
 												(주)퍼플아이오 | 웹퍼블리셔(프리랜서)<br />
-												- 나이스정보평가 (RM1, KISLINE 사이트 통합)<br />- 퍼블리싱 (Vue.js, Vuetify 기반)
+												- 나이스정보평가 (RM1, KISLINE 사이트 통합)<br />-
+												퍼블리싱 (Vue.js, Vuetify 기반)
 											</dd>
 										</dl>
 									</li>
@@ -193,7 +196,8 @@
 											<dt>2021. 05 ~ 2022. 10</dt>
 											<dd>
 												(주)솔루션메이트 | 웹퍼블리셔(프리랜서)<br />
-												- 하나캐피탈 중고차 플랫폼 사이트 리뉴얼<br />- 퍼블리싱+프론트 개발 일부
+												- 하나캐피탈 중고차 플랫폼 사이트 리뉴얼<br />-
+												퍼블리싱+프론트 개발 일부
 											</dd>
 										</dl>
 									</li>
@@ -201,8 +205,8 @@
 										<dl class="career_txt">
 											<dt>2018. 10 ~ 2021. 03</dt>
 											<dd>
-												아이비트레이드 | 웹퍼블리셔(정규직)<br />- 자사 홈페이지
-												제작 및 유지 / 보수
+												아이비트레이드 | 웹퍼블리셔(정규직)<br />- 자사
+												홈페이지 제작 및 유지 / 보수
 											</dd>
 										</dl>
 									</li>
@@ -210,8 +214,8 @@
 										<dl class="career_txt">
 											<dt>2017. 01 ~ 2017. 09</dt>
 											<dd>
-												유비온 Ubion | 마케터<br />- 온라인마케팅 및 내부영업지원,
-												출판업무 담당
+												유비온 Ubion | 마케터<br />- 온라인마케팅 및
+												내부영업지원, 출판업무 담당
 											</dd>
 										</dl>
 									</li>
@@ -223,7 +227,7 @@
 										<span></span>
 									</span>
 								</p>
-								<ul style="display: none;">
+								<ul style="display: none">
 									<li>
 										<dl class="career_txt">
 											<dt>2019. 10 ~ 2019. 11</dt>
@@ -335,6 +339,51 @@
 				</div>
 				<div class="cnt clearfix">
 					<ul class="item">
+						<li class="list all maintenance">
+							<div class="thumb">
+								<a href="https://hanwhalife.com/p/main/SF_PCMA000_P10000.do" target="_blank">
+									<img src="./img/imgThumb24.png" alt="lifeCanvasImage" />
+								</a>
+							</div>
+							<div class="info hide">
+								<p class="title">라이프캔버스</p>
+								<p class="txt">
+									<span>웹사이트 운영 (유지보수)</span>
+								</p>
+							</div>
+							<div class="infoM hide">
+								<p class="title">라이프캔버스</p>
+							</div>
+							<img src="./img/iconLink.png" alt="linkIcon" class="link" />
+						</li>
+						<li class="list all maintenance">
+							<div class="thumb">
+								<img src="./img/imgThumb23.png" alt="orangeTouchImage" />
+							</div>
+							<div class="info hide">
+								<p class="title">오렌지터치 (App)</p>
+								<p class="txt">
+									<span>앱 운영 (유지보수)</span>
+								</p>
+							</div>
+							<div class="infoM hide">
+								<p class="title">오렌지터치 (App)</p>
+							</div>
+						</li>
+						<li class="list all maintenance">
+							<div class="thumb">
+								<img src="./img/imgThumb22.png" alt="recruitImage" />
+							</div>
+							<div class="info hide">
+								<p class="title">한화FP리크루팅 (App)</p>
+								<p class="txt">
+									<span>앱 운영 (유지보수)</span>
+								</p>
+							</div>
+							<div class="infoM hide">
+								<p class="title">한화FP리크루팅 (App)</p>
+							</div>
+						</li>
 						<li class="list all new">
 							<div class="thumb">
 								<a href="https://www.nicebizline.com/" target="_blank">
@@ -343,7 +392,7 @@
 							</div>
 							<div class="info hide">
 								<a href="https://www.nicebizline.com/" target="_blank">
-									<p class="title">NICE BizLINE </p>
+									<p class="title">NICE BizLINE</p>
 									<p class="txt">
 										<span>사이트 통폐합 리뉴얼 퍼블리싱</span>
 										<span>Web 30%</span>
@@ -352,7 +401,7 @@
 							</div>
 							<img src="./img/iconLink.png" alt="linkIcon" class="link" />
 							<div class="infoM hide">
-								<p class="title">퍼블리시링크 API (PublishLink API)</p>
+								<p class="title">NICE BizLINE</p>
 							</div>
 						</li>
 						<li class="list all renewal">
@@ -360,14 +409,14 @@
 								<img src="./img/imgThumb20.png" alt="hanadreamcarImage" />
 							</div>
 							<div class="info hide">
-								<p class="title">하나드림카 : 중고차 거래 사이트</p>
+								<p class="title">하나드림카 (중고차 거래 플랫폼)</p>
 								<p class="txt">
 									<span>사이트 전면리뉴얼 퍼블리싱</span>
 									<span>Web + Mobile 100%</span>
 								</p>
 							</div>
 							<div class="infoM hide">
-								<p class="title">퍼블리시링크 API (PublishLink API)</p>
+								<p class="title">하나드림카 (중고차 거래 플랫폼)</p>
 							</div>
 						</li>
 						<li class="list all new">
@@ -748,7 +797,10 @@
 								<img src="./img/profile.jpg" alt="me" />
 							</p>
 							<p class="name">Park Seul Gi</p>
-							<p>HTML, (S)CSS, JQUERY, JAVASCRIPT<br />VueJS, Vuetify, CROSS-BROWSING (IE9+)</p>
+							<p>
+								HTML, (S)CSS, JQUERY, JAVASCRIPT<br />VueJS, Vuetify,
+								CROSS-BROWSING (IE9+)
+							</p>
 							<p>010.9456.2572<br />peach_crush@kakao.com</p>
 						</div>
 						<div class="item">
@@ -791,249 +843,7 @@
 			</span>
 		</div>
 	</div>
-	<script>
-		var idx = 0;
-
-		var webSize = "W";
-
-		(function () {
-			var $menu = $(".menuBtn"),
-				$contents = $(".moving");
-
-			$(window)
-				.scroll(function () {
-					var winSc = $(window).scrollLeft();
-					$("#headerWrap").css("left", -winSc);
-					var scltop = $(window).scrollTop();
-
-					$.each($contents, function (idx) {
-						var $target = $contents.eq(idx),
-							i = $target.index(),
-							targetTop = $target.offset().top;
-
-						var windowTop = $(window).innerHeight();
-						var documentTop = $(document).innerHeight();
-
-						if (documentTop - windowTop <= scltop + windowTop * 0.2) {
-							$menu.removeClass("menuBg2");
-							$(".menu").find(".menuBtn:last").addClass("menuBg2");
-						} else if (targetTop <= scltop + 130) {
-							$menu.removeClass("menuBg2");
-							$menu.eq(idx).addClass("menuBg2");
-						}
-					});
-				})
-				.scroll();
-
-			var anim = {
-				set: function () {
-					$(".item").each(function () {
-						var obj = $(this);
-						var top = obj.offset().top;
-						obj.attr("data-top", top);
-						var type = obj.data("type");
-						var ease = obj.data("ease");
-						var speed = obj.data("speed") / 1000;
-						var delay = obj.data("delay") / 1000;
-						if (type == undefined) {
-							type = "up";
-							obj.attr("data-type", "up");
-						}
-						if (!ease) ease = "ease";
-						if (isNaN(speed)) speed = 1;
-						if (isNaN(delay)) delay = 0;
-						$(window).scroll(function () {
-							obj.css(
-								"transition",
-								"all " + speed + "s " + ease + " " + delay + "s"
-							);
-						});
-						obj.addClass("type_" + type);
-					});
-				},
-				play: function () {
-					$(".item").each(function () {
-						var base = $(document).scrollTop() + $(window).height();
-						var top = $(this).data("top");
-						var type = $(this).data("type");
-						if (top < base) {
-							$(this).removeClass("type_" + type);
-						} else {
-							var type = $(this).data("type");
-							$(this).addClass("type_" + type);
-						}
-					});
-				},
-			};
-			anim.set();
-			$(window)
-				.scroll(function () {
-					if ($(window).width() < 576) {
-						return false;
-					}
-					anim.play();
-				})
-				.scroll();
-
-			$(window)
-				.resize(function () {
-					if (window.innerWidth < 576) {
-						$(".type_up").removeClass("type_up");
-						$(".type_left").removeClass("type_left");
-						$(".type_left").removeClass("type_left");
-					}
-
-					if ($(window).width() < 1300) {
-						$(".history .subTitle").addClass("toggle").toggleClass("off");
-						$(this).on("click", function () {
-							if ($(this).hasClass("off")) {
-								$(this).siblings("ul").stop().slideUp();
-							} else {
-								$(this).siblings("ul").stop().slideDown();
-							}
-						});
-					} else {
-						$(".history .subTitle").removeClass("toggle").toggleClass("off");
-					}
-				})
-				.resize();
-
-			$(".main_nav_btn a").on("click", function () {
-				var nm = $(this).attr("href");
-				var offset = $(nm).offset().top;
-				$("html, body").stop().animate({ scrollTop: offset }, 800);
-				return false;
-			});
-		})();
-
-		$(window).scroll(function () {
-			if ($(this).scrollTop() < $(window).height() - 650) {
-				$("#top span").removeClass("active");
-			} else {
-				$("#top span").addClass("active");
-			}
-		});
-
-		$("#top span").click(function () {
-			$("html, body").animate({ scrollTop: "0" }, 300);
-		});
-
-		if (window.innerWidth < 800) {
-			$("#Portfolio .list .infoM").removeClass("hide");
-		} else {
-			$("#Portfolio .list .infoM").addClass("hide");
-			$("#Portfolio .list").hover(
-				function () {
-					$(this).find(".info").slideDown();
-				},
-				function () {
-					$(this).find(".info").slideUp();
-				}
-			);
-		}
-
-		function clock() {
-			var date = new Date(),
-				hours = date.getHours(),
-				minutes = date.getMinutes(),
-				seconds = date.getSeconds();
-
-			if (window.innerWidth >= 500) {
-				document.querySelector("#clock span").textContent = `현재 시간 ${hours < 10 ? `0${hours}` : hours
-					} : ${minutes < 10 ? `0${minutes}` : minutes} : ${seconds < 10 ? `0${seconds}` : seconds
-					}`;
-				document.querySelector("#clock").style.cssFloat = "left";
-			} else {
-				document.querySelector("#clock span").textContent = `${hours < 10 ? `0${hours}` : hours
-					} : ${minutes < 10 ? `0${minutes}` : minutes} : ${seconds < 10 ? `0${seconds}` : seconds
-					}`;
-				document.querySelector("#clock").style.cssFloat = "right";
-			}
-		}
-
-		function init() {
-			clock();
-			setInterval(clock, 1000);
-		}
-
-		init();
-
-		$(function () {
-			$("#typed").typed({
-				stringsElement: $("#typed-strings"),
-				typeSpeed: 200,
-				backDelay: 1500,
-				loop: false,
-				contentType: "html",
-				loopCount: false,
-				callback: function () {
-					foo();
-				},
-				resetCallback: function () {
-					newTyped();
-				},
-			});
-		});
-
-		function foo() { }
-		function newTyped() { }
-
-		$(".tabWrap li").on("click", function () {
-			$(this).siblings("li").removeClass("selected");
-			$(this).addClass("selected");
-			var tabTarget = $(this).data("target");
-			$("." + tabTarget)
-				.siblings("li")
-				.addClass("hide");
-			$("." + tabTarget).removeClass("hide");
-		});
-
-		const checkbox = document.querySelector('input[type="checkbox"]');
-		const root = document.querySelector("html");
-
-		function checkSystem() {
-			const prefersDark = window.matchMedia("(prefers-color-scheme: dark)")
-				.matches;
-			if (prefersDark) {
-				root.classList.add("DarkMode");
-			} else {
-				root.classList.remove("DarkMode");
-			}
-		}
-
-		function initDarkMode() {
-			checkSystem();
-
-			if (root.classList.contains("DarkMode")) {
-				checkbox.setAttribute("checked", true);
-			}
-
-			checkbox.addEventListener("change", (event) => {
-				root.classList.toggle("DarkMode");
-				const isDarkMode = root.classList.contains("DarkMode");
-				checkbox.setAttribute("checked", isDarkMode);
-			});
-		}
-		initDarkMode();
-
-		$('.toggle').on('click', function () {
-			$(this).next("ul").stop().slideToggle();
-			if ($(this).find('.arrow').hasClass('active')) {
-				$(this).find('.arrow').removeClass('active');
-			} else {
-				$(this).find('.arrow').addClass('active');
-			}
-		});
-		/*
-window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
-	if (e.matches) {
-		console.log('dark mode is enabled');
-	} else {
-		console.log('dark mode is disabled');
-	}
-});
-*/
-	</script>
+	<script src="./js/index.js"></script>
 </body>
 
 </html>

@@ -44,8 +44,17 @@
    background-color: #222;
 }
 
-
-.DarkMode .history dt {
+.DarkMode .history .subTitle2 {
+   color: #fff;
+}
+.DarkMode .history .title span {
+   color: #fff;
+}
+.DarkMode .history .subTitle span {
+   color: #fff;
+}
+.DarkMode .history dt,
+.DarkMode .history dd {
    color: #fff;
 }
 
@@ -65,7 +74,7 @@
 }
 
 .DarkMode #Portfolio .cnt ul li .infoM .title {
-   background-color: #222;
+   background-color: #fff;
 }
 
 .DarkMode #Portfolio .cnt .name .part:nth-child(1) p:nth-child(2) {
@@ -102,9 +111,13 @@
    border-color: #fff;
 }
 
+.DarkMode #container section#Contact .cnt {
+   color: #fff;
+}
 .DarkMode .pg_1 {
    border-color: #fff;
    background-color: #222;
+   color: #fff;
 }
 
 .DarkMode .pg_1 .txt p.line {
@@ -125,4 +138,8 @@
 
 .DarkMode .arrow span {
    background-color: #fff;
+}
+
+.DarkMode .long_line span {
+   color: #fff;
 }
