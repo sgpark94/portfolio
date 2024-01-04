@@ -742,7 +742,6 @@ dd {
 	right: 0;
 	padding: 15px;
 	background-color: rgba(0, 0, 0, 0.7);
-	color: #fff;
 }
 
 #Portfolio .cnt ul li .info p {
@@ -754,6 +753,7 @@ dd {
 	font-size: 1.25rem;
 	font-weight: 700;
 	font-family: "Noto Sans KR", sans-serif;
+	color: #fff;
 }
 
 #Portfolio .cnt ul li .infoM .title {
@@ -761,11 +761,13 @@ dd {
 	background-color: #fff;
 	font-weight: 700;
 	font-family: "Noto Sans KR", sans-serif;
+	color: #000;
 }
 
 #Portfolio .cnt ul li .info .txt {
 	line-height: 1.6;
 	font-size: 0.875rem;
+	color: #fff;
 }
 
 #Portfolio .cnt ul li .info .txt span {
@@ -940,45 +942,46 @@ dd {
 	margin-left: 10%;
 }
 
-#container section .cnt form div {
+#container section .cnt div {
 	margin-top: 20px;
-	text-align: right;
+	text-align: center;
 }
 
-#container section .cnt form [type="submit"] {
+#container section .cnt [type="submit"] {
 	border: 1px dashed #333;
 	padding: 10px 20px;
 }
 
-#container section .cnt form [type="submit"]:hover {
+#container section .cnt [type="submit"]:hover {
 	color: #fff;
 	border-color: #333;
 	background-color: #747474;
 }
 
-#container section .cnt form dl dt {
+#container section .cnt dl dt {
 	margin-top: 30px;
+	text-align: left;
 	letter-spacing: 4px;
 	font-weight: 700;
 }
 
-#container section .cnt form dl dd {
+#container section .cnt dl dd {
 	position: relative;
 	display: block;
 	margin-top: 30px;
 	border-bottom: 1px solid #999;
 }
 
-#container section .cnt form dl dd input {
+#container section .cnt dl dd input {
 	width: 100%;
 }
 
-#container section .cnt form dl dd textarea {
+#container section .cnt dl dd textarea {
 	height: 100px;
 	width: 100%;
 }
 
-#container section .cnt form dl dd i {
+#container section .cnt dl dd i {
 	position: absolute;
 	bottom: 10px;
 	right: 18px;
