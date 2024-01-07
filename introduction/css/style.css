@@ -1109,6 +1109,15 @@ section#Main > div:first-of-type {
 	margin: 30px auto;
 }
 
+.pg_1 .resume {
+	margin-top: 32px;
+}
+
+.pg_1 .resume a {
+	padding: 8px 12px;
+	border: 1px solid #000;
+}
+
 .pg_1 .txt_detail {
 	padding-bottom: 30px;
 }
