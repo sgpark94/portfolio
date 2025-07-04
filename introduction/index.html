@@ -13,10 +13,7 @@
 	<meta property="og:image" content="./img/snsShare.png" />
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link
-		href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&family=Hahmlet:wght@300;500;700&display=swap"
-		rel="stylesheet" />
-	<script src="https://code.jquery.com/jquery-1.11.3.js"></script>
+	<script src="./js/lib/jquery-1.11.3.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 	</script>
 	<script type="text/javascript">
@@ -25,7 +22,7 @@
 		})();
 	</script>
 	<title>박슬기의 포트폴리오</title>
-	<link rel="stylesheet" href="./css/common.min.css" />
+	<link rel="stylesheet" href="./css/common.css" />
 	<link rel="stylesheet" href="./css/style.css" />
 	<link rel="shortcut icon" href="./img/favicon.png" />
 	<link rel="stylesheet" href="./css/dark.css" />
@@ -378,22 +375,19 @@
 				</div>
 				<div class="cnt clearfix">
 					<ul class="item">
-						<li class="list all new">
+						<li class="list all new" id="btn_openPop">
 							<div class="thumb">
-								<a href="https://publish.ospp-stg.hanwhalifefs.com/sm/main.html" target="_blank">
-									<img src="./img/imgThumb25.png" alt="OrangeTreeImage" />
-								</a>
+                <img src="./img/imgThumb26.png" alt="OrangeTreeAdvanceImage" />
 							</div>
 							<div class="info hide">
-								<p class="title">오렌지트리 고도화 메인 V2</p>
+								<p class="title">오렌지트리 메인 고도화</p>
 								<p class="txt">
-									<span>웹사이트 코드 변경<br />(토마토UI > html/css/js) (리뉴얼)</span>
+									<span>웹사이트 코드 변경<br />(토마토UI > html/css/js) (전체 리뉴얼)</span>
 								</p>
 							</div>
 							<div class="infoM hide">
-								<p class="title">오렌지트리 고도화 메인 V2</p>
+								<p class="title">오렌지트리 메인 고도화</p>
 							</div>
-							<img src="./img/iconLink.png" alt="linkIcon" class="link" />
 						</li>
 						<li class="list all maintenance">
 							<div class="thumb">
@@ -900,6 +894,96 @@
 				<img src="./img/iconTop.png" alt="최상단으로이동" />
 			</span>
 		</div>
+    <!-- 서브페이지 팝업 -->
+    <div class="popup">
+      <div class="popup_content">
+        <div class="pop_head">
+			<h1>페이지 리스트</h1>
+			<button type="button" class="pop_close"></button>
+		</div>
+    <div class="pop_body pop_scroll">
+      <ul class="pop_list">
+        <li>
+          <img src="./img/img_fp_ty1.png" alt="">
+          <p class="title">FP - LIFEMD</p>
+        </li>
+        <li>
+          <img src="./img/img_fp_ty2.png" alt="">
+          <p class="title">FP - 개인영업본부</p>
+        </li>
+        <li>
+          <img src="./img/img_fp_ty3.png" alt="">
+          <p class="title">FP - 제휴GA</p>
+        </li>
+        <li>
+          <img src="./img/img_orga_ty1.png" alt="">
+          <p class="title">내근기관 - 개인영업본부</p>
+        </li>
+        <li>
+          <img src="./img/img_orga_ty2.png" alt="">
+          <p class="title">내근기관 - 제휴GA</p>
+        </li>
+        <li>
+          <img src="./img/img_loading.png" alt="">
+          <p class="title">로딩창</p>
+        </li>
+        <li>
+          <img src="./img/img_menu.png" alt="">
+          <p class="title">전체메뉴</p>
+        </li>
+        <li>
+          <img src="./img/popup_ty1.png" alt="">
+          <p class="title">팝업 1</p>
+        </li>
+        <li>
+          <img src="./img/popup_ty2.png" alt="">
+          <p class="title">팝업 2</p>
+        </li>
+        <li>
+          <img src="./img/popup_ty3.png" alt="">
+          <p class="title">팝업 3</p>
+        </li>
+        <li>
+          <img src="./img/popup_ty4.png" alt="">
+          <p class="title">팝업 4</p>
+        </li>
+        <li>
+          <img src="./img/popup_ty5.png" alt="">
+          <p class="title">팝업 5</p>
+        </li>
+        <li>
+          <img src="./img/popup_ty6.png" alt="">
+          <p class="title">팝업 6</p>
+        </li>
+        <li>
+          <img src="./img/popup_ty7.png" alt="">
+          <p class="title">팝업 7</p>
+        </li>
+        <li>
+          <img src="./img/popup_ty8.png" alt="">
+          <p class="title">팝업 8</p>
+        </li>
+      </ul>
+    </div>
+    <div class="pages">
+      <div class="page active" data-page="1">
+        <h2>페이지 1</h2>
+        <p>첫 번째 페이지 내용입니다.</p>
+      </div>
+      <div class="page" data-page="2">
+        <h2>페이지 2</h2>
+        <p>두 번째 페이지 내용입니다.</p>
+      </div>
+      <div class="page" data-page="3">
+        <h2>페이지 3</h2>
+        <p>세 번째 페이지 내용입니다.</p>
+      </div>
+    </div>
+    <div class="pagination">
+      <button class="prev">이전</button>
+      <span class="current_page">1</span> / <span class="total_pages">3</span>
+      <button class="next">다음</button>
+    </div>
 	</div>
 	<script src="./js/index.js"></script>
 	<script>

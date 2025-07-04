@@ -3,7 +3,6 @@
    padding: 0;
    color: inherit;
    font-family: inherit;
-   font-size: 1em;
    font-style: inherit;
    font-weight: inherit;
    text-decoration: inherit;
@@ -15,27 +14,29 @@
    background-color: transparent;
    background-repeat: no-repeat
 }
-
 b,
 strong {
    font-weight: 700
 }
-
 ::after,
 ::before {
    border: 0 solid transparent
 }
-
 ol,
 ul {
    list-style: none
 }
-
 table {
    table-layout: fixed;
    border-collapse: collapse
 }
-
+html {
+   font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: initial;
+  font-weight: 700;
+}
 [type=button],
 [type=reset],
 [type=submit],
@@ -44,35 +45,29 @@ button,
 label {
    cursor: pointer
 }
-
 .clearfix:after {
    content: "";
    display: block;
    clear: both
 }
-
 .ellipsis {
    overflow: hidden;
    -ms-text-overflow: ellipsis;
    text-overflow: ellipsis;
    white-space: nowrap
 }
-
 .hidden {
    display: none
 }
-
 .bold {
    font-weight: 700
 }
-
 #wrap {
    overflow: hidden;
    position: relative;
    height: 100%;
-   font-family: NanumSquare, 'Nanum Gothic', Raleway, 'Noto Sans KR', sans-serif
+   font-family: 'Pretendard', 'Nanum Gothic', Raleway, 'Noto Sans KR', sans-serif
 }
-
 .inner {
    position: relative;
    max-width: 1280px;
@@ -80,13 +75,11 @@ label {
    margin: auto;
    padding: 0 40px
 }
-
 .inner:after {
    content: "";
    display: block;
    clear: both
 }
-
 footer,
 section {
    background-attachment: fixed;
@@ -94,23 +87,18 @@ section {
    -webkit-background-size: 40px;
    background-size: 40px
 }
-
 section:nth-child(1) {
    background-image: url(../img/bg_num_01.png)
 }
-
 section:nth-child(2) {
    background-image: url(../img/bg_num_02.png)
 }
-
 section:nth-child(3) {
    background-image: url(../img/bg_num_03.png)
 }
-
 /*section:nth-child(4) {
    background-image: url(../img/bg_num_04.png)
 }
-
 section:nth-child(5) {
    background-image: url(../img/bg_num_05.png)
 }
@@ -118,27 +106,21 @@ section:nth-child(5) {
 footer {
    background-image: url(../img/bg_num_04.png)
 }
-
 @media screen and (max-width:1280px) {
-
    footer,
    section {
       -webkit-background-size: 30px;
       background-size: 30px
    }
 }
-
 @media screen and (max-width:1024px) {
-
    footer,
    section {
       -webkit-background-size: 26px;
       background-size: 26px
    }
 }
-
 @media screen and (max-width:768px) {
-
    footer,
    section {
       -webkit-background-size: 22px;
