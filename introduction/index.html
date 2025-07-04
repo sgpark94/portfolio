@@ -37,41 +37,34 @@
 			color: inherit;
 			text-decoration: inherit;
 		}
-
 		html {
 			background: let(--background);
 			color: let(--color);
 		}
-
 		.item {
 			position: relative;
 			top: 0;
 			left: 0;
 			opacity: 1;
 		}
-
 		.item.type_up {
 			top: 500px;
 			opacity: 0;
 		}
-
 		.item.type_left {
 			left: 500px;
 			opacity: 0;
 		}
-
 		.item.type_right {
 			left: -500px;
 			opacity: 0;
 		}
-
 		:root {
 			--dark: #333;
 			--light: #fff;
 			--background: let(--light);
 			--color: let(--dark);
 		}
-
 		.DarkMode {
 			--color: let(--light);
 			--background: let(--dark);
